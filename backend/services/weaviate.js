@@ -4,11 +4,16 @@ class WeaviateService {
   constructor() {
     const weaviateUrl = process.env.WEAVIATE_URL || 'http://localhost:8080';
     const apiKey = process.env.WEAVIATE_API_KEY;
+    
+    // Determine scheme and host from URL
+    const isHttps = weaviateUrl.startsWith('https://');
+    const scheme = isHttps ? 'https' : 'http';
+    const host = weaviateUrl.replace('http://', '').replace('https://', '');
 
-    this.client = weaviate.client({
-      scheme: 'http',
-      host: weaviateUrl.replace('http://', '').replace('https://', ''),
-      apiKey: apiKey ? new (weaviate.ApiKey)(apiKey) : undefined,
+    this.client = weaviate.default.client({
+      scheme: scheme,
+      host: host,
+      apiKey: apiKey,
     });
     
     this.isInitialized = false;
