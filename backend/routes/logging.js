@@ -2,7 +2,7 @@ const express = require('express');
 const multer = require('multer');
 const { v4: uuidv4 } = require('uuid');
 const Joi = require('joi');
-const { weaviateService } = require('../services/memory-storage');
+const { weaviateService } = require('../services/persistent-storage');
 const { aiCoach } = require('../services/mock-openai');
 
 const router = express.Router();

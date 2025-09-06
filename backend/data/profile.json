@@ -1,0 +1,27 @@
+{
+  "4b514588-a40b-4b8d-9236-8df8dcef25f7": {
+    "id": "4b514588-a40b-4b8d-9236-8df8dcef25f7",
+    "content": "User profile: Alice Johnson, 30 year old female, mesomorph body type, european background, goals: maintain weight, increase energy, better sleep",
+    "metadata": {
+      "type": "profile",
+      "userId": "4b514588-a40b-4b8d-9236-8df8dcef25f7",
+      "timestamp": "2025-09-06T20:42:10.065Z",
+      "id": "4b514588-a40b-4b8d-9236-8df8dcef25f7",
+      "name": "Alice Johnson",
+      "age": 30,
+      "gender": "female",
+      "height": 170,
+      "weight": 65,
+      "bodyType": "mesomorph",
+      "culture": "european",
+      "goals": [
+        "maintain weight",
+        "increase energy",
+        "better sleep"
+      ],
+      "createdAt": "2025-09-06T20:42:10.065Z",
+      "updatedAt": "2025-09-06T20:42:10.065Z"
+    },
+    "timestamp": "2025-09-06T20:42:10.066Z"
+  }
+}
