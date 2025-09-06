@@ -2,68 +2,191 @@ const express = require('express');
 const multer = require('multer');
 const { v4: uuidv4 } = require('uuid');
 const Joi = require('joi');
+const fs = require('fs').promises;
+const path = require('path');
 const { weaviateService } = require('../services/persistent-storage');
-const { aiCoach } = require('../services/mock-openai');
 
 const router = express.Router();
 
+// Create uploads directory structure
+const uploadsDir = path.join(__dirname, '../uploads');
+const textDir = path.join(uploadsDir, 'text');
+const audioDir = path.join(uploadsDir, 'audio');
+const imageDir = path.join(uploadsDir, 'images');
+
+// Ensure directories exist
+async function ensureDirectories() {
+  try {
+    await fs.mkdir(uploadsDir, { recursive: true });
+    await fs.mkdir(textDir, { recursive: true });
+    await fs.mkdir(audioDir, { recursive: true });
+    await fs.mkdir(imageDir, { recursive: true });
+  } catch (error) {
+    console.error('Error creating directories:', error);
+  }
+}
+
+// Initialize directories
+ensureDirectories();
+
 // Configure multer for file uploads
+const storage = multer.memoryStorage();
 const upload = multer({
-  storage: multer.memoryStorage(),
+  storage: storage,
   limits: {
-    fileSize: 10 * 1024 * 1024, // 10MB limit
+    fileSize: 50 * 1024 * 1024, // 50MB limit
   },
   fileFilter: (req, file, cb) => {
-    if (file.mimetype.startsWith('image/')) {
+    // Accept audio files (.wav, .mp3, .m4a) and images (.png, .jpg, .jpeg)
+    const allowedMimes = [
+      'audio/wav', 'audio/wave', 'audio/x-wav',
+      'audio/mpeg', 'audio/mp3',
+      'audio/mp4', 'audio/m4a',
+      'image/png', 'image/jpeg', 'image/jpg'
+    ];
+    
+    if (allowedMimes.includes(file.mimetype)) {
       cb(null, true);
     } else {
-      cb(new Error('Only image files are allowed'), false);
+      cb(new Error(`File type ${file.mimetype} not allowed. Only audio (.wav, .mp3, .m4a) and image (.png, .jpg, .jpeg) files are supported.`), false);
     }
   }
 });
 
 // Validation schemas
-const logEntrySchema = Joi.object({
-  habitId: Joi.string().required(),
-  value: Joi.number().min(0).required(),
-  unit: Joi.string().min(1).max(50).required(),
-  notes: Joi.string().max(500).optional(),
-  method: Joi.string().valid('text', 'voice', 'photo').required(),
-  metadata: Joi.object({
-    foodItems: Joi.array().items(Joi.string()).optional(),
-    calories: Joi.number().min(0).optional(),
-    imageUrl: Joi.string().uri().optional(),
-    voiceTranscript: Joi.string().optional()
-  }).optional()
+const textLogSchema = Joi.object({
+  user_id: Joi.string().required(),
+  timestamp: Joi.string().isoDate().required(),
+  input_method: Joi.string().valid('text').required(),
+  content: Joi.string().min(1).max(5000).required()
 });
 
-// Log activity entry
-router.post('/', async (req, res) => {
-  try {
-    const { error, value } = logEntrySchema.validate(req.body);
-    if (error) {
-      return res.status(400).json({
-        success: false,
-        error: 'Validation error',
-        message: error.details[0].message
-      });
-    }
+const fileLogSchema = Joi.object({
+  user_id: Joi.string().required(),
+  timestamp: Joi.string().isoDate().required(),
+  input_method: Joi.string().valid('voice', 'photo').required()
+});
 
-    const logEntry = {
-      id: uuidv4(),
-      ...value,
-      timestamp: new Date()
+// POST /api/logging - Create a new log entry
+router.post('/', upload.single('file'), async (req, res) => {
+  try {
+    const logId = uuidv4();
+    const { user_id, timestamp, input_method, content } = req.body;
+    
+    let logEntry = {
+      id: logId,
+      user_id,
+      timestamp,
+      input_method,
+      file_name: null,
+      created_at: new Date().toISOString()
     };
 
-    // Store in Weaviate
+    // Handle different input methods
+    switch (input_method) {
+      case 'text':
+        // Validate text input
+        const { error: textError } = textLogSchema.validate(req.body);
+        if (textError) {
+          return res.status(400).json({
+            success: false,
+            error: 'Validation error',
+            message: textError.details[0].message
+          });
+        }
+
+        // Save text content to file
+        const textFileName = `${logId}.txt`;
+        const textFilePath = path.join(textDir, textFileName);
+        await fs.writeFile(textFilePath, content, 'utf8');
+        
+        logEntry.file_name = textFileName;
+        logEntry.content_preview = content.substring(0, 100) + (content.length > 100 ? '...' : '');
+        break;
+
+      case 'voice':
+        // Validate file input
+        const { error: voiceError } = fileLogSchema.validate(req.body);
+        if (voiceError) {
+          return res.status(400).json({
+            success: false,
+            error: 'Validation error',
+            message: voiceError.details[0].message
+          });
+        }
+
+        if (!req.file) {
+          return res.status(400).json({
+            success: false,
+            error: 'File required',
+            message: 'Audio file is required for voice input method'
+          });
+        }
+
+        // Determine file extension based on mimetype
+        let audioExt = '.wav';
+        if (req.file.mimetype.includes('mp3')) audioExt = '.mp3';
+        if (req.file.mimetype.includes('m4a')) audioExt = '.m4a';
+
+        const audioFileName = `${logId}${audioExt}`;
+        const audioFilePath = path.join(audioDir, audioFileName);
+        await fs.writeFile(audioFilePath, req.file.buffer);
+        
+        logEntry.file_name = audioFileName;
+        logEntry.file_size = req.file.size;
+        logEntry.content_preview = `Audio recording (${(req.file.size / 1024).toFixed(1)} KB)`;
+        break;
+
+      case 'photo':
+        // Validate file input
+        const { error: photoError } = fileLogSchema.validate(req.body);
+        if (photoError) {
+          return res.status(400).json({
+            success: false,
+            error: 'Validation error',
+            message: photoError.details[0].message
+          });
+        }
+
+        if (!req.file) {
+          return res.status(400).json({
+            success: false,
+            error: 'File required',
+            message: 'Image file is required for photo input method'
+          });
+        }
+
+        // Determine file extension based on mimetype
+        let imageExt = '.png';
+        if (req.file.mimetype.includes('jpeg') || req.file.mimetype.includes('jpg')) {
+          imageExt = '.jpg';
+        }
+
+        const imageFileName = `${logId}${imageExt}`;
+        const imageFilePath = path.join(imageDir, imageFileName);
+        await fs.writeFile(imageFilePath, req.file.buffer);
+        
+        logEntry.file_name = imageFileName;
+        logEntry.file_size = req.file.size;
+        logEntry.content_preview = `Image file (${(req.file.size / 1024).toFixed(1)} KB)`;
+        break;
+
+      default:
+        return res.status(400).json({
+          success: false,
+          error: 'Invalid input method',
+          message: 'input_method must be one of: text, voice, photo'
+        });
+    }
+
+    // Store in persistent storage
     await weaviateService.addDocument({
-      id: logEntry.id,
-      content: `Activity log: ${logEntry.habitId} - ${logEntry.value} ${logEntry.unit}${logEntry.notes ? ` (${logEntry.notes})` : ''}`,
+      id: logId,
+      content: `Log entry: ${input_method} - ${logEntry.content_preview}`,
       metadata: {
         type: 'log',
-        habitId: logEntry.habitId,
-        userId: req.body.userId,
-        timestamp: logEntry.timestamp.toISOString(),
+        userId: user_id,
+        timestamp: timestamp,
         ...logEntry
       }
     });
@@ -71,118 +194,53 @@ router.post('/', async (req, res) => {
     res.json({
       success: true,
       data: logEntry,
-      message: 'Activity logged successfully'
+      message: 'Log entry created successfully'
     });
+
   } catch (error) {
     console.error('Logging error:', error);
     res.status(500).json({
       success: false,
-      error: 'Failed to log activity',
+      error: 'Failed to create log entry',
       message: error.message
     });
   }
 });
 
-// Handle photo upload and food recognition
-router.post('/photo', upload.single('photo'), async (req, res) => {
-  try {
-    if (!req.file) {
-      return res.status(400).json({
-        success: false,
-        error: 'No photo provided',
-        message: 'Please upload a photo'
-      });
-    }
-
-    // For hackathon demo, we'll simulate food recognition
-    // In production, you'd integrate with Google Vision API or similar
-    const mockFoodRecognition = {
-      foodItems: ['Pizza', 'Salad', 'Apple'],
-      calories: 450,
-      confidence: 0.85
-    };
-
-    const logEntry = {
-      id: uuidv4(),
-      habitId: req.body.habitId || 'nutrition',
-      value: mockFoodRecognition.calories,
-      unit: 'calories',
-      method: 'photo',
-      notes: `Recognized: ${mockFoodRecognition.foodItems.join(', ')}`,
-      metadata: {
-        foodItems: mockFoodRecognition.foodItems,
-        calories: mockFoodRecognition.calories,
-        imageUrl: `data:${req.file.mimetype};base64,${req.file.buffer.toString('base64')}`,
-        confidence: mockFoodRecognition.confidence
-      },
-      timestamp: new Date()
-    };
-
-    // Store in Weaviate
-    await weaviateService.addDocument({
-      id: logEntry.id,
-      content: `Photo log: ${logEntry.habitId} - ${logEntry.value} ${logEntry.unit} (${logEntry.notes})`,
-      metadata: {
-        type: 'log',
-        habitId: logEntry.habitId,
-        userId: req.body.userId,
-        timestamp: logEntry.timestamp.toISOString(),
-        ...logEntry
-      }
-    });
-
-    res.json({
-      success: true,
-      data: logEntry,
-      message: 'Photo processed and logged successfully'
-    });
-  } catch (error) {
-    console.error('Photo processing error:', error);
-    res.status(500).json({
-      success: false,
-      error: 'Failed to process photo',
-      message: error.message
-    });
-  }
-});
-
-// Get user's log history
+// GET /api/logging/:userId - Get user's log entries
 router.get('/:userId', async (req, res) => {
   try {
     const { userId } = req.params;
-    const { limit = 50, habitId, startDate, endDate } = req.query;
+    const { limit = 50, input_method, start_date, end_date } = req.query;
     
-    let whereCondition = {
-      path: ['userId'],
-      operator: 'Equal',
-      valueText: userId
-    };
+    // Get logs from persistent storage
+    const documents = await weaviateService.getDocumentsByType('log', userId, parseInt(limit));
+    let logs = documents.map(doc => doc.metadata);
 
-    if (habitId) {
-      whereCondition = {
-        operator: 'And',
-        operands: [
-          {
-            path: ['userId'],
-            operator: 'Equal',
-            valueText: userId
-          },
-          {
-            path: ['habitId'],
-            operator: 'Equal',
-            valueText: habitId
-          }
-        ]
-      };
+    // Filter by input method if specified
+    if (input_method) {
+      logs = logs.filter(log => log.input_method === input_method);
     }
 
-    const documents = await weaviateService.searchSimilar('', parseInt(limit), whereCondition);
-    const logs = documents.map(doc => doc.metadata);
+    // Filter by date range if specified
+    if (start_date || end_date) {
+      logs = logs.filter(log => {
+        const logDate = new Date(log.timestamp);
+        if (start_date && logDate < new Date(start_date)) return false;
+        if (end_date && logDate > new Date(end_date)) return false;
+        return true;
+      });
+    }
+
+    // Sort by timestamp (newest first)
+    logs.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
 
     res.json({
       success: true,
-      data: logs
+      data: logs,
+      count: logs.length
     });
+
   } catch (error) {
     console.error('Log retrieval error:', error);
     res.status(500).json({
@@ -193,7 +251,7 @@ router.get('/:userId', async (req, res) => {
   }
 });
 
-// Get today's logs
+// GET /api/logging/:userId/today - Get today's logs
 router.get('/:userId/today', async (req, res) => {
   try {
     const { userId } = req.params;
@@ -202,12 +260,15 @@ router.get('/:userId/today', async (req, res) => {
     const documents = await weaviateService.getDocumentsByType('log', userId, 100);
     const todayLogs = documents
       .map(doc => doc.metadata)
-      .filter(log => log.timestamp.startsWith(today));
+      .filter(log => log.timestamp.startsWith(today))
+      .sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
 
     res.json({
       success: true,
-      data: todayLogs
+      data: todayLogs,
+      count: todayLogs.length
     });
+
   } catch (error) {
     console.error('Today logs retrieval error:', error);
     res.status(500).json({
@@ -218,22 +279,192 @@ router.get('/:userId/today', async (req, res) => {
   }
 });
 
-// Delete log entry
+// GET /api/logging/file/:logId - Download/view a log file
+router.get('/file/:logId', async (req, res) => {
+  try {
+    const { logId } = req.params;
+    
+    // Get log entry from storage
+    const logDoc = await weaviateService.getDocumentById(logId);
+    if (!logDoc) {
+      return res.status(404).json({
+        success: false,
+        error: 'Log not found',
+        message: 'No log entry found with this ID'
+      });
+    }
+
+    const logEntry = logDoc.metadata;
+    const { input_method, file_name } = logEntry;
+
+    if (!file_name) {
+      return res.status(404).json({
+        success: false,
+        error: 'File not found',
+        message: 'No file associated with this log entry'
+      });
+    }
+
+    // Determine file path based on input method
+    let filePath;
+    let contentType;
+    
+    switch (input_method) {
+      case 'text':
+        filePath = path.join(textDir, file_name);
+        contentType = 'text/plain';
+        break;
+      case 'voice':
+        filePath = path.join(audioDir, file_name);
+        if (file_name.endsWith('.wav')) contentType = 'audio/wav';
+        else if (file_name.endsWith('.mp3')) contentType = 'audio/mpeg';
+        else if (file_name.endsWith('.m4a')) contentType = 'audio/mp4';
+        else contentType = 'audio/wav';
+        break;
+      case 'photo':
+        filePath = path.join(imageDir, file_name);
+        if (file_name.endsWith('.png')) contentType = 'image/png';
+        else if (file_name.endsWith('.jpg') || file_name.endsWith('.jpeg')) contentType = 'image/jpeg';
+        else contentType = 'image/png';
+        break;
+      default:
+        return res.status(400).json({
+          success: false,
+          error: 'Invalid input method',
+          message: 'Unknown input method for file retrieval'
+        });
+    }
+
+    // Check if file exists
+    try {
+      await fs.access(filePath);
+    } catch (error) {
+      return res.status(404).json({
+        success: false,
+        error: 'File not found',
+        message: 'The associated file could not be found on disk'
+      });
+    }
+
+    // Set appropriate headers and send file
+    res.setHeader('Content-Type', contentType);
+    res.setHeader('Content-Disposition', `inline; filename="${file_name}"`);
+    
+    const fileBuffer = await fs.readFile(filePath);
+    res.send(fileBuffer);
+
+  } catch (error) {
+    console.error('File retrieval error:', error);
+    res.status(500).json({
+      success: false,
+      error: 'Failed to retrieve file',
+      message: error.message
+    });
+  }
+});
+
+// DELETE /api/logging/:logId - Delete a log entry and its associated file
 router.delete('/:logId', async (req, res) => {
   try {
     const { logId } = req.params;
     
+    // Get log entry from storage
+    const logDoc = await weaviateService.getDocumentById(logId);
+    if (!logDoc) {
+      return res.status(404).json({
+        success: false,
+        error: 'Log not found',
+        message: 'No log entry found with this ID'
+      });
+    }
+
+    const logEntry = logDoc.metadata;
+    const { input_method, file_name } = logEntry;
+
+    // Delete associated file if it exists
+    if (file_name) {
+      let filePath;
+      switch (input_method) {
+        case 'text':
+          filePath = path.join(textDir, file_name);
+          break;
+        case 'voice':
+          filePath = path.join(audioDir, file_name);
+          break;
+        case 'photo':
+          filePath = path.join(imageDir, file_name);
+          break;
+      }
+
+      try {
+        await fs.unlink(filePath);
+        console.log(`Deleted file: ${filePath}`);
+      } catch (error) {
+        console.warn(`Could not delete file ${filePath}:`, error.message);
+      }
+    }
+
+    // Delete from persistent storage
     await weaviateService.deleteDocument(logId);
 
     res.json({
       success: true,
-      message: 'Log entry deleted successfully'
+      message: 'Log entry and associated file deleted successfully'
     });
+
   } catch (error) {
     console.error('Log deletion error:', error);
     res.status(500).json({
       success: false,
       error: 'Failed to delete log entry',
+      message: error.message
+    });
+  }
+});
+
+// GET /api/logging/stats/:userId - Get logging statistics for a user
+router.get('/stats/:userId', async (req, res) => {
+  try {
+    const { userId } = req.params;
+    const { days = 30 } = req.query;
+    
+    const documents = await weaviateService.getDocumentsByType('log', userId, 1000);
+    const logs = documents.map(doc => doc.metadata);
+    
+    // Filter logs by date range
+    const cutoffDate = new Date();
+    cutoffDate.setDate(cutoffDate.getDate() - parseInt(days));
+    
+    const recentLogs = logs.filter(log => new Date(log.timestamp) >= cutoffDate);
+    
+    // Calculate statistics
+    const stats = {
+      total_logs: recentLogs.length,
+      by_input_method: {
+        text: recentLogs.filter(log => log.input_method === 'text').length,
+        voice: recentLogs.filter(log => log.input_method === 'voice').length,
+        photo: recentLogs.filter(log => log.input_method === 'photo').length
+      },
+      by_date: {}
+    };
+    
+    // Group by date
+    recentLogs.forEach(log => {
+      const date = log.timestamp.split('T')[0];
+      stats.by_date[date] = (stats.by_date[date] || 0) + 1;
+    });
+    
+    res.json({
+      success: true,
+      data: stats,
+      period_days: parseInt(days)
+    });
+
+  } catch (error) {
+    console.error('Stats retrieval error:', error);
+    res.status(500).json({
+      success: false,
+      error: 'Failed to retrieve statistics',
       message: error.message
     });
   }

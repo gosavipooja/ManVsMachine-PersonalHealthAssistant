@@ -1,0 +1,52 @@
+{
+  "e9bcd0e4-6f71-42bc-812c-e57f4575c232": {
+    "id": "e9bcd0e4-6f71-42bc-812c-e57f4575c232",
+    "content": "Log entry: text - Jogged 20 minutes in the park this morning. Felt great and energized!",
+    "metadata": {
+      "type": "log",
+      "userId": "4b514588-a40b-4b8d-9236-8df8dcef25f7",
+      "timestamp": "2025-09-06T21:00:00Z",
+      "id": "e9bcd0e4-6f71-42bc-812c-e57f4575c232",
+      "user_id": "4b514588-a40b-4b8d-9236-8df8dcef25f7",
+      "input_method": "text",
+      "file_name": "e9bcd0e4-6f71-42bc-812c-e57f4575c232.txt",
+      "created_at": "2025-09-06T21:00:24.638Z",
+      "content_preview": "Jogged 20 minutes in the park this morning. Felt great and energized!"
+    },
+    "timestamp": "2025-09-06T21:00:24.643Z"
+  },
+  "5265537e-2e98-4729-b355-9f3070d82684": {
+    "id": "5265537e-2e98-4729-b355-9f3070d82684",
+    "content": "Log entry: photo - Image file (0.1 KB)",
+    "metadata": {
+      "type": "log",
+      "userId": "4b514588-a40b-4b8d-9236-8df8dcef25f7",
+      "timestamp": "2025-09-06T21:01:30Z",
+      "id": "5265537e-2e98-4729-b355-9f3070d82684",
+      "user_id": "4b514588-a40b-4b8d-9236-8df8dcef25f7",
+      "input_method": "photo",
+      "file_name": "5265537e-2e98-4729-b355-9f3070d82684.png",
+      "created_at": "2025-09-06T21:02:39.209Z",
+      "file_size": 70,
+      "content_preview": "Image file (0.1 KB)"
+    },
+    "timestamp": "2025-09-06T21:02:39.211Z"
+  },
+  "db0110a5-9654-4516-b853-5492a192d006": {
+    "id": "db0110a5-9654-4516-b853-5492a192d006",
+    "content": "Log entry: voice - Audio recording (0.0 KB)",
+    "metadata": {
+      "type": "log",
+      "userId": "4b514588-a40b-4b8d-9236-8df8dcef25f7",
+      "timestamp": "2025-09-06T21:04:30Z",
+      "id": "db0110a5-9654-4516-b853-5492a192d006",
+      "user_id": "4b514588-a40b-4b8d-9236-8df8dcef25f7",
+      "input_method": "voice",
+      "file_name": "db0110a5-9654-4516-b853-5492a192d006.wav",
+      "created_at": "2025-09-06T21:07:39.496Z",
+      "file_size": 44,
+      "content_preview": "Audio recording (0.0 KB)"
+    },
+    "timestamp": "2025-09-06T21:07:39.497Z"
+  }
+}
