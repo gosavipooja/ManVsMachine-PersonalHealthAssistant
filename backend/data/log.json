@@ -130,5 +130,22 @@
       "content_preview": "Image file (797.4 KB)"
     },
     "timestamp": "2025-09-06T23:38:45.918Z"
+  },
+  "fa875d50-e733-4416-8b7e-9b71db568677": {
+    "id": "fa875d50-e733-4416-8b7e-9b71db568677",
+    "content": "Log entry: voice - Audio recording (1160.5 KB)",
+    "metadata": {
+      "type": "log",
+      "userId": "user123",
+      "timestamp": "2025-09-06T23:43:33.518Z",
+      "id": "fa875d50-e733-4416-8b7e-9b71db568677",
+      "user_id": "user123",
+      "input_method": "voice",
+      "file_name": "fa875d50-e733-4416-8b7e-9b71db568677.wav",
+      "created_at": "2025-09-06T23:43:33.561Z",
+      "file_size": 1188366,
+      "content_preview": "Audio recording (1160.5 KB)"
+    },
+    "timestamp": "2025-09-06T23:43:33.569Z"
   }
 }
