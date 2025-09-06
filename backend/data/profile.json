@@ -1,27 +1,28 @@
 {
-  "4b514588-a40b-4b8d-9236-8df8dcef25f7": {
-    "id": "4b514588-a40b-4b8d-9236-8df8dcef25f7",
-    "content": "User profile: Alice Johnson, 30 year old female, mesomorph body type, european background, goals: maintain weight, increase energy, better sleep",
+  "09e5516c-e1a6-4cc1-83f9-275a8d23a721": {
+    "id": "09e5516c-e1a6-4cc1-83f9-275a8d23a721",
+    "content": "User profile: Alex Smith, 28 year old male, mesomorph body type, moderate activity level, western background, goals: lose weight, build muscle, improve health",
     "metadata": {
       "type": "profile",
-      "userId": "4b514588-a40b-4b8d-9236-8df8dcef25f7",
-      "timestamp": "2025-09-06T20:42:10.065Z",
-      "id": "4b514588-a40b-4b8d-9236-8df8dcef25f7",
-      "name": "Alice Johnson",
-      "age": 30,
-      "gender": "female",
-      "height": 170,
-      "weight": 65,
+      "userId": "09e5516c-e1a6-4cc1-83f9-275a8d23a721",
+      "timestamp": "2025-09-06T21:37:13.181Z",
+      "id": "09e5516c-e1a6-4cc1-83f9-275a8d23a721",
+      "name": "Alex Smith",
+      "age": 28,
+      "gender": "male",
+      "height": 175,
+      "weight": 70,
       "bodyType": "mesomorph",
-      "culture": "european",
+      "culture": "western",
       "goals": [
-        "maintain weight",
-        "increase energy",
-        "better sleep"
+        "lose weight",
+        "build muscle",
+        "improve health"
       ],
-      "createdAt": "2025-09-06T20:42:10.065Z",
-      "updatedAt": "2025-09-06T20:42:10.065Z"
+      "activity_level": "moderate",
+      "createdAt": "2025-09-06T21:37:13.181Z",
+      "updatedAt": "2025-09-06T21:37:13.181Z"
     },
-    "timestamp": "2025-09-06T20:42:10.066Z"
+    "timestamp": "2025-09-06T21:37:13.182Z"
   }
 }

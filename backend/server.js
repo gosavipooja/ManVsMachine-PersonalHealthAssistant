@@ -6,12 +6,9 @@ const morgan = require('morgan');
 require('dotenv').config();
 
 const profileRoutes = require('./routes/profile');
-const loggingRoutes = require('./routes/logging');
-const coachingRoutes = require('./routes/coaching');
-const dashboardRoutes = require('./routes/dashboard');
-const chatRoutes = require('./routes/chat');
-const aiCoachingRoutes = require('./routes/ai-coaching');
 const specCompliantRoutes = require('./routes/spec-compliant');
+const structuredHealthRoutes = require('./routes/structured-health');
+const enhancedHealthRoutes = require('./routes/enhanced-health');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -45,11 +42,8 @@ app.get('/health', (req, res) => {
 
 // API Routes
 app.use('/api/profile', profileRoutes);
-app.use('/api/logging', loggingRoutes);
-app.use('/api/coaching', coachingRoutes);
-app.use('/api/dashboard', dashboardRoutes);
-app.use('/api/chat', chatRoutes);
-app.use('/api/ai', aiCoachingRoutes);
+app.use('/api/structured-health', structuredHealthRoutes);
+app.use('/api/enhanced', enhancedHealthRoutes);
 
 // Spec-compliant routes (exact match to DESIGN.md)
 app.use('/', specCompliantRoutes);

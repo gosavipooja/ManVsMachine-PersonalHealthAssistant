@@ -1,0 +1,224 @@
+{
+  "729c4e97-6ac0-4bef-8235-44745ecaf779": {
+    "id": "729c4e97-6ac0-4bef-8235-44745ecaf779",
+    "content": "Food: 1 count of banana",
+    "metadata": {
+      "type": "food",
+      "userId": "test-user-456",
+      "timestamp": "2025-09-06T21:26:08.109Z",
+      "habitId": "nutrition",
+      "value": "1",
+      "unit": "count",
+      "notes": "banana",
+      "method": "structured",
+      "confidence": 0.96
+    },
+    "timestamp": "2025-09-06T21:26:08.109Z"
+  },
+  "b34011d7-c1d9-45be-bb8e-87ccd163498e": {
+    "id": "b34011d7-c1d9-45be-bb8e-87ccd163498e",
+    "content": "Food: 1 bowl of oatmeal",
+    "metadata": {
+      "type": "food",
+      "userId": "test-user-456",
+      "timestamp": "2025-09-06T21:26:08.109Z",
+      "habitId": "nutrition",
+      "value": "1",
+      "unit": "bowl",
+      "notes": "oatmeal",
+      "method": "structured",
+      "confidence": 0.96
+    },
+    "timestamp": "2025-09-06T21:26:08.109Z"
+  },
+  "61bc30c0-0ada-4bbc-aa51-916c70bff0a5": {
+    "id": "61bc30c0-0ada-4bbc-aa51-916c70bff0a5",
+    "content": "Food: 1 count of banana",
+    "metadata": {
+      "type": "food",
+      "userId": "test-user-123",
+      "timestamp": "2025-09-06T21:30:30.070Z",
+      "habitId": "nutrition",
+      "value": "1",
+      "unit": "count",
+      "notes": "banana",
+      "method": "structured",
+      "confidence": 0.96
+    },
+    "timestamp": "2025-09-06T21:30:30.070Z"
+  },
+  "7f7e508c-5320-43c2-af82-1f4fda365135": {
+    "id": "7f7e508c-5320-43c2-af82-1f4fda365135",
+    "content": "Food: 1 bowl of oatmeal",
+    "metadata": {
+      "type": "food",
+      "userId": "test-user-123",
+      "timestamp": "2025-09-06T21:30:30.070Z",
+      "habitId": "nutrition",
+      "value": "1",
+      "unit": "bowl",
+      "notes": "oatmeal",
+      "method": "structured",
+      "confidence": 0.96
+    },
+    "timestamp": "2025-09-06T21:30:30.070Z"
+  },
+  "f5a3b7e7-ccb3-4903-9cb1-5be95ec9d8e7": {
+    "id": "f5a3b7e7-ccb3-4903-9cb1-5be95ec9d8e7",
+    "content": "Food: 6 oz of chicken breast",
+    "metadata": {
+      "type": "food",
+      "userId": "test-user-123",
+      "timestamp": "2025-09-06T21:30:55.750Z",
+      "habitId": "nutrition",
+      "value": "6",
+      "unit": "oz",
+      "notes": "chicken breast",
+      "method": "structured",
+      "confidence": 0.98
+    },
+    "timestamp": "2025-09-06T21:30:55.750Z"
+  },
+  "fbdac446-a321-4b97-869d-bafc158963ff": {
+    "id": "fbdac446-a321-4b97-869d-bafc158963ff",
+    "content": "Food: 1 cup of brown rice",
+    "metadata": {
+      "type": "food",
+      "userId": "test-user-123",
+      "timestamp": "2025-09-06T21:30:55.751Z",
+      "habitId": "nutrition",
+      "value": "1",
+      "unit": "cup",
+      "notes": "brown rice",
+      "method": "structured",
+      "confidence": 0.98
+    },
+    "timestamp": "2025-09-06T21:30:55.751Z"
+  },
+  "74f7ef60-af76-47fb-92a5-ca5aee2751b1": {
+    "id": "74f7ef60-af76-47fb-92a5-ca5aee2751b1",
+    "content": "Food: 1 cup of broccoli",
+    "metadata": {
+      "type": "food",
+      "userId": "test-user-123",
+      "timestamp": "2025-09-06T21:30:55.751Z",
+      "habitId": "nutrition",
+      "value": "1",
+      "unit": "cup",
+      "notes": "broccoli",
+      "method": "structured",
+      "confidence": 0.98
+    },
+    "timestamp": "2025-09-06T21:30:55.751Z"
+  },
+  "c02f800d-ea44-4757-a230-e9076f606729": {
+    "id": "c02f800d-ea44-4757-a230-e9076f606729",
+    "content": "Food: 1 cup of greek yogurt",
+    "metadata": {
+      "type": "food",
+      "userId": "4b514588-a40b-4b8d-9236-8df8dcef25f7",
+      "timestamp": "2025-09-06T21:36:06.402Z",
+      "habitId": "nutrition",
+      "value": "1",
+      "unit": "cup",
+      "notes": "greek yogurt",
+      "method": "structured",
+      "confidence": 0.95
+    },
+    "timestamp": "2025-09-06T21:36:06.402Z"
+  },
+  "ddcff89e-dbf5-4a58-919f-d5411d7cefc2": {
+    "id": "ddcff89e-dbf5-4a58-919f-d5411d7cefc2",
+    "content": "Food: 1 cup of berries",
+    "metadata": {
+      "type": "food",
+      "userId": "4b514588-a40b-4b8d-9236-8df8dcef25f7",
+      "timestamp": "2025-09-06T21:36:06.421Z",
+      "habitId": "nutrition",
+      "value": "1",
+      "unit": "cup",
+      "notes": "berries",
+      "method": "structured",
+      "confidence": 0.95
+    },
+    "timestamp": "2025-09-06T21:36:06.421Z"
+  },
+  "09b908bf-c226-44ff-bd9e-afef3d58358a": {
+    "id": "09b908bf-c226-44ff-bd9e-afef3d58358a",
+    "content": "Food: 1 handful of almonds",
+    "metadata": {
+      "type": "food",
+      "userId": "4b514588-a40b-4b8d-9236-8df8dcef25f7",
+      "timestamp": "2025-09-06T21:36:06.428Z",
+      "habitId": "nutrition",
+      "value": "1",
+      "unit": "handful",
+      "notes": "almonds",
+      "method": "structured",
+      "confidence": 0.95
+    },
+    "timestamp": "2025-09-06T21:36:06.428Z"
+  },
+  "aa3c1500-5bed-4652-af4e-28c37d444d5e": {
+    "id": "aa3c1500-5bed-4652-af4e-28c37d444d5e",
+    "content": "Food: 1 bowl of quinoa salad",
+    "metadata": {
+      "type": "food",
+      "userId": "4b514588-a40b-4b8d-9236-8df8dcef25f7",
+      "timestamp": "2025-09-06T21:36:20.396Z",
+      "habitId": "nutrition",
+      "value": "1",
+      "unit": "bowl",
+      "notes": "quinoa salad",
+      "method": "structured",
+      "confidence": 0.97
+    },
+    "timestamp": "2025-09-06T21:36:20.396Z"
+  },
+  "41b11b84-cc91-4ced-bb37-452e5595fb2d": {
+    "id": "41b11b84-cc91-4ced-bb37-452e5595fb2d",
+    "content": "Food: 4 oz of grilled salmon",
+    "metadata": {
+      "type": "food",
+      "userId": "4b514588-a40b-4b8d-9236-8df8dcef25f7",
+      "timestamp": "2025-09-06T21:36:20.398Z",
+      "habitId": "nutrition",
+      "value": "4",
+      "unit": "oz",
+      "notes": "grilled salmon",
+      "method": "structured",
+      "confidence": 0.97
+    },
+    "timestamp": "2025-09-06T21:36:20.398Z"
+  },
+  "mf8te9gin1p5rip5yu": {
+    "id": "mf8te9gin1p5rip5yu",
+    "metadata": {
+      "type": "food",
+      "userId": "09e5516c-e1a6-4cc1-83f9-275a8d23a721",
+      "timestamp": "2025-09-06T21:04:30.000Z",
+      "source": "audio",
+      "provenance": {
+        "input_file": "db0110a5-9654-4516-b853-5492a192d006.wav",
+        "transcript_confidence": 0.93,
+        "parser_confidence": 0.96
+      }
+    },
+    "timestamp": "2025-09-06T22:07:28.871Z"
+  },
+  "mf8tjtkor46fayy0cmi": {
+    "id": "mf8tjtkor46fayy0cmi",
+    "metadata": {
+      "type": "food",
+      "userId": "09e5516c-e1a6-4cc1-83f9-275a8d23a721",
+      "timestamp": "2025-09-06T22:00:00.000Z",
+      "source": "vector_test",
+      "provenance": {
+        "input_file": "test_vector_db.wav",
+        "transcript_confidence": 0.95,
+        "parser_confidence": 0.98
+      }
+    },
+    "timestamp": "2025-09-06T22:11:48.216Z"
+  }
+}

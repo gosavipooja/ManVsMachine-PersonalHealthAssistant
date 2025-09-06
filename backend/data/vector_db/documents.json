@@ -1,0 +1,28 @@
+{
+  "mf8u4h138pcbo6xeomi": {
+    "id": "mf8u4h138pcbo6xeomi",
+    "content": "Food: salmon fillet - 1 piece | Nutrition: 280 calories, 39g protein, 0g carbs, 12g fat",
+    "embedding": {
+      "280": 1,
+      "food": 1,
+      "salmon": 1,
+      "fillet": 1,
+      "piece": 1,
+      "nutrition": 1,
+      "calories": 1,
+      "39g": 1,
+      "protein": 1,
+      "carbs": 1,
+      "12g": 1,
+      "fat": 1
+    },
+    "metadata": {
+      "type": "food",
+      "user_id": "09e5516c-e1a6-4cc1-83f9-275a8d23a721",
+      "timestamp": "2025-09-06T22:25:00.000Z",
+      "source": "api",
+      "original_data": "{\"id\":\"mf8u4h138pcbo6xeomi\",\"type\":\"food\",\"userId\":\"09e5516c-e1a6-4cc1-83f9-275a8d23a721\",\"timestamp\":\"2025-09-06T22:25:00.000Z\",\"data\":{\"type\":\"food\",\"user_id\":\"09e5516c-e1a6-4cc1-83f9-275a8d23a721\",\"timestamp\":\"2025-09-06T22:25:00.000Z\",\"items\":[{\"name\":\"salmon fillet\",\"quantity\":1,\"unit\":\"piece\",\"macros\":{\"calories\":280,\"carbs_g\":0,\"protein_g\":39,\"fat_g\":12},\"source_ref\":{\"provider\":\"USDA\",\"id\":\"salmon_fillet\"}}],\"source\":\"simple_vector_test\",\"provenance\":{\"input_file\":\"test_simple_vector.wav\",\"transcript_confidence\":0.97,\"parser_confidence\":0.99}},\"metadata\":{\"type\":\"food\",\"userId\":\"09e5516c-e1a6-4cc1-83f9-275a8d23a721\",\"timestamp\":\"2025-09-06T22:25:00.000Z\",\"source\":\"simple_vector_test\",\"provenance\":{\"input_file\":\"test_simple_vector.wav\",\"transcript_confidence\":0.97,\"parser_confidence\":0.99}}}"
+    },
+    "created_at": "2025-09-06T22:27:51.735Z"
+  }
+}

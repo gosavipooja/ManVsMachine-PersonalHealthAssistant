@@ -1,0 +1,97 @@
+{
+  "30143053-78e3-410f-8632-e7eacd2b55d3": {
+    "id": "30143053-78e3-410f-8632-e7eacd2b55d3",
+    "content": "Exercise: running for 25 minutes (3 miles)",
+    "metadata": {
+      "type": "exercise",
+      "userId": "test-user-456",
+      "timestamp": "2025-09-06T21:26:08.110Z",
+      "habitId": "exercise",
+      "value": 25,
+      "unit": "minutes",
+      "notes": "running - 3 miles",
+      "method": "structured",
+      "confidence": 0.91
+    },
+    "timestamp": "2025-09-06T21:26:08.110Z"
+  },
+  "8e758fb7-1051-417b-bc9e-9cdae257dc4d": {
+    "id": "8e758fb7-1051-417b-bc9e-9cdae257dc4d",
+    "content": "Exercise: running for 25 minutes (3 miles)",
+    "metadata": {
+      "type": "exercise",
+      "userId": "test-user-123",
+      "timestamp": "2025-09-06T21:30:30.071Z",
+      "habitId": "exercise",
+      "value": 25,
+      "unit": "minutes",
+      "notes": "running - 3 miles",
+      "method": "structured",
+      "confidence": 0.91
+    },
+    "timestamp": "2025-09-06T21:30:30.071Z"
+  },
+  "9259d953-b827-4143-983c-b9f3917c6378": {
+    "id": "9259d953-b827-4143-983c-b9f3917c6378",
+    "content": "Exercise: weight lifting for 45 minutes",
+    "metadata": {
+      "type": "exercise",
+      "userId": "test-user-123",
+      "timestamp": "2025-09-06T21:30:55.752Z",
+      "habitId": "exercise",
+      "value": 45,
+      "unit": "minutes",
+      "notes": "weight lifting",
+      "method": "structured",
+      "confidence": 0.95
+    },
+    "timestamp": "2025-09-06T21:30:55.752Z"
+  },
+  "eb81f7a2-99b3-4fd8-9492-f7aa717e51b5": {
+    "id": "eb81f7a2-99b3-4fd8-9492-f7aa717e51b5",
+    "content": "Exercise: yoga for 30 minutes",
+    "metadata": {
+      "type": "exercise",
+      "userId": "4b514588-a40b-4b8d-9236-8df8dcef25f7",
+      "timestamp": "2025-09-06T21:36:06.435Z",
+      "habitId": "exercise",
+      "value": 30,
+      "unit": "minutes",
+      "notes": "yoga",
+      "method": "structured",
+      "confidence": 0.88
+    },
+    "timestamp": "2025-09-06T21:36:06.435Z"
+  },
+  "1623bce0-782b-41c1-9548-27723df39100": {
+    "id": "1623bce0-782b-41c1-9548-27723df39100",
+    "content": "Exercise: strength training for 45 minutes",
+    "metadata": {
+      "type": "exercise",
+      "userId": "4b514588-a40b-4b8d-9236-8df8dcef25f7",
+      "timestamp": "2025-09-06T21:36:20.398Z",
+      "habitId": "exercise",
+      "value": 45,
+      "unit": "minutes",
+      "notes": "strength training",
+      "method": "structured",
+      "confidence": 0.92
+    },
+    "timestamp": "2025-09-06T21:36:20.398Z"
+  },
+  "mf8tehy2mdlqyesyepj": {
+    "id": "mf8tehy2mdlqyesyepj",
+    "metadata": {
+      "type": "exercise",
+      "userId": "09e5516c-e1a6-4cc1-83f9-275a8d23a721",
+      "timestamp": "2025-09-06T21:04:30.000Z",
+      "source": "audio",
+      "provenance": {
+        "input_file": "db0110a5-9654-4516-b853-5492a192d006.wav",
+        "transcript_confidence": 0.93,
+        "parser_confidence": 0.91
+      }
+    },
+    "timestamp": "2025-09-06T22:07:39.866Z"
+  }
+}

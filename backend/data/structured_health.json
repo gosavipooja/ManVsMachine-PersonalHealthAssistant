@@ -1,0 +1,412 @@
+{
+  "ffa69cb6-5d9a-4b0f-8df4-cde814fb008f": {
+    "id": "ffa69cb6-5d9a-4b0f-8df4-cde814fb008f",
+    "content": "Structured health data processed: 2 food items, 1 exercise activities",
+    "metadata": {
+      "type": "structured_health",
+      "userId": "test-user-456",
+      "timestamp": "2025-09-06T21:26:08.108Z",
+      "id": "ffa69cb6-5d9a-4b0f-8df4-cde814fb008f",
+      "data": {
+        "original": {
+          "food": [
+            {
+              "name": "banana",
+              "quantity": "1",
+              "unit": "count"
+            },
+            {
+              "name": "oatmeal",
+              "quantity": "1",
+              "unit": "bowl"
+            }
+          ],
+          "exercise": [
+            {
+              "activity": "running",
+              "duration_min": 25,
+              "distance_miles": 3
+            }
+          ],
+          "meta": {
+            "file_id": "test-file-123",
+            "user_id": "test-user-456",
+            "confidence": {
+              "food": 0.96,
+              "exercise": 0.91
+            }
+          }
+        },
+        "aiInsights": {
+          "nutrition": {
+            "analysis": "Unable to generate nutrition analysis at this time",
+            "recommendations": [
+              "Consider logging more detailed food information"
+            ],
+            "concerns": [],
+            "positives": []
+          },
+          "exercise": {
+            "analysis": "Unable to generate exercise analysis at this time",
+            "recommendations": [
+              "Consider logging more detailed exercise information"
+            ],
+            "concerns": [],
+            "positives": []
+          },
+          "overall": {
+            "assessment": "Keep up the great work with your health tracking!",
+            "recommendations": [
+              "Continue logging your daily activities"
+            ],
+            "motivation": "Every small step towards better health counts!"
+          },
+          "meta": {
+            "processed_at": "2025-09-06T21:26:08.107Z",
+            "confidence_scores": {
+              "food": 0.96,
+              "exercise": 0.91
+            },
+            "user_id": "test-user-456"
+          }
+        }
+      }
+    },
+    "timestamp": "2025-09-06T21:26:08.108Z"
+  },
+  "163feb48-d0d0-4356-87c0-1b3bd66121ff": {
+    "id": "163feb48-d0d0-4356-87c0-1b3bd66121ff",
+    "content": "Structured health data processed: 2 food items, 1 exercise activities",
+    "metadata": {
+      "type": "structured_health",
+      "userId": "test-user-123",
+      "timestamp": "2025-09-06T21:30:30.068Z",
+      "id": "163feb48-d0d0-4356-87c0-1b3bd66121ff",
+      "data": {
+        "original": {
+          "food": [
+            {
+              "name": "banana",
+              "quantity": "1",
+              "unit": "count"
+            },
+            {
+              "name": "oatmeal",
+              "quantity": "1",
+              "unit": "bowl"
+            }
+          ],
+          "exercise": [
+            {
+              "activity": "running",
+              "duration_min": 25,
+              "distance_miles": 3
+            }
+          ],
+          "meta": {
+            "file_id": "test-file-789",
+            "user_id": "test-user-123",
+            "confidence": {
+              "food": 0.96,
+              "exercise": 0.91
+            }
+          }
+        },
+        "aiInsights": {
+          "nutrition": {
+            "analysis": "The food intake consists of a banana and a bowl of oatmeal, which is a good source of dietary fiber, vitamins, and minerals. This meal is low in protein and lacks variety in terms of food groups.",
+            "recommendations": [
+              "Add a source of protein to your meal, such as a hard-boiled egg or a serving of Greek yogurt.",
+              "Include a wider variety of fruits or add some vegetables to increase your intake of different vitamins and minerals.",
+              "Consider adding some healthy fats to your diet, like a handful of nuts or seeds."
+            ],
+            "concerns": "The meal lacks protein and healthy fats, which are necessary for a balanced diet. There's also a lack of variety, which could lead to nutrient deficiency in the long run.",
+            "positives": "Both banana and oatmeal are great sources of dietary fiber which is good for digestion. This meal is also low in calories and can be beneficial for weight management."
+          },
+          "exercise": {
+            "analysis": "The user is maintaining a decent pace of running, covering 3 miles in 25 minutes. This indicates a good level of cardio fitness and stamina. However, without a detailed user profile, it's challenging to provide a comprehensive fitness analysis.",
+            "recommendations": [
+              "To improve pace and endurance, consider incorporating interval training into your routine. This involves alternating between high-intensity and low-intensity running.",
+              "Incorporate strength training exercises into your routine to build muscle endurance, which can help improve your running performance.",
+              "Ensure proper hydration and nutrition before and after your run to maintain energy levels and aid recovery."
+            ],
+            "concerns": "Without knowledge of the user's physical condition and fitness level, it's difficult to identify any potential concerns. Always consult with a healthcare professional before starting or modifying an exercise routine.",
+            "positives": "The user's pace and distance indicate a good level of cardiovascular fitness. The high confidence score suggests consistency and dedication to the exercise regime."
+          },
+          "overall": {
+            "assessment": "You are doing well with logging your food and exercise, which shows your active participation in your health journey. However, to provide a more detailed and comprehensive health assessment, more information about your user profile (age, gender, weight, health concerns, etc.) would be beneficial.",
+            "recommendations": [
+              "Try to increase the variety of food items logged to ensure a balanced diet.",
+              "Include more activities in your exercise log to have a broader picture of your physical activities.",
+              "If possible, provide more information about yourself, such as age, weight, and health goals, for a more personalized plan."
+            ],
+            "motivation": "Remember, every step you take is bringing you closer to your health goals. Keep up the good work, but also remember to be patient with yourself. Health is a journey, not a destination."
+          },
+          "meta": {
+            "processed_at": "2025-09-06T21:30:30.068Z",
+            "confidence_scores": {
+              "food": 0.96,
+              "exercise": 0.91
+            },
+            "user_id": "test-user-123"
+          }
+        }
+      }
+    },
+    "timestamp": "2025-09-06T21:30:30.069Z"
+  },
+  "1057ba3c-e30a-4fcc-936c-368ba614c4fd": {
+    "id": "1057ba3c-e30a-4fcc-936c-368ba614c4fd",
+    "content": "Structured health data processed: 3 food items, 1 exercise activities",
+    "metadata": {
+      "type": "structured_health",
+      "userId": "test-user-123",
+      "timestamp": "2025-09-06T21:30:55.749Z",
+      "id": "1057ba3c-e30a-4fcc-936c-368ba614c4fd",
+      "data": {
+        "original": {
+          "food": [
+            {
+              "name": "chicken breast",
+              "quantity": "6",
+              "unit": "oz"
+            },
+            {
+              "name": "brown rice",
+              "quantity": "1",
+              "unit": "cup"
+            },
+            {
+              "name": "broccoli",
+              "quantity": "1",
+              "unit": "cup"
+            }
+          ],
+          "exercise": [
+            {
+              "activity": "weight lifting",
+              "duration_min": 45
+            }
+          ],
+          "meta": {
+            "file_id": "test-file-456",
+            "user_id": "test-user-123",
+            "confidence": {
+              "food": 0.98,
+              "exercise": 0.95
+            }
+          }
+        },
+        "aiInsights": {
+          "nutrition": {
+            "analysis": "The provided meal is generally well-balanced, containing a good mix of protein (chicken breast), complex carbohydrates (brown rice), and vegetables (broccoli). It provides essential nutrients such as fiber, vitamins, and minerals. However, the meal may lack a bit in terms of healthy fats and diversity of micronutrients.",
+            "recommendations": [
+              "Include a source of healthy fats, such as avocado, nuts, or seeds, to improve the meal's nutritional profile.",
+              "Consider diversifying the types of vegetables consumed to ensure a wider range of vitamins and minerals.",
+              "Include a variety of protein sources, not just chicken, to get a broader spectrum of amino acids."
+            ],
+            "concerns": "The meal may be lacking in healthy fats, which are essential for nutrient absorption and overall health. The lack of variety in vegetables and protein sources may limit the range of micronutrients received.",
+            "positives": "The meal contains a good balance of macronutrients and includes fiber-rich foods and lean protein, which are beneficial for digestion and muscle repair, respectively. The confidence score of 0.98 suggests a high degree of certainty in the food intake report."
+          },
+          "exercise": {
+            "analysis": "Based on the information provided, the user performed weight lifting for 45 minutes with a high confidence score. This is a good length of time for a weight lifting session, indicating that the user has a fair amount of strength and endurance.",
+            "recommendations": [
+              "To ensure a balanced workout, consider incorporating exercises that target different muscle groups. This will help avoid overworking certain muscles and neglecting others.",
+              "Consider incorporating some cardio into your workouts, such as running or cycling, to improve your cardiovascular health and endurance.",
+              "Take time to rest between sets to allow your muscles to recover. This will help improve your performance and prevent injuries."
+            ],
+            "concerns": "Without more information about the user's profile, such as their age, weight, and fitness level, it's hard to provide a full analysis or identify any potential concerns. For example, if the user is new to weight lifting, lifting weights for 45 minutes could potentially cause injury if not done with proper form.",
+            "positives": "The user's high confidence score suggests they feel good about their performance, which is a positive sign. Exercise can boost mood and self-confidence, in addition to its physical benefits."
+          },
+          "overall": {
+            "assessment": "Based on the limited information, you are doing a good job in logging your food and exercise. The high confidence scores for both indicate that you are likely eating well and engaged in regular physical activity. However, without your user profile or specifics around the food items or exercises, it's challenging to provide a more detailed assessment.",
+            "recommendations": [
+              "Try to diversify your food intake by adding more types of fruits, vegetables, and whole grains.",
+              "Consider adding another physical activity to your day, even if it's light like stretching or walking.",
+              "Ensure you drink enough water throughout the day.",
+              "Provide more information about your daily routines and health goals for a more personalized recommendation."
+            ],
+            "motivation": "You're on the right track! Remember, every step you take is a step towards better health. Keep going, and your efforts will pay off!"
+          },
+          "meta": {
+            "processed_at": "2025-09-06T21:30:55.749Z",
+            "confidence_scores": {
+              "food": 0.98,
+              "exercise": 0.95
+            },
+            "user_id": "test-user-123"
+          }
+        }
+      }
+    },
+    "timestamp": "2025-09-06T21:30:55.749Z"
+  },
+  "7874861e-d15d-4dd5-a867-976214b63c82": {
+    "id": "7874861e-d15d-4dd5-a867-976214b63c82",
+    "content": "Structured health data processed: 3 food items, 1 exercise activities",
+    "metadata": {
+      "type": "structured_health",
+      "userId": "4b514588-a40b-4b8d-9236-8df8dcef25f7",
+      "timestamp": "2025-09-06T21:36:06.288Z",
+      "id": "7874861e-d15d-4dd5-a867-976214b63c82",
+      "data": {
+        "original": {
+          "food": [
+            {
+              "name": "greek yogurt",
+              "quantity": "1",
+              "unit": "cup"
+            },
+            {
+              "name": "berries",
+              "quantity": "1",
+              "unit": "cup"
+            },
+            {
+              "name": "almonds",
+              "quantity": "1",
+              "unit": "handful"
+            }
+          ],
+          "exercise": [
+            {
+              "activity": "yoga",
+              "duration_min": 30
+            }
+          ],
+          "meta": {
+            "file_id": "test-file-personalized",
+            "user_id": "4b514588-a40b-4b8d-9236-8df8dcef25f7",
+            "confidence": {
+              "food": 0.95,
+              "exercise": 0.88
+            }
+          }
+        },
+        "aiInsights": {
+          "nutrition": {
+            "analysis": "Alice's food intake indicates a balanced diet rich in proteins, healthy fats, and antioxidants. The Greek yogurt provides essential proteins and probiotics, the berries are a good source of fiber and antioxidants, and almonds offer healthy fats and proteins. Considering her body type, age, and health goals, this dietary approach is beneficial for maintaining weight, boosting energy, and promoting better sleep.",
+            "recommendations": [
+              "To increase her energy levels, Alice could consider adding more complex carbohydrates to her diet such as whole grains or sweet potatoes.",
+              "For better sleep, Alice might want to include foods rich in magnesium and potassium in her diet, such as bananas or spinach, as these nutrients support quality sleep.",
+              "While maintaining her weight, it's important for Alice to balance her protein intake with adequate hydration. Drinking plenty of water will also help to increase her overall energy levels."
+            ],
+            "concerns": "As a mesomorph, Alice may naturally gain muscle more easily than others, which could potentially lead to unwanted weight gain if not balanced with adequate exercise. Additionally, her calcium intake may be insufficient, which is a concern for women approaching their 30s due to the risk of osteoporosis.",
+            "positives": "The food intake is well-balanced and beneficial for a mesomorph body type like Alice. The proteins (from Greek yogurt and almonds) will help her maintain her naturally muscular build, while the antioxidants from berries can help with recovery and overall health. Additionally, the dietary choices made are in line with her European cultural background."
+          },
+          "exercise": {
+            "analysis": "Alice, as a 30 year old mesomorph female, your body type is naturally strong and athletic, making you well-suited for a variety of exercises. Your choice of yoga is excellent for maintaining weight, increasing energy, and promoting better sleep. However, to optimize your goals, a combination of strength, cardio, and flexibility routines could be more beneficial.",
+            "recommendations": [
+              "Incorporate strength training routines into your workout schedule 2-3 times per week to maintain lean muscle mass and metabolism.",
+              "Add a moderate-intensity cardio exercise, like brisk walking or cycling, for at least 150 minutes per week to increase your energy levels and cardiovascular health.",
+              "Consider a mindfulness practice such as meditation in conjunction with yoga to enhance sleep quality."
+            ],
+            "concerns": "As a mesomorph, you may gain weight easily if your caloric intake is not properly managed. It's important to balance your diet with your exercise routine. Also, focus on the quality and duration of your sleep, as inadequate sleep can disrupt your energy levels and overall health.",
+            "positives": "Your body type and age are both advantages for achieving your fitness goals. With a balanced and varied exercise routine, you can easily maintain your weight, increase your energy, and improve your sleep. Plus, yoga is excellent for stress reduction, flexibility, and mindfulness, which all contribute to better sleep."
+          },
+          "overall": {
+            "assessment": "Alice, your mesomorphic body type, combined with your active lifestyle, places you in an excellent position to achieve your health goals. It's encouraging to see how well you've been tracking your food and exercise. Please keep this up as it aids in maintaining your weight, increasing your energy, and improving your sleep quality.",
+            "recommendations": [
+              "Alice, aim to consume a balanced diet that includes a variety of fruits, vegetables, lean proteins, and whole grains to maintain your weight and energy levels.",
+              "Considering your health goals, incorporating exercises that aid in better sleep, such as yoga or light cardio in the evening, may be beneficial.",
+              "Keep hydrating throughout the day to keep your energy levels up and assist in a good night's sleep.",
+              "Given your European background, exploring traditional foods from different European cultures that align with your health goals might add variety and enjoyment to your meals."
+            ],
+            "motivation": "Alice, remember that maintaining a healthy lifestyle is a journey, not a race. Each small step you take towards your health goals is a victory. Be proud of your progress and keep pushing forward. Embrace your European roots and let it inspire you to explore a variety of nutritious cuisines. You've got this!"
+          },
+          "meta": {
+            "processed_at": "2025-09-06T21:36:06.282Z",
+            "confidence_scores": {
+              "food": 0.95,
+              "exercise": 0.88
+            },
+            "user_id": "4b514588-a40b-4b8d-9236-8df8dcef25f7"
+          }
+        }
+      }
+    },
+    "timestamp": "2025-09-06T21:36:06.296Z"
+  },
+  "718a1b07-76ea-435b-a8a2-eba5535e28e6": {
+    "id": "718a1b07-76ea-435b-a8a2-eba5535e28e6",
+    "content": "Structured health data processed: 2 food items, 1 exercise activities",
+    "metadata": {
+      "type": "structured_health",
+      "userId": "4b514588-a40b-4b8d-9236-8df8dcef25f7",
+      "timestamp": "2025-09-06T21:36:20.396Z",
+      "id": "718a1b07-76ea-435b-a8a2-eba5535e28e6",
+      "data": {
+        "original": {
+          "food": [
+            {
+              "name": "quinoa salad",
+              "quantity": "1",
+              "unit": "bowl"
+            },
+            {
+              "name": "grilled salmon",
+              "quantity": "4",
+              "unit": "oz"
+            }
+          ],
+          "exercise": [
+            {
+              "activity": "strength training",
+              "duration_min": 45
+            }
+          ],
+          "meta": {
+            "file_id": "test-file-personalized-2",
+            "user_id": "4b514588-a40b-4b8d-9236-8df8dcef25f7",
+            "confidence": {
+              "food": 0.97,
+              "exercise": 0.92
+            }
+          }
+        },
+        "aiInsights": {
+          "nutrition": {
+            "analysis": "Alice, you're doing great with your food choices. Consuming quinoa and salmon provides a balanced intake of complex carbohydrates, lean protein, and healthy fats that should help maintain your weight and boost energy levels. This meal is rich in Omega-3 fatty acids, fiber, and essential vitamins, which are beneficial for your overall health and sleep quality.",
+            "recommendations": [
+              "Consider having a variety of vegetables with your meals to increase the intake of vitamins, minerals, and fiber.",
+              "Include foods rich in magnesium and calcium in your diet, such as nuts, seeds, and dairy products, which can aid in better sleep.",
+              "Stay hydrated by drinking at least 2 liters of water a day, which can also aid in maintaining your weight and boosting energy levels."
+            ],
+            "concerns": "As a 30-year-old mesomorph, your metabolism might start to slow down, making it slightly more difficult to maintain your weight. Monitor your portion sizes and avoid late-night snacking to prevent unwanted weight gain.",
+            "positives": "Your body type, the mesomorph, tends to be naturally athletic and can efficiently convert food into energy. This is beneficial for your goals of maintaining weight and increasing energy. Moreover, a balanced diet like yours can also contribute to better sleep quality."
+          },
+          "exercise": {
+            "analysis": "Alice, at 30 years old with a mesomorph body type, you have the natural advantage of building and maintaining muscle mass. Your current fitness regimen of strength training is beneficial for your health and aligns with your goals of maintaining weight, increasing energy, and getting better sleep. However, it's important to balance it with cardio and flexibility exercises for overall health and fitness.",
+            "recommendations": [
+              "Incorporate 2-3 cardio sessions, such as running or swimming, into your weekly routine to improve heart health and increase energy levels.",
+              "Add flexibility exercises like yoga or Pilates to your routine at least twice a week to enhance your range of motion and prevent injuries.",
+              "Ensure you are getting sufficient protein and complex carbs in your diet to support your strength training sessions and recovery."
+            ],
+            "concerns": "As a mesomorph, you may gain weight easily if you're not careful with your diet. It's important to keep your calorie intake in check, especially from processed and high-sugar foods.",
+            "positives": "Your strength training routine is excellent for maintaining weight and promoting better sleep. As a mesomorph, you have the advantage of gaining muscle and losing fat relatively easily compared to other body types."
+          },
+          "overall": {
+            "assessment": "Alice, as a 30-year-old mesomorph, you're in a great position to achieve your health goals - maintaining weight, increasing energy, and improving sleep. Your balanced body type allows you to manage weight effectively and build muscle if you choose to. However, your energy levels and sleep quality can be influenced by diet and exercise, which need careful attention.",
+            "recommendations": [
+              "Maintain a balanced diet rich in lean proteins, whole grains, and fresh fruits and vegetables to maintain your weight and keep energy levels high.",
+              "As an individual of European heritage, consider including traditional Mediterranean foods in your diet, like olives, tomatoes, whole grains, and fish, which are known for their health benefits.",
+              "Engage in moderate cardio activities and strength training exercises at least three times a week to help manage weight and boost energy levels.",
+              "Consider yoga or meditation before bedtime to improve sleep quality. These practices may help your mind and body relax, promoting better sleep.",
+              "Stay hydrated. Drink at least 2 liters of water daily to maintain optimal bodily functions and energy levels."
+            ],
+            "motivation": "Alice, remember that health isn't a destination, it's a journey. Each meal you eat, every exercise you do, contributes to your wellness. Embrace your European roots and the rich palate it offers it, find joy in the movement your body allows. Your goals are not only achievable, but they're also the building blocks of a fulfilled, energized life."
+          },
+          "meta": {
+            "processed_at": "2025-09-06T21:36:20.396Z",
+            "confidence_scores": {
+              "food": 0.97,
+              "exercise": 0.92
+            },
+            "user_id": "4b514588-a40b-4b8d-9236-8df8dcef25f7"
+          }
+        }
+      }
+    },
+    "timestamp": "2025-09-06T21:36:20.396Z"
+  }
+}
