@@ -1,10 +1,19 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useState } from 'react';
 import axios from 'axios';
+import fileToBase64 from '../utils/fileToBase64';
 
 interface HabitLoggerProps {
   userId: string;
   onNewLog: (log: any) => void; // callback to notify dashboard
+}
+
+interface LogEntry {
+  user_id: string;
+  timestamp: string;
+  input_method: 'text' | 'voice' | 'photo';
+  content: string; // text or base64 encoded file
+  file_type?: 'png' | 'wav'; // for voice/photo
 }
 
 const HabitLogger: React.FC<HabitLoggerProps> = ({ userId, onNewLog }) => {
@@ -16,24 +25,37 @@ const HabitLogger: React.FC<HabitLoggerProps> = ({ userId, onNewLog }) => {
 
   const handleSubmit = async () => {
     let content: string = '';
-    if (inputMethod === 'text') content = textInput;
-    else if (inputMethod === 'voice' && voiceBlob) content = 'voice_record.wav'; // placeholder
-    else if (inputMethod === 'photo' && photoFile) content = photoFile.name;
 
-    if (!content) {
-      alert('Please provide input before logging!');
-      return;
-    }
-
-    const logEntry = {
-      user_id: userId,
-      timestamp: new Date().toISOString(),
-      input_method: inputMethod,
-      content,
-    };
-
-    setLoading(true);
     try {
+      if (inputMethod === 'text') {
+        content = textInput;
+      } else if (inputMethod === 'voice' && voiceBlob) {
+        content = await fileToBase64(voiceBlob); // convert audio to base64
+      } else if (inputMethod === 'photo' && photoFile) {
+        content = await fileToBase64(photoFile); // convert image to base64
+      }
+
+      if (!content) {
+        alert('Please provide input before logging!');
+        return;
+      }
+
+      const logEntry: LogEntry = {
+        user_id: userId,
+        timestamp: new Date().toISOString(),
+        input_method: inputMethod,
+        content,
+      };
+
+      if (inputMethod === 'photo') {
+        logEntry.file_type = 'png';
+      }
+
+      if (inputMethod === 'voice') {
+        logEntry.file_type = 'wav';
+      }
+
+      setLoading(true);
       const res = await axios.post('http://localhost:3001/api/logging', logEntry);
       if (res.data.success) {
         onNewLog(res.data.data); // notify Dashboard
