@@ -1,12 +1,12 @@
 {
-  "f2519195-0c7f-4c95-8de7-9ddbe70997ff": {
-    "id": "f2519195-0c7f-4c95-8de7-9ddbe70997ff",
+  "emma_chen": {
+    "id": "emma_chen",
     "content": "User profile: Emma Chen, 24 year old female, lean body type, light activity level, asian background, goals: gain weight, build muscle, improve strength",
     "metadata": {
       "type": "profile",
-      "userId": "f2519195-0c7f-4c95-8de7-9ddbe70997ff",
+      "userId": "emma_chen",
       "timestamp": "2025-09-06T21:46:58.043Z",
-      "id": "f2519195-0c7f-4c95-8de7-9ddbe70997ff",
+      "id": "emma_chen",
       "name": "Emma Chen",
       "age": 24,
       "gender": "female",
@@ -25,14 +25,14 @@
     },
     "timestamp": "2025-09-06T21:46:58.044Z"
   },
-  "0a730f2b-7238-4243-98fa-bb004d96025b": {
-    "id": "0a730f2b-7238-4243-98fa-bb004d96025b",
+  "marcus_johnson": {
+    "id": "marcus_johnson",
     "content": "User profile: Marcus Johnson, 29 year old male, athletic body type, vigorous activity level, african background, goals: maintain fitness, build endurance",
     "metadata": {
       "type": "profile",
-      "userId": "0a730f2b-7238-4243-98fa-bb004d96025b",
+      "userId": "marcus_johnson",
       "timestamp": "2025-09-06T21:47:18.407Z",
-      "id": "0a730f2b-7238-4243-98fa-bb004d96025b",
+      "id": "marcus_johnson",
       "name": "Marcus Johnson",
       "age": 29,
       "gender": "male",
@@ -50,14 +50,14 @@
     },
     "timestamp": "2025-09-06T21:47:18.407Z"
   },
-  "37f82e76-7165-4d66-bfbd-a6b41b38da66": {
-    "id": "37f82e76-7165-4d66-bfbd-a6b41b38da66",
+  "sofia_martinez": {
+    "id": "sofia_martinez",
     "content": "User profile: Sofia Martinez, 35 year old female, rounded body type, moderate activity level, mediterranean background, goals: lose weight, improve health",
     "metadata": {
       "type": "profile",
-      "userId": "37f82e76-7165-4d66-bfbd-a6b41b38da66",
+      "userId": "sofia_martinez",
       "timestamp": "2025-09-06T21:47:18.417Z",
-      "id": "37f82e76-7165-4d66-bfbd-a6b41b38da66",
+      "id": "sofia_martinez",
       "name": "Sofia Martinez",
       "age": 35,
       "gender": "female",
