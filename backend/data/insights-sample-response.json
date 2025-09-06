@@ -8,7 +8,7 @@
   },
   "examples": {
     "basic_request": {
-      "url": "GET /api/insights?userId=f2519195-0c7f-4c95-8de7-9ddbe70997ff",
+      "url": "GET /api/insights?userId=emma_chen",
       "response": {
         "success": true,
         "data": {
@@ -17,7 +17,7 @@
       }
     },
     "with_recommendations": {
-      "url": "GET /api/insights?userId=f2519195-0c7f-4c95-8de7-9ddbe70997ff&includeRecommendations=true",
+      "url": "GET /api/insights?userId=emma_chen&includeRecommendations=true",
       "response": {
         "success": true,
         "data": {
@@ -27,7 +27,7 @@
       }
     },
     "different_user_profile": {
-      "url": "GET /api/insights?userId=0a730f2b-7238-4243-98fa-bb004d96025b&includeRecommendations=true",
+      "url": "GET /api/insights?userId=marcus_johnson&includeRecommendations=true",
       "description": "Example with different body type (athletic) and culture (African)",
       "response": {
         "success": true,
@@ -38,7 +38,7 @@
       }
     },
     "no_activity": {
-      "url": "GET /api/insights?userId=new-user-id&includeRecommendations=true",
+      "url": "GET /api/insights?userId=user123&includeRecommendations=true",
       "description": "Example for user with no logged activities",
       "response": {
         "success": true,
