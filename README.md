@@ -1,204 +1,112 @@
 # FitAura - Personal AI Health Coach
 
-A comprehensive personal health assistant that uses AI coaching, Weaviate vector database, and multimodal input logging to help users build healthy micro-habits.
+A hackathon project featuring an AI-powered personal health assistant with cultural personalization and multimodal input logging.
 
-## 🚀 Features
+## 🚀 Quick Start (5 Minutes)
 
-- **AI-Powered Coaching**: Personalized health insights and motivation based on user profile and activity
-- **Multimodal Logging**: Log activities via text, voice (speech-to-text), or photo upload
-- **Weaviate Vector Database**: Intelligent storage and retrieval of health data with semantic search
-- **Micro-Habit Tracking**: Focus on hydration and nutrition with progress visualization
-- **Real-time Dashboard**: Track progress, streaks, and receive AI insights
-- **Voice & Photo Recognition**: Advanced input methods for easy habit logging
-- **PWA Support**: Install as a mobile app for offline access
-
-## 🏗️ Architecture
-
-```
-Frontend (Next.js)          Backend (Node.js)           Vector DB (Weaviate)
-├── Profile Setup           ├── Express API             ├── Health Data Storage
-├── Habit Logging           ├── OpenAI Integration      ├── Semantic Search
-├── Voice/Photo Input       ├── Weaviate Service        ├── User Context
-├── Dashboard               ├── File Upload Handling    └── Coaching History
-├── AI Chat Interface       └── Data Processing
-└── PWA Features
-```
-
-## 🛠️ Tech Stack
-
-### Frontend
-- **Next.js 14** - React framework with App Router
-- **TypeScript** - Type safety
-- **Tailwind CSS** - Styling
-- **Framer Motion** - Animations
-- **React Hook Form** - Form handling
-- **Lucide React** - Icons
-- **Recharts** - Data visualization
-
-### Backend
-- **Node.js** - Runtime
-- **Express** - Web framework
-- **OpenAI API** - AI coaching
-- **Weaviate** - Vector database
-- **Multer** - File uploads
-- **Joi** - Validation
-
-### Database
-- **Weaviate** - Vector database for semantic search and storage
-- **Local Storage** - Client-side data persistence
-
-## 🚀 Quick Start
-
-### Prerequisites
-- Node.js 18+ 
-- Weaviate instance running
-- OpenAI API key
-
-### 1. Clone and Install
+### 1. Install Dependencies
 ```bash
-cd ManVsMachine-PersonalHealthAssistant
+# Frontend
 npm install
+
+# Backend
 cd backend && npm install
+
+# Python (optional - for ML experiments only)
+python3 -m venv hackathon-env
+source hackathon-env/bin/activate
+pip install openai python-dotenv requests Pillow SpeechRecognition
 ```
 
-### 2. Environment Setup
+### 2. Set Environment Variables
 ```bash
 cp env.example .env.local
+# Add your OpenAI API key to .env.local
 ```
 
-Edit `.env.local` with your configuration:
-```env
-OPENAI_API_KEY=your_openai_api_key_here
-WEAVIATE_URL=http://localhost:8080
-WEAVIATE_API_KEY=your_weaviate_api_key_here
-```
-
-### 3. Start Weaviate
+### 3. Start Weaviate (Vector Database)
 ```bash
-# Using Docker
-docker run -p 8080:8080 -p 50051:50051 \
-  -e QUERY_DEFAULTS_LIMIT=25 \
-  -e AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED=true \
-  -e PERSISTENCE_DATA_PATH=/var/lib/weaviate \
-  -v weaviate_data:/var/lib/weaviate \
-  semitechnologies/weaviate:latest
+docker run -p 8080:8080 -e AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED=true semitechnologies/weaviate:latest
 ```
 
-### 4. Start Development Servers
+### 4. Run the Application
 ```bash
-# Terminal 1: Frontend
-npm run dev
-
-# Terminal 2: Backend
-npm run backend
-
-# Or run both together
 npm run dev:full
 ```
 
-### 5. Access the Application
-- Frontend: http://localhost:3000
-- Backend API: http://localhost:3001
-- Weaviate: http://localhost:8080
+## 🎯 Demo Flow
 
-## 📱 Usage
+1. **Profile Setup** → Create user profile with cultural preferences
+2. **Habit Logging** → Log activities via text, voice, or photo
+3. **AI Coaching** → Get personalized, culturally-aware health insights
+4. **Dashboard** → View progress and AI recommendations
 
-### 1. Profile Setup
-- Enter personal information (age, gender, height, weight, body type, culture)
-- Set health goals
-- AI coach personalizes based on your profile
+## 🏗️ Architecture
 
-### 2. Habit Logging
-- **Text**: Quick text input for activities
-- **Voice**: Use speech-to-text for hands-free logging
-- **Photo**: Upload food photos for automatic recognition
+- **Frontend**: Next.js 14 with TypeScript
+- **Backend**: Node.js with Express
+- **AI**: OpenAI GPT-4 with cultural personalization
+- **Database**: Weaviate vector database
+- **Storage**: Local storage + vector embeddings
 
-### 3. AI Coaching
-- Daily motivational messages
-- Personalized nutrition suggestions
-- Progress insights and recommendations
-- Interactive chat interface
+## 📡 API Endpoints
 
-### 4. Dashboard
-- Track daily progress across habits
-- View streaks and achievements
-- Weekly progress visualization
-- AI-generated insights
+- `POST /profile` - Create user profile
+- `POST /log` - Log habit entry
+- `GET /history` - Get user logs
+- `POST /coach` - Get AI coaching feedback
 
-## 🔧 API Endpoints
+## 🌍 Cultural Personalization
 
-### Profile
-- `POST /api/profile` - Create/update profile
-- `GET /api/profile/:userId` - Get user profile
-- `GET /api/profile/:userId/insights` - Get personalized insights
+Supports 5+ cultural contexts:
+- **Indian**: Ayurveda principles, Namaste greetings
+- **Chinese**: TCM balance, qi energy concepts
+- **Mexican**: Family-centered wellness
+- **American**: Individual goal-focused approach
+- **European**: Work-life balance emphasis
 
-### Logging
-- `POST /api/logging` - Log activity
-- `POST /api/logging/photo` - Upload photo for food recognition
-- `GET /api/logging/:userId` - Get user logs
-- `GET /api/logging/:userId/today` - Get today's logs
+## 💪 Body Type Intelligence
 
-### Coaching
-- `GET /api/coaching/:userId/motivation` - Get daily motivation
-- `GET /api/coaching/:userId/nutrition` - Get nutrition suggestions
-- `GET /api/coaching/:userId/insights` - Get comprehensive insights
+- **Ectomorph**: Calorie-dense nutrition, strength training
+- **Mesomorph**: Balanced approach, variety focus
+- **Endomorph**: Portion control, regular cardio
 
-### Dashboard
-- `GET /api/dashboard/:userId` - Get dashboard data
-- `GET /api/dashboard/:userId/habit/:habitId` - Get habit progress
+## 🧪 Testing
 
-### Chat
-- `POST /api/chat/:userId/message` - Send message to AI coach
-- `GET /api/chat/:userId/history` - Get chat history
-- `GET /api/chat/:userId/suggestions` - Get contextual suggestions
+```bash
+# Test AI prompts
+node test-ai-prompts.js
 
-## 🎯 Hackathon Features
+# Test spec compliance
+node demo-spec.js
+```
 
-### Core Features (MVP)
-- ✅ User profile setup with personalization
-- ✅ Hydration and nutrition tracking
-- ✅ AI coaching with OpenAI integration
-- ✅ Weaviate vector database for intelligent storage
-- ✅ Voice and photo logging capabilities
-- ✅ Real-time dashboard with progress tracking
+## 📁 Project Structure
 
-### Advanced Features
-- 🔄 Food recognition with photo upload
-- 🔄 Voice-to-text logging
-- 🔄 Streak tracking and gamification
-- 🔄 PWA installation
-- 🔄 Offline support
+```
+├── app/                    # Next.js frontend
+├── backend/               # Express API server
+├── lib/                   # Shared utilities
+├── types/                 # TypeScript definitions
+├── hackathon-env/         # Python virtual environment (optional)
+└── requirements.txt       # Python dependencies (optional)
+```
 
-## 🏆 Demo Flow
+## 🔧 Tech Stack
 
-1. **Landing Page** - Welcome screen with feature overview
-2. **Profile Setup** - Quick onboarding with personal details
-3. **Habit Logging** - Demonstrate text, voice, and photo input
-4. **AI Coaching** - Show personalized insights and chat
-5. **Dashboard** - Display progress, streaks, and analytics
+- **Frontend**: Next.js, TypeScript, Tailwind CSS
+- **Backend**: Node.js, Express, OpenAI API
+- **Database**: Weaviate vector database
+- **AI**: GPT-4 with advanced prompt engineering
 
-## 🔮 Future Enhancements
+## 🎉 Hackathon Features
 
-- **Social Features**: Share progress with friends
-- **Wearable Integration**: Connect with fitness trackers
-- **Advanced Analytics**: Detailed health insights
-- **Meal Planning**: AI-powered meal suggestions
-- **Community**: Connect with other users
-- **Health Professionals**: Connect with doctors/nutritionists
-
-## 🤝 Contributing
-
-This is a hackathon project! Feel free to:
-- Add new features
-- Improve the UI/UX
-- Enhance AI prompts
-- Add new integrations
-- Optimize performance
-
-## 📄 License
-
-MIT License - feel free to use this project for your own hackathons and learning!
+- ✅ **Multimodal Input**: Text, voice, photo logging
+- ✅ **AI Coaching**: Personalized, cultural-aware insights
+- ✅ **Vector Search**: Intelligent data retrieval
+- ✅ **Real-time Dashboard**: Progress tracking
+- ✅ **Spec Compliance**: Exact API contract match
 
 ---
 
-**Built with ❤️ for the hackathon by the FitAura team**
+**Built for hackathon with ❤️ by the FitAura team**
