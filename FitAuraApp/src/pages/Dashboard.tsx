@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import HabitLogger from './HabitLogger';
 import ProfilePage from './ProfilePage';
 
@@ -13,26 +14,53 @@ const Dashboard: React.FC<DashboardProps> = ({ userId, onLogout }) => {
   const [profile, setProfile] = useState<any>(null);
   const [logs, setLogs] = useState<any[]>([]);
 
-  // Load profile on mount
+  // Fetch profile from backend
   useEffect(() => {
-    const savedProfile = localStorage.getItem(`profile_${userId}`);
-    if (savedProfile) setProfile(JSON.parse(savedProfile));
+    const fetchProfile = async () => {
+      try {
+        const res = await axios.get(`http://localhost:3001/api/profile/${userId}`);
+        if (res.data.success && res.data.data) {
+          const data = res.data.data;
+          setProfile({
+            name: data.name || '',
+            age: data.age || 0,
+            gender: data.gender || 'male',
+            weight: data.weight || 0,
+            height: data.height || 0,
+            bodyType: data.bodyType || 'lean',
+            goal: Array.isArray(data.goals) && data.goals.length > 0 ? data.goals[0] : 'weight loss',
+            activityLevel: data.activity_level || 'moderate',
+            culture: data.culture || 'Western',
+          });
+        }
+      } catch (err) {
+        console.error('Failed to fetch profile:', err);
+      }
+    };
 
-    const savedLogs = localStorage.getItem(`logs_${userId}`);
-    if (savedLogs) setLogs(JSON.parse(savedLogs));
+    const fetchLogs = async () => {
+      try {
+        const res = await axios.get(`http://localhost:3001/api/logging/${userId}`);
+        if (res.data.success && Array.isArray(res.data.data)) {
+          setLogs(res.data.data);
+        }
+      } catch (err) {
+        console.error('Failed to fetch logs:', err);
+      }
+    };
+
+    fetchProfile();
+    fetchLogs();
   }, [userId]);
 
-  // Handle profile save
+  // Handle profile save (edit-profile tab)
   const handleSaveProfile = (updatedProfile: any) => {
     setProfile(updatedProfile);
-    localStorage.setItem(`profile_${userId}`, JSON.stringify(updatedProfile));
   };
 
-  // Handle log save (when HabitLogger posts a new habit)
+  // Handle new habit log
   const handleNewLog = (log: any) => {
-    const updatedLogs = [...logs, log];
-    setLogs(updatedLogs);
-    localStorage.setItem(`logs_${userId}`, JSON.stringify(updatedLogs));
+    setLogs((prevLogs) => [...prevLogs, log]);
   };
 
   // Filter logs for today
@@ -79,7 +107,7 @@ const Dashboard: React.FC<DashboardProps> = ({ userId, onLogout }) => {
                     <tr key={log.id}>
                       <td>{new Date(log.timestamp).toLocaleTimeString()}</td>
                       <td>{log.input_method}</td>
-                      <td>{log.content}</td>
+                      <td>{log.content_preview || log.content}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -127,7 +155,7 @@ const Dashboard: React.FC<DashboardProps> = ({ userId, onLogout }) => {
                 <button onClick={() => setActiveTab('edit-profile')}>Edit Profile</button>
               </div>
             ) : (
-              <p>No profile set up yet.</p>
+              <p>Loading profile...</p>
             )}
           </section>
         )}
@@ -138,13 +166,13 @@ const Dashboard: React.FC<DashboardProps> = ({ userId, onLogout }) => {
               userId={userId}
               onSave={(updatedProfile) => {
                 handleSaveProfile(updatedProfile);
-                setActiveTab('profile'); // go back to profile view
+                setActiveTab('profile'); // return to profile view
               }}
             />
           </section>
         )}
 
-        {activeTab === 'log' && <HabitLogger userId={userId} />}
+        {activeTab === 'log' && <HabitLogger userId={userId} onNewLog={handleNewLog} />}
 
         {activeTab === 'chat' && (
           <section className='chat-tab'>

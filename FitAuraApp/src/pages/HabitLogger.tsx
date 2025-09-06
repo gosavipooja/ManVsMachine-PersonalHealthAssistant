@@ -1,15 +1,18 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useState } from 'react';
 import axios from 'axios';
 
 interface HabitLoggerProps {
   userId: string;
+  onNewLog: (log: any) => void; // callback to notify dashboard
 }
 
-const HabitLogger: React.FC<HabitLoggerProps> = ({ userId }) => {
+const HabitLogger: React.FC<HabitLoggerProps> = ({ userId, onNewLog }) => {
   const [inputMethod, setInputMethod] = useState<'text' | 'voice' | 'photo'>('text');
   const [textInput, setTextInput] = useState('');
   const [voiceBlob, setVoiceBlob] = useState<Blob | null>(null);
   const [photoFile, setPhotoFile] = useState<File | null>(null);
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async () => {
     let content: string = '';
@@ -22,28 +25,30 @@ const HabitLogger: React.FC<HabitLoggerProps> = ({ userId }) => {
       return;
     }
 
-    const payload = {
+    const logEntry = {
       user_id: userId,
       timestamp: new Date().toISOString(),
       input_method: inputMethod,
       content,
     };
 
+    setLoading(true);
     try {
-      const response = await axios.post('http://localhost:3001/api/logging', payload, {
-        headers: { 'Content-Type': 'application/json' },
-      });
-      if (response.data.success) {
-        alert('Habit logged!');
+      const res = await axios.post('http://localhost:3001/api/logging', logEntry);
+      if (res.data.success) {
+        onNewLog(res.data.data); // notify Dashboard
+        alert('Habit logged successfully!');
         setTextInput('');
         setVoiceBlob(null);
         setPhotoFile(null);
       } else {
-        alert(`Failed: ${response.data.message || 'Unknown error'}`);
+        alert(`Failed to log habit: ${res.data.message || 'Unknown error'}`);
       }
     } catch (err) {
       console.error(err);
-      alert('Failed to log habit. Please check server connection.');
+      alert('Error logging habit.');
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -59,14 +64,12 @@ const HabitLogger: React.FC<HabitLoggerProps> = ({ userId }) => {
     <section className='habit-logger'>
       <h3>Log a Habit</h3>
 
-      {/* Input method selector */}
       <select value={inputMethod} onChange={(e) => setInputMethod(e.target.value as any)}>
         <option value='text'>Text</option>
         <option value='voice'>Voice</option>
         <option value='photo'>Photo</option>
       </select>
 
-      {/* Conditional input fields */}
       {inputMethod === 'text' && (
         <input type='text' placeholder='Enter habit details' value={textInput} onChange={(e) => setTextInput(e.target.value)} />
       )}
@@ -77,7 +80,6 @@ const HabitLogger: React.FC<HabitLoggerProps> = ({ userId }) => {
           {voiceBlob && (
             <audio controls>
               <source src={URL.createObjectURL(voiceBlob)} type={voiceBlob.type} />
-              <track kind='captions' src='' label='No captions' />
               Your browser does not support the audio element.
             </audio>
           )}
@@ -93,7 +95,9 @@ const HabitLogger: React.FC<HabitLoggerProps> = ({ userId }) => {
         </>
       )}
 
-      <button onClick={handleSubmit}>Log Habit</button>
+      <button onClick={handleSubmit} disabled={loading}>
+        {loading ? 'Logging...' : 'Log Habit'}
+      </button>
     </section>
   );
 };
