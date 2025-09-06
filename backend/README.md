@@ -126,6 +126,8 @@ Content-Type: application/json
 ```
 
 ### Upload Voice Log
+
+**Option 1: File Upload (multipart/form-data)**
 ```http
 POST /api/logging
 Content-Type: multipart/form-data
@@ -143,6 +145,33 @@ curl -X POST http://localhost:3001/api/logging \
   -F "timestamp=2025-09-06T21:04:30Z" \
   -F "input_method=voice" \
   -F "file=@/path/to/audio.wav;type=audio/wav"
+```
+
+**Option 2: Base64 Content (application/json)**
+```http
+POST /api/logging
+Content-Type: application/json
+
+{
+  "user_id": "4b514588-a40b-4b8d-9236-8df8dcef25f7",
+  "timestamp": "2025-09-06T21:00:00Z",
+  "input_method": "voice",
+  "content": "UklGRiQAAABXQVZFZm10IBAAAAABAAEA...",
+  "file_type": "wav"
+}
+```
+
+**cURL Example:**
+```bash
+curl -X POST http://localhost:3001/api/logging \
+  -H "Content-Type: application/json" \
+  -d '{
+    "user_id": "4b514588-a40b-4b8d-9236-8df8dcef25f7",
+    "timestamp": "2025-09-06T21:00:00Z",
+    "input_method": "voice",
+    "content": "UklGRiQAAABXQVZFZm10IBAAAAABAAEA...",
+    "file_type": "wav"
+  }'
 ```
 
 **Response:**
@@ -164,6 +193,8 @@ curl -X POST http://localhost:3001/api/logging \
 ```
 
 ### Upload Photo Log
+
+**Option 1: File Upload (multipart/form-data)**
 ```http
 POST /api/logging
 Content-Type: multipart/form-data
@@ -181,6 +212,33 @@ curl -X POST http://localhost:3001/api/logging \
   -F "timestamp=2025-09-06T21:01:30Z" \
   -F "input_method=photo" \
   -F "file=@/path/to/image.png"
+```
+
+**Option 2: Base64 Content (application/json)**
+```http
+POST /api/logging
+Content-Type: application/json
+
+{
+  "user_id": "4b514588-a40b-4b8d-9236-8df8dcef25f7",
+  "timestamp": "2025-09-06T21:00:00Z",
+  "input_method": "photo",
+  "content": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==",
+  "file_type": "png"
+}
+```
+
+**cURL Example:**
+```bash
+curl -X POST http://localhost:3001/api/logging \
+  -H "Content-Type: application/json" \
+  -d '{
+    "user_id": "4b514588-a40b-4b8d-9236-8df8dcef25f7",
+    "timestamp": "2025-09-06T21:00:00Z",
+    "input_method": "photo",
+    "content": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==",
+    "file_type": "png"
+  }'
 ```
 
 **Response:**

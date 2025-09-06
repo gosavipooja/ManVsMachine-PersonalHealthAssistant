@@ -67,6 +67,14 @@ const fileLogSchema = Joi.object({
   input_method: Joi.string().valid('voice', 'photo').required()
 });
 
+const base64LogSchema = Joi.object({
+  user_id: Joi.string().required(),
+  timestamp: Joi.string().isoDate().required(),
+  input_method: Joi.string().valid('voice', 'photo').required(),
+  content: Joi.string().required(), // base64 encoded data
+  file_type: Joi.string().valid('wav', 'mp3', 'm4a', 'png', 'jpg', 'jpeg').required()
+});
+
 // POST /api/logging - Create a new log entry
 router.post('/', upload.single('file'), async (req, res) => {
   try {
@@ -105,70 +113,132 @@ router.post('/', upload.single('file'), async (req, res) => {
         break;
 
       case 'voice':
-        // Validate file input
-        const { error: voiceError } = fileLogSchema.validate(req.body);
-        if (voiceError) {
+        // Check if we have a file upload or base64 content
+        if (req.file) {
+          // Handle file upload
+          const { error: voiceError } = fileLogSchema.validate(req.body);
+          if (voiceError) {
+            return res.status(400).json({
+              success: false,
+              error: 'Validation error',
+              message: voiceError.details[0].message
+            });
+          }
+
+          // Determine file extension based on mimetype
+          let audioExt = '.wav';
+          if (req.file.mimetype.includes('mp3')) audioExt = '.mp3';
+          if (req.file.mimetype.includes('m4a')) audioExt = '.m4a';
+
+          const audioFileName = `${logId}${audioExt}`;
+          const audioFilePath = path.join(audioDir, audioFileName);
+          await fs.writeFile(audioFilePath, req.file.buffer);
+          
+          logEntry.file_name = audioFileName;
+          logEntry.file_size = req.file.size;
+          logEntry.content_preview = `Audio recording (${(req.file.size / 1024).toFixed(1)} KB)`;
+        } else if (req.body.content && req.body.file_type) {
+          // Handle base64 content
+          const { error: base64Error } = base64LogSchema.validate(req.body);
+          if (base64Error) {
+            return res.status(400).json({
+              success: false,
+              error: 'Validation error',
+              message: base64Error.details[0].message
+            });
+          }
+
+          try {
+            // Decode base64 content
+            const audioBuffer = Buffer.from(req.body.content, 'base64');
+            const audioExt = `.${req.body.file_type}`;
+            const audioFileName = `${logId}${audioExt}`;
+            const audioFilePath = path.join(audioDir, audioFileName);
+            
+            await fs.writeFile(audioFilePath, audioBuffer);
+            
+            logEntry.file_name = audioFileName;
+            logEntry.file_size = audioBuffer.length;
+            logEntry.content_preview = `Audio recording (${(audioBuffer.length / 1024).toFixed(1)} KB)`;
+          } catch (error) {
+            return res.status(400).json({
+              success: false,
+              error: 'Invalid base64 content',
+              message: 'Could not decode base64 audio data'
+            });
+          }
+        } else {
           return res.status(400).json({
             success: false,
-            error: 'Validation error',
-            message: voiceError.details[0].message
+            error: 'File or content required',
+            message: 'Either upload a file or provide base64 content with file_type for voice input method'
           });
         }
-
-        if (!req.file) {
-          return res.status(400).json({
-            success: false,
-            error: 'File required',
-            message: 'Audio file is required for voice input method'
-          });
-        }
-
-        // Determine file extension based on mimetype
-        let audioExt = '.wav';
-        if (req.file.mimetype.includes('mp3')) audioExt = '.mp3';
-        if (req.file.mimetype.includes('m4a')) audioExt = '.m4a';
-
-        const audioFileName = `${logId}${audioExt}`;
-        const audioFilePath = path.join(audioDir, audioFileName);
-        await fs.writeFile(audioFilePath, req.file.buffer);
-        
-        logEntry.file_name = audioFileName;
-        logEntry.file_size = req.file.size;
-        logEntry.content_preview = `Audio recording (${(req.file.size / 1024).toFixed(1)} KB)`;
         break;
 
       case 'photo':
-        // Validate file input
-        const { error: photoError } = fileLogSchema.validate(req.body);
-        if (photoError) {
+        // Check if we have a file upload or base64 content
+        if (req.file) {
+          // Handle file upload
+          const { error: photoError } = fileLogSchema.validate(req.body);
+          if (photoError) {
+            return res.status(400).json({
+              success: false,
+              error: 'Validation error',
+              message: photoError.details[0].message
+            });
+          }
+
+          // Determine file extension based on mimetype
+          let imageExt = '.png';
+          if (req.file.mimetype.includes('jpeg') || req.file.mimetype.includes('jpg')) {
+            imageExt = '.jpg';
+          }
+
+          const imageFileName = `${logId}${imageExt}`;
+          const imageFilePath = path.join(imageDir, imageFileName);
+          await fs.writeFile(imageFilePath, req.file.buffer);
+          
+          logEntry.file_name = imageFileName;
+          logEntry.file_size = req.file.size;
+          logEntry.content_preview = `Image file (${(req.file.size / 1024).toFixed(1)} KB)`;
+        } else if (req.body.content && req.body.file_type) {
+          // Handle base64 content
+          const { error: base64Error } = base64LogSchema.validate(req.body);
+          if (base64Error) {
+            return res.status(400).json({
+              success: false,
+              error: 'Validation error',
+              message: base64Error.details[0].message
+            });
+          }
+
+          try {
+            // Decode base64 content
+            const imageBuffer = Buffer.from(req.body.content, 'base64');
+            const imageExt = `.${req.body.file_type}`;
+            const imageFileName = `${logId}${imageExt}`;
+            const imageFilePath = path.join(imageDir, imageFileName);
+            
+            await fs.writeFile(imageFilePath, imageBuffer);
+            
+            logEntry.file_name = imageFileName;
+            logEntry.file_size = imageBuffer.length;
+            logEntry.content_preview = `Image file (${(imageBuffer.length / 1024).toFixed(1)} KB)`;
+          } catch (error) {
+            return res.status(400).json({
+              success: false,
+              error: 'Invalid base64 content',
+              message: 'Could not decode base64 image data'
+            });
+          }
+        } else {
           return res.status(400).json({
             success: false,
-            error: 'Validation error',
-            message: photoError.details[0].message
+            error: 'File or content required',
+            message: 'Either upload a file or provide base64 content with file_type for photo input method'
           });
         }
-
-        if (!req.file) {
-          return res.status(400).json({
-            success: false,
-            error: 'File required',
-            message: 'Image file is required for photo input method'
-          });
-        }
-
-        // Determine file extension based on mimetype
-        let imageExt = '.png';
-        if (req.file.mimetype.includes('jpeg') || req.file.mimetype.includes('jpg')) {
-          imageExt = '.jpg';
-        }
-
-        const imageFileName = `${logId}${imageExt}`;
-        const imageFilePath = path.join(imageDir, imageFileName);
-        await fs.writeFile(imageFilePath, req.file.buffer);
-        
-        logEntry.file_name = imageFileName;
-        logEntry.file_size = req.file.size;
-        logEntry.content_preview = `Image file (${(req.file.size / 1024).toFixed(1)} KB)`;
         break;
 
       default:

@@ -31,5 +31,39 @@
       "content_preview": "Image file (0.1 KB)"
     },
     "timestamp": "2025-09-06T21:47:51.755Z"
+  },
+  "92fbe1ab-19e7-4d0c-b682-594b33479a6b": {
+    "id": "92fbe1ab-19e7-4d0c-b682-594b33479a6b",
+    "content": "Log entry: photo - Image file (0.1 KB)",
+    "metadata": {
+      "type": "log",
+      "userId": "f2519195-0c7f-4c95-8de7-9ddbe70997ff",
+      "timestamp": "2025-09-06T21:55:00Z",
+      "id": "92fbe1ab-19e7-4d0c-b682-594b33479a6b",
+      "user_id": "f2519195-0c7f-4c95-8de7-9ddbe70997ff",
+      "input_method": "photo",
+      "file_name": "92fbe1ab-19e7-4d0c-b682-594b33479a6b.png",
+      "created_at": "2025-09-06T21:55:45.240Z",
+      "file_size": 70,
+      "content_preview": "Image file (0.1 KB)"
+    },
+    "timestamp": "2025-09-06T21:55:45.245Z"
+  },
+  "711ce200-9151-430e-a2d2-b74998e7e9f1": {
+    "id": "711ce200-9151-430e-a2d2-b74998e7e9f1",
+    "content": "Log entry: voice - Audio recording (0.0 KB)",
+    "metadata": {
+      "type": "log",
+      "userId": "0a730f2b-7238-4243-98fa-bb004d96025b",
+      "timestamp": "2025-09-06T21:56:00Z",
+      "id": "711ce200-9151-430e-a2d2-b74998e7e9f1",
+      "user_id": "0a730f2b-7238-4243-98fa-bb004d96025b",
+      "input_method": "voice",
+      "file_name": "711ce200-9151-430e-a2d2-b74998e7e9f1.wav",
+      "created_at": "2025-09-06T21:59:53.110Z",
+      "file_size": 44,
+      "content_preview": "Audio recording (0.0 KB)"
+    },
+    "timestamp": "2025-09-06T21:59:53.110Z"
   }
 }
