@@ -11,6 +11,7 @@ const coachingRoutes = require('./routes/coaching');
 const dashboardRoutes = require('./routes/dashboard');
 const chatRoutes = require('./routes/chat');
 const aiCoachingRoutes = require('./routes/ai-coaching');
+const insightsRoutes = require('./routes/insights');
 const specCompliantRoutes = require('./routes/spec-compliant');
 
 const app = express();
@@ -50,6 +51,7 @@ app.use('/api/coaching', coachingRoutes);
 app.use('/api/dashboard', dashboardRoutes);
 app.use('/api/chat', chatRoutes);
 app.use('/api/ai', aiCoachingRoutes);
+app.use('/api/insights', insightsRoutes);
 
 // Spec-compliant routes (exact match to DESIGN.md)
 app.use('/', specCompliantRoutes);
