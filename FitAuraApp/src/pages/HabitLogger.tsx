@@ -22,8 +22,7 @@ const HabitLogger: React.FC<HabitLoggerProps> = ({ userId }) => {
       return;
     }
 
-    const logEntry = {
-      id: `log_${Date.now()}`,
+    const payload = {
       user_id: userId,
       timestamp: new Date().toISOString(),
       input_method: inputMethod,
@@ -31,14 +30,20 @@ const HabitLogger: React.FC<HabitLoggerProps> = ({ userId }) => {
     };
 
     try {
-      await axios.post('http://localhost:3001/health/api/log', logEntry);
-      alert('Habit logged!');
-      setTextInput('');
-      setVoiceBlob(null);
-      setPhotoFile(null);
+      const response = await axios.post('http://localhost:3001/api/logging', payload, {
+        headers: { 'Content-Type': 'application/json' },
+      });
+      if (response.data.success) {
+        alert('Habit logged!');
+        setTextInput('');
+        setVoiceBlob(null);
+        setPhotoFile(null);
+      } else {
+        alert(`Failed: ${response.data.message || 'Unknown error'}`);
+      }
     } catch (err) {
       console.error(err);
-      alert('Failed to log habit.');
+      alert('Failed to log habit. Please check server connection.');
     }
   };
 
