@@ -65,5 +65,21 @@
       "content_preview": "Audio recording (0.0 KB)"
     },
     "timestamp": "2025-09-06T21:59:53.110Z"
+  },
+  "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86": {
+    "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+    "content": "Log entry: text - This is a log for 25 minute run.",
+    "metadata": {
+      "type": "log",
+      "userId": "user123",
+      "timestamp": "2025-09-06T21:47:00Z",
+      "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+      "user_id": "user123",
+      "input_method": "text",
+      "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+      "created_at": "2025-09-06T22:31:13.388Z",
+      "content_preview": "This is a log for 25 minute run."
+    },
+    "timestamp": "2025-09-06T22:31:13.396Z"
   }
 }
