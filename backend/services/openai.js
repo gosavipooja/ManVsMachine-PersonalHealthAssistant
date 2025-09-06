@@ -18,7 +18,7 @@ class AICoachService {
     
     try {
       const response = await openai.chat.completions.create({
-        model: 'gpt-3.5-turbo',
+        model: 'gpt-4o-mini',
         messages: [
           {
             role: 'system',
@@ -45,7 +45,7 @@ class AICoachService {
     
     try {
       const response = await openai.chat.completions.create({
-        model: 'gpt-3.5-turbo',
+        model: 'gpt-4o-mini',
         messages: [
           {
             role: 'system',
@@ -73,7 +73,7 @@ class AICoachService {
     
     try {
       const response = await openai.chat.completions.create({
-        model: 'gpt-3.5-turbo',
+        model: 'gpt-4o-mini',
         messages: [
           {
             role: 'system',
@@ -100,7 +100,7 @@ class AICoachService {
     
     try {
       const response = await openai.chat.completions.create({
-        model: 'gpt-3.5-turbo',
+        model: 'gpt-4o-mini',
         messages: [
           {
             role: 'system',
@@ -195,7 +195,7 @@ Provide comprehensive insights including:
     
     try {
       const response = await openai.chat.completions.create({
-        model: 'gpt-3.5-turbo',
+        model: 'gpt-4o-mini',
         messages: [
           {
             role: 'system',
@@ -217,30 +217,59 @@ Provide comprehensive insights including:
     }
   }
 
-  async generateDinnerRecommendation(profile, logs) {
-    const prompt = this.buildDinnerPrompt(profile, logs);
+  async generateDinnerRecommendation(profile, logs, foodContext = null) {
+    const prompt = this.buildDinnerPrompt(profile, logs, foodContext);
     
     try {
       const response = await openai.chat.completions.create({
-        model: 'gpt-3.5-turbo',
+        model: 'gpt-4o-mini',
         messages: [
           {
             role: 'system',
-            content: 'You are a nutritionist and personal chef. Provide a specific, culturally-appropriate dinner recommendation based on the user\'s profile, goals, and recent activity. Be practical and encouraging.'
+            content: 'You are a nutritionist and personal chef. Provide a specific, culturally-appropriate dinner recommendation based on the user\'s profile, goals, recent activity, and food intake. Consider macro balance and what they\'ve already eaten today. Be practical and encouraging.'
           },
           {
             role: 'user',
             content: prompt
           }
         ],
-        max_tokens: 250,
-        temperature: 0.6,
+        max_tokens: 400,
+        temperature: 0.7,
       });
 
       return response.choices[0]?.message?.content || 'Consider a balanced meal with lean protein and vegetables.';
     } catch (error) {
       console.error('Error generating dinner recommendation:', error);
       return 'For tonight\'s dinner, I recommend a balanced meal with lean protein and plenty of vegetables.';
+    }
+  }
+
+  // NEW: Single optimized method that combines all insights generation
+  async generateAllInsights(profile, logs, days, foodContext = null, includeRecommendations = true) {
+    const prompt = this.buildCombinedInsightsPrompt(profile, logs, days, foodContext, includeRecommendations);
+    
+    try {
+      const response = await openai.chat.completions.create({
+        model: 'gpt-4o-mini',
+        messages: [
+          {
+            role: 'system',
+            content: `You are a comprehensive personal health coach${includeRecommendations ? ' and nutritionist' : ''}. Provide a complete health analysis including personalized summary, motivation, suggestions, insights, progress summary, and next steps${includeRecommendations ? ', and dinner recommendation' : ''}. Be encouraging, specific, culturally aware, and practical.`
+          },
+          {
+            role: 'user',
+            content: prompt
+          }
+        ],
+        max_tokens: 800,
+        temperature: 0.7,
+      });
+
+      const content = response.choices[0]?.message?.content || '';
+      return this.parseCombinedResponse(content, includeRecommendations);
+    } catch (error) {
+      console.error('Error generating combined insights:', error);
+      return this.getFallbackResponse(includeRecommendations);
     }
   }
 
@@ -262,20 +291,148 @@ Write a personalized summary of their recent progress and activity. Be encouragi
     `.trim();
   }
 
-  buildDinnerPrompt(profile, logs) {
+  buildDinnerPrompt(profile, logs, foodContext = null) {
     const recentFood = logs.filter(log => log.input_method === 'text' || log.input_method === 'photo')
       .slice(0, 3)
       .map(log => log.content_preview || log.content || 'meal logged')
       .join(', ');
 
+    let foodContextSection = '';
+    if (foodContext && foodContext.hasRecentFood) {
+      foodContextSection = `
+
+RECENT FOOD INTAKE ANALYSIS:
+Recent Food Logs: ${foodContext.recentFoodLogs.map(log => `${log.method}: ${log.content}`).join(', ')}
+
+MACRO BALANCE ANALYSIS:
+- Needs Protein: ${foodContext.foodAnalysis.needsProtein ? 'YES' : 'NO'} ${foodContext.foodAnalysis.proteinSources.length > 0 ? `(Already had: ${foodContext.foodAnalysis.proteinSources.join(', ')})` : ''}
+- Needs Carbs: ${foodContext.foodAnalysis.needsCarbs ? 'YES' : 'NO'} ${foodContext.foodAnalysis.carbSources.length > 0 ? `(Already had: ${foodContext.foodAnalysis.carbSources.join(', ')})` : ''}
+- Needs Fats: ${foodContext.foodAnalysis.needsFats ? 'YES' : 'NO'} ${foodContext.foodAnalysis.fatSources.length > 0 ? `(Already had: ${foodContext.foodAnalysis.fatSources.join(', ')})` : ''}
+- Needs Vegetables: ${foodContext.foodAnalysis.needsVegetables ? 'YES' : 'NO'} ${foodContext.foodAnalysis.vegetables.length > 0 ? `(Already had: ${foodContext.foodAnalysis.vegetables.join(', ')})` : ''}
+
+RECOMMENDED FOCUS: ${this.getMacroFocus(foodContext.foodAnalysis)}
+
+IMPORTANT: Create a dinner recommendation that addresses the macro gaps identified above to ensure a balanced diet.`;
+    }
+
     return `
 User Profile: ${profile.age} year old ${profile.gender}, ${profile.bodyType} body type, ${profile.culture} background
 Goals: ${profile.goals.join(', ')}
 Activity Level: ${profile.activity_level}
-Recent Meals: ${recentFood || 'No recent meals logged'}
+Recent Meals: ${recentFood || 'No recent meals logged'}${foodContextSection}
 
-Suggest a specific dinner recommendation that aligns with their goals, body type, and cultural preferences. Be practical and encouraging.
+Suggest a specific dinner recommendation that aligns with their goals, body type, and cultural preferences. Be practical and encouraging.${foodContext && foodContext.hasRecentFood ? ' Focus on balancing their daily macro intake based on the analysis above.' : ''}
     `.trim();
+  }
+
+  getMacroFocus(foodAnalysis) {
+    const needs = [];
+    if (foodAnalysis.needsProtein) needs.push('PROTEIN');
+    if (foodAnalysis.needsCarbs) needs.push('CARBS');
+    if (foodAnalysis.needsFats) needs.push('HEALTHY FATS');
+    if (foodAnalysis.needsVegetables) needs.push('VEGETABLES');
+    
+    if (needs.length === 0) return 'BALANCED - All macros covered, focus on variety and micronutrients';
+    if (needs.length === 1) return `PRIORITY: ${needs[0]}`;
+    if (needs.length === 2) return `PRIORITY: ${needs.join(' and ')}`;
+    return `PRIORITY: ${needs.slice(0, -1).join(', ')} and ${needs[needs.length - 1]}`;
+  }
+
+  buildCombinedInsightsPrompt(profile, logs, days, foodContext = null, includeRecommendations = true) {
+    const timeframe = days === 1 ? 'today' : `the past ${days} days`;
+    const recentActivity = logs.slice(0, 5).map(log => {
+      const method = log.input_method;
+      const content = log.content_preview || log.content || 'Activity logged';
+      return `${method}: ${content}`;
+    }).join(', ');
+
+    let foodContextSection = '';
+    if (includeRecommendations && foodContext && foodContext.hasRecentFood) {
+      foodContextSection = `
+
+RECENT FOOD INTAKE ANALYSIS:
+Recent Food Logs: ${foodContext.recentFoodLogs.map(log => `${log.method}: ${log.content}`).join(', ')}
+
+MACRO BALANCE ANALYSIS:
+- Needs Protein: ${foodContext.foodAnalysis.needsProtein ? 'YES' : 'NO'} ${foodContext.foodAnalysis.proteinSources.length > 0 ? `(Already had: ${foodContext.foodAnalysis.proteinSources.join(', ')})` : ''}
+- Needs Carbs: ${foodContext.foodAnalysis.needsCarbs ? 'YES' : 'NO'} ${foodContext.foodAnalysis.carbSources.length > 0 ? `(Already had: ${foodContext.foodAnalysis.carbSources.join(', ')})` : ''}
+- Needs Fats: ${foodContext.foodAnalysis.needsFats ? 'YES' : 'NO'} ${foodContext.foodAnalysis.fatSources.length > 0 ? `(Already had: ${foodContext.foodAnalysis.fatSources.join(', ')})` : ''}
+- Needs Vegetables: ${foodContext.foodAnalysis.needsVegetables ? 'YES' : 'NO'} ${foodContext.foodAnalysis.vegetables.length > 0 ? `(Already had: ${foodContext.foodAnalysis.vegetables.join(', ')})` : ''}
+
+RECOMMENDED FOCUS: ${this.getMacroFocus(foodContext.foodAnalysis)}`;
+    }
+
+    return `
+User Profile: ${profile.age} year old ${profile.gender}, ${profile.bodyType} body type, ${profile.culture} background
+Goals: ${profile.goals.join(', ')}
+Activity Level: ${profile.activity_level}
+Recent Activity (${timeframe}): ${recentActivity || 'No recent activity logged'}${foodContextSection}
+
+IMPORTANT: Respond ONLY with valid JSON in the exact format below. Do not include any other text or explanations:
+
+{
+  "summary": "A personalized summary of their recent progress and activity (2-3 sentences, encouraging and specific)",
+  "motivation": "A motivational message (1-2 sentences)",
+  "suggestions": ["2-3 practical suggestions for improvement"],
+  "keyInsights": ["2-3 key insights about their progress"],
+  "progressSummary": "A brief progress summary (1-2 sentences)",
+  "nextSteps": ["2-3 next steps for improvement"]${includeRecommendations ? ',\n  "dinnerRecommendation": "A specific, culturally-appropriate dinner recommendation that addresses macro balance and aligns with their goals"' : ''}
+}
+
+Be encouraging, specific, culturally aware, and practical.${includeRecommendations && foodContext && foodContext.hasRecentFood ? ' Focus on balancing their daily macro intake in the dinner recommendation.' : ''}
+    `.trim();
+  }
+
+  parseCombinedResponse(content, includeRecommendations = true) {
+    try {
+      // Try to extract JSON from the response (in case it's wrapped in text)
+      let jsonContent = content;
+      
+      // Look for JSON object in the response
+      const jsonMatch = content.match(/\{[\s\S]*\}/);
+      if (jsonMatch) {
+        jsonContent = jsonMatch[0];
+      }
+      
+      const parsed = JSON.parse(jsonContent);
+      return {
+        summary: parsed.summary || 'Keep up the great work on your health journey!',
+        motivation: parsed.motivation || 'You\'re making great progress!',
+        suggestions: parsed.suggestions || ['Keep tracking your habits consistently'],
+        keyInsights: parsed.keyInsights || ['Consistency is key to building lasting habits'],
+        progressSummary: parsed.progressSummary || 'You\'re on the right track!',
+        nextSteps: parsed.nextSteps || ['Continue with your current routine'],
+        dinnerRecommendation: includeRecommendations ? (parsed.dinnerRecommendation || 'Consider a balanced meal with lean protein and vegetables.') : null
+      };
+    } catch (error) {
+      // Fallback parsing if JSON fails
+      console.log('JSON parsing failed, using fallback parsing:', error.message);
+      console.log('Content received:', content.substring(0, 200) + '...');
+      
+      // Try to extract individual components from the text
+      const lines = content.split('\n').filter(line => line.trim());
+      return {
+        summary: lines.find(line => line.includes('summary') || line.includes('progress')) || 'Keep up the great work on your health journey!',
+        motivation: lines.find(line => line.includes('motivation') || line.includes('encouraging')) || 'You\'re making great progress!',
+        suggestions: lines.filter(line => line.includes('•') || line.includes('-')).slice(0, 3),
+        keyInsights: lines.filter(line => line.includes('insight') || line.includes('pattern')).slice(0, 3),
+        progressSummary: lines.find(line => line.includes('progress') || line.includes('summary')) || 'You\'re on the right track!',
+        nextSteps: lines.filter(line => line.includes('next') || line.includes('try') || line.includes('consider')).slice(0, 3),
+        dinnerRecommendation: includeRecommendations ? (lines.find(line => line.includes('dinner') || line.includes('meal')) || 'Consider a balanced meal with lean protein and vegetables.') : null
+      };
+    }
+  }
+
+  getFallbackResponse(includeRecommendations = true) {
+    return {
+      summary: 'You\'re making great progress on your health goals!',
+      motivation: 'Keep up the great work!',
+      suggestions: ['Keep tracking your habits consistently'],
+      keyInsights: ['Consistency is key to building lasting habits'],
+      progressSummary: 'You\'re on the right track!',
+      nextSteps: ['Continue with your current routine'],
+      dinnerRecommendation: includeRecommendations ? 'Consider a balanced meal with lean protein and vegetables.' : null
+    };
   }
 
   parseCoachingResponse(content) {

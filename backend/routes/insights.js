@@ -61,20 +61,22 @@ router.get('/', async (req, res) => {
     // 5. Get user's personal context from vector database for personalized insights
     const userContext = await embeddingsService.getUserContextForPrompts(userId, profile, logs, parseInt(days));
 
-    // Generate comprehensive insights using AI coach with user context
-    const aiInsights = await aiCoach.generateComprehensiveInsights(profile, logs, userContext);
+    // 6. Get food context for dinner recommendation (only if recommendations are requested)
+    const foodContext = includeRecommendations === 'true' 
+      ? await embeddingsService.getFoodContextForDinnerRecommendation(userId, profile, logs, parseInt(days))
+      : null;
 
-    // Generate AI-powered summary based on user's recent activity and profile with context
-    const summary = await aiCoach.generatePersonalizedSummary(profile, logs, parseInt(days), userContext);
+    // Generate all insights in a single optimized OpenAI call
+    const allInsights = await aiCoach.generateAllInsights(profile, logs, parseInt(days), foodContext, includeRecommendations === 'true');
     
     // Prepare insights response with AI-generated content and vector database insights
     const insights = {
-      summary: summary || generateDailySummary(profile, logs, parseInt(days)),
-      motivation: aiInsights.motivationMessage,
-      suggestions: aiInsights.suggestions,
-      keyInsights: aiInsights.insights,
-      progressSummary: aiInsights.progressSummary,
-      nextSteps: aiInsights.nextSteps,
+      summary: allInsights.summary,
+      motivation: allInsights.motivation,
+      suggestions: allInsights.suggestions,
+      keyInsights: allInsights.keyInsights,
+      progressSummary: allInsights.progressSummary,
+      nextSteps: allInsights.nextSteps,
       // Vector database insights
       similarUsers: similarUsers,
       relevantRecommendations: relevantRecommendations,
@@ -84,7 +86,7 @@ router.get('/', async (req, res) => {
 
     // Add dinner recommendation if requested
     if (includeRecommendations === 'true') {
-      insights.dinnerRecommendation = await aiCoach.generateDinnerRecommendation(profile, logs);
+      insights.dinnerRecommendation = allInsights.dinnerRecommendation;
     }
 
     // Save AI responses to vector database for learning
@@ -120,7 +122,17 @@ router.get('/', async (req, res) => {
         totalInteractions: userContext.totalInteractions,
         lastInteraction: userContext.lastInteraction,
         hasHistory: userContext.totalInteractions > 0
-      }
+      },
+      foodContext: includeRecommendations === 'true' && foodContext ? {
+        hasRecentFood: foodContext.hasRecentFood,
+        recentFoodLogs: foodContext.recentFoodLogs.length,
+        macroAnalysis: {
+          needsProtein: foodContext.foodAnalysis.needsProtein,
+          needsCarbs: foodContext.foodAnalysis.needsCarbs,
+          needsFats: foodContext.foodAnalysis.needsFats,
+          needsVegetables: foodContext.foodAnalysis.needsVegetables
+        }
+      } : null
     };
 
     res.json({

@@ -433,6 +433,133 @@ class EmbeddingsService {
     }
   }
 
+  async getFoodContextForDinnerRecommendation(userId, profile, logs, days) {
+    try {
+      console.log(`🍽️ Fetching food context for ${userId} dinner recommendation...`);
+      
+      // Get recent food logs from the provided logs
+      const recentFoodLogs = logs.filter(log => 
+        log.input_method === 'text' || 
+        log.input_method === 'photo' || 
+        log.content_preview?.toLowerCase().includes('food') ||
+        log.content_preview?.toLowerCase().includes('meal') ||
+        log.content_preview?.toLowerCase().includes('eat')
+      ).slice(0, 5);
+
+      // Get food-related data from vector database
+      const foodRecommendations = await vectorDB.searchSimilar(
+        `food recommendations for ${profile.bodyType} body type ${profile.culture} culture ${profile.goals.join(' ')}`,
+        {
+          limit: 3,
+          threshold: 0.6,
+          where: { 
+            type: 'food'
+          }
+        }
+      );
+
+      // Get macro information from vector database
+      const macroInfo = await vectorDB.searchSimilar(
+        `macronutrients protein carbs fat for ${profile.goals.join(' ')} user ${userId}`,
+        {
+          limit: 2,
+          threshold: 0.5,
+          where: { 
+            type: { $in: ['ai_response', 'recommendation'] }
+          }
+        }
+      );
+
+      // Analyze recent food intake for macro balance
+      const foodAnalysis = this.analyzeRecentFoodIntake(recentFoodLogs, profile);
+
+      const context = {
+        recentFoodLogs: recentFoodLogs.map(log => ({
+          method: log.input_method,
+          content: log.content_preview || log.content,
+          timestamp: log.timestamp
+        })),
+        foodRecommendations: foodRecommendations.map(f => ({
+          content: f.content,
+          metadata: f.metadata,
+          similarity: f.similarity
+        })),
+        macroInfo: macroInfo.map(m => ({
+          content: m.content,
+          similarity: m.similarity
+        })),
+        foodAnalysis: foodAnalysis,
+        hasRecentFood: recentFoodLogs.length > 0
+      };
+
+      console.log(`✅ Found ${recentFoodLogs.length} recent food logs, ${foodRecommendations.length} food recommendations, ${macroInfo.length} macro insights`);
+      return context;
+      
+    } catch (error) {
+      console.error('Error fetching food context:', error);
+      return {
+        recentFoodLogs: [],
+        foodRecommendations: [],
+        macroInfo: [],
+        foodAnalysis: { needsProtein: false, needsCarbs: false, needsFats: false, needsVegetables: false },
+        hasRecentFood: false
+      };
+    }
+  }
+
+  analyzeRecentFoodIntake(foodLogs, profile) {
+    const analysis = {
+      needsProtein: true,
+      needsCarbs: true,
+      needsFats: true,
+      needsVegetables: true,
+      proteinSources: [],
+      carbSources: [],
+      fatSources: [],
+      vegetables: []
+    };
+
+    // Simple keyword analysis for macro identification
+    const proteinKeywords = ['chicken', 'beef', 'fish', 'salmon', 'turkey', 'eggs', 'protein', 'meat', 'tofu', 'beans', 'lentils'];
+    const carbKeywords = ['rice', 'pasta', 'bread', 'potato', 'quinoa', 'oats', 'cereal', 'carbs', 'carbohydrate'];
+    const fatKeywords = ['oil', 'butter', 'avocado', 'nuts', 'cheese', 'fat', 'olive'];
+    const vegetableKeywords = ['vegetable', 'salad', 'broccoli', 'spinach', 'carrot', 'tomato', 'pepper', 'onion', 'greens'];
+
+    foodLogs.forEach(log => {
+      const content = (log.content_preview || log.content || '').toLowerCase();
+      
+      proteinKeywords.forEach(keyword => {
+        if (content.includes(keyword)) {
+          analysis.proteinSources.push(keyword);
+          analysis.needsProtein = false;
+        }
+      });
+      
+      carbKeywords.forEach(keyword => {
+        if (content.includes(keyword)) {
+          analysis.carbSources.push(keyword);
+          analysis.needsCarbs = false;
+        }
+      });
+      
+      fatKeywords.forEach(keyword => {
+        if (content.includes(keyword)) {
+          analysis.fatSources.push(keyword);
+          analysis.needsFats = false;
+        }
+      });
+      
+      vegetableKeywords.forEach(keyword => {
+        if (content.includes(keyword)) {
+          analysis.vegetables.push(keyword);
+          analysis.needsVegetables = false;
+        }
+      });
+    });
+
+    return analysis;
+  }
+
   async getVectorStats() {
     try {
       return await vectorDB.getStats();

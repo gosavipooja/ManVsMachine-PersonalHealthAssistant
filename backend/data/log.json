@@ -81,5 +81,37 @@
       "content_preview": "This is a log for 25 minute run."
     },
     "timestamp": "2025-09-06T22:31:13.396Z"
+  },
+  "d310c2a1-46a9-46fc-8925-3d727615858d": {
+    "id": "d310c2a1-46a9-46fc-8925-3d727615858d",
+    "content": "Log entry: text - Had chicken breast with rice and broccoli for lunch",
+    "metadata": {
+      "type": "log",
+      "userId": "user123",
+      "timestamp": "2025-09-06T12:00:00Z",
+      "id": "d310c2a1-46a9-46fc-8925-3d727615858d",
+      "user_id": "user123",
+      "input_method": "text",
+      "file_name": "d310c2a1-46a9-46fc-8925-3d727615858d.txt",
+      "created_at": "2025-09-06T23:17:08.362Z",
+      "content_preview": "Had chicken breast with rice and broccoli for lunch"
+    },
+    "timestamp": "2025-09-06T23:17:08.369Z"
+  },
+  "9b73eb37-91ac-466b-96e2-ffb5c6ade17c": {
+    "id": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c",
+    "content": "Log entry: text - Breakfast: oatmeal with banana and almonds",
+    "metadata": {
+      "type": "log",
+      "userId": "user123",
+      "timestamp": "2025-09-06T08:00:00Z",
+      "id": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c",
+      "user_id": "user123",
+      "input_method": "text",
+      "file_name": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c.txt",
+      "created_at": "2025-09-06T23:17:14.473Z",
+      "content_preview": "Breakfast: oatmeal with banana and almonds"
+    },
+    "timestamp": "2025-09-06T23:17:14.474Z"
   }
 }
