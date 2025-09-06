@@ -1,52 +1,35 @@
 {
-  "e9bcd0e4-6f71-42bc-812c-e57f4575c232": {
-    "id": "e9bcd0e4-6f71-42bc-812c-e57f4575c232",
-    "content": "Log entry: text - Jogged 20 minutes in the park this morning. Felt great and energized!",
+  "8f5e3762-bd1a-423e-9fcd-54dfd75bab21": {
+    "id": "8f5e3762-bd1a-423e-9fcd-54dfd75bab21",
+    "content": "Log entry: text - Started my new fitness routine today! Feeling motivated with my lean body type goals.",
     "metadata": {
       "type": "log",
-      "userId": "4b514588-a40b-4b8d-9236-8df8dcef25f7",
-      "timestamp": "2025-09-06T21:00:00Z",
-      "id": "e9bcd0e4-6f71-42bc-812c-e57f4575c232",
-      "user_id": "4b514588-a40b-4b8d-9236-8df8dcef25f7",
+      "userId": "f2519195-0c7f-4c95-8de7-9ddbe70997ff",
+      "timestamp": "2025-09-06T21:47:00Z",
+      "id": "8f5e3762-bd1a-423e-9fcd-54dfd75bab21",
+      "user_id": "f2519195-0c7f-4c95-8de7-9ddbe70997ff",
       "input_method": "text",
-      "file_name": "e9bcd0e4-6f71-42bc-812c-e57f4575c232.txt",
-      "created_at": "2025-09-06T21:00:24.638Z",
-      "content_preview": "Jogged 20 minutes in the park this morning. Felt great and energized!"
+      "file_name": "8f5e3762-bd1a-423e-9fcd-54dfd75bab21.txt",
+      "created_at": "2025-09-06T21:47:37.299Z",
+      "content_preview": "Started my new fitness routine today! Feeling motivated with my lean body type goals."
     },
-    "timestamp": "2025-09-06T21:00:24.643Z"
+    "timestamp": "2025-09-06T21:47:37.300Z"
   },
-  "5265537e-2e98-4729-b355-9f3070d82684": {
-    "id": "5265537e-2e98-4729-b355-9f3070d82684",
+  "eb7542b3-41e7-4cdc-a905-d69a00b3cefe": {
+    "id": "eb7542b3-41e7-4cdc-a905-d69a00b3cefe",
     "content": "Log entry: photo - Image file (0.1 KB)",
     "metadata": {
       "type": "log",
-      "userId": "4b514588-a40b-4b8d-9236-8df8dcef25f7",
-      "timestamp": "2025-09-06T21:01:30Z",
-      "id": "5265537e-2e98-4729-b355-9f3070d82684",
-      "user_id": "4b514588-a40b-4b8d-9236-8df8dcef25f7",
+      "userId": "0a730f2b-7238-4243-98fa-bb004d96025b",
+      "timestamp": "2025-09-06T21:47:30Z",
+      "id": "eb7542b3-41e7-4cdc-a905-d69a00b3cefe",
+      "user_id": "0a730f2b-7238-4243-98fa-bb004d96025b",
       "input_method": "photo",
-      "file_name": "5265537e-2e98-4729-b355-9f3070d82684.png",
-      "created_at": "2025-09-06T21:02:39.209Z",
+      "file_name": "eb7542b3-41e7-4cdc-a905-d69a00b3cefe.png",
+      "created_at": "2025-09-06T21:47:51.755Z",
       "file_size": 70,
       "content_preview": "Image file (0.1 KB)"
     },
-    "timestamp": "2025-09-06T21:02:39.211Z"
-  },
-  "db0110a5-9654-4516-b853-5492a192d006": {
-    "id": "db0110a5-9654-4516-b853-5492a192d006",
-    "content": "Log entry: voice - Audio recording (0.0 KB)",
-    "metadata": {
-      "type": "log",
-      "userId": "4b514588-a40b-4b8d-9236-8df8dcef25f7",
-      "timestamp": "2025-09-06T21:04:30Z",
-      "id": "db0110a5-9654-4516-b853-5492a192d006",
-      "user_id": "4b514588-a40b-4b8d-9236-8df8dcef25f7",
-      "input_method": "voice",
-      "file_name": "db0110a5-9654-4516-b853-5492a192d006.wav",
-      "created_at": "2025-09-06T21:07:39.496Z",
-      "file_size": 44,
-      "content_preview": "Audio recording (0.0 KB)"
-    },
-    "timestamp": "2025-09-06T21:07:39.497Z"
+    "timestamp": "2025-09-06T21:47:51.755Z"
   }
 }

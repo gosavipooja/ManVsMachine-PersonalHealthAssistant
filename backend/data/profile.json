@@ -1,27 +1,78 @@
 {
-  "4b514588-a40b-4b8d-9236-8df8dcef25f7": {
-    "id": "4b514588-a40b-4b8d-9236-8df8dcef25f7",
-    "content": "User profile: Alice Johnson, 30 year old female, mesomorph body type, european background, goals: maintain weight, increase energy, better sleep",
+  "f2519195-0c7f-4c95-8de7-9ddbe70997ff": {
+    "id": "f2519195-0c7f-4c95-8de7-9ddbe70997ff",
+    "content": "User profile: Emma Chen, 24 year old female, lean body type, light activity level, asian background, goals: gain weight, build muscle, improve strength",
     "metadata": {
       "type": "profile",
-      "userId": "4b514588-a40b-4b8d-9236-8df8dcef25f7",
-      "timestamp": "2025-09-06T20:42:10.065Z",
-      "id": "4b514588-a40b-4b8d-9236-8df8dcef25f7",
-      "name": "Alice Johnson",
-      "age": 30,
+      "userId": "f2519195-0c7f-4c95-8de7-9ddbe70997ff",
+      "timestamp": "2025-09-06T21:46:58.043Z",
+      "id": "f2519195-0c7f-4c95-8de7-9ddbe70997ff",
+      "name": "Emma Chen",
+      "age": 24,
       "gender": "female",
-      "height": 170,
-      "weight": 65,
-      "bodyType": "mesomorph",
-      "culture": "european",
+      "height": 162,
+      "weight": 52,
+      "bodyType": "lean",
+      "culture": "asian",
       "goals": [
-        "maintain weight",
-        "increase energy",
-        "better sleep"
+        "gain weight",
+        "build muscle",
+        "improve strength"
       ],
-      "createdAt": "2025-09-06T20:42:10.065Z",
-      "updatedAt": "2025-09-06T20:42:10.065Z"
+      "activity_level": "light",
+      "createdAt": "2025-09-06T21:46:58.043Z",
+      "updatedAt": "2025-09-06T21:46:58.043Z"
     },
-    "timestamp": "2025-09-06T20:42:10.066Z"
+    "timestamp": "2025-09-06T21:46:58.044Z"
+  },
+  "0a730f2b-7238-4243-98fa-bb004d96025b": {
+    "id": "0a730f2b-7238-4243-98fa-bb004d96025b",
+    "content": "User profile: Marcus Johnson, 29 year old male, athletic body type, vigorous activity level, african background, goals: maintain fitness, build endurance",
+    "metadata": {
+      "type": "profile",
+      "userId": "0a730f2b-7238-4243-98fa-bb004d96025b",
+      "timestamp": "2025-09-06T21:47:18.407Z",
+      "id": "0a730f2b-7238-4243-98fa-bb004d96025b",
+      "name": "Marcus Johnson",
+      "age": 29,
+      "gender": "male",
+      "height": 178,
+      "weight": 75,
+      "bodyType": "athletic",
+      "culture": "african",
+      "goals": [
+        "maintain fitness",
+        "build endurance"
+      ],
+      "activity_level": "vigorous",
+      "createdAt": "2025-09-06T21:47:18.407Z",
+      "updatedAt": "2025-09-06T21:47:18.407Z"
+    },
+    "timestamp": "2025-09-06T21:47:18.407Z"
+  },
+  "37f82e76-7165-4d66-bfbd-a6b41b38da66": {
+    "id": "37f82e76-7165-4d66-bfbd-a6b41b38da66",
+    "content": "User profile: Sofia Martinez, 35 year old female, rounded body type, moderate activity level, mediterranean background, goals: lose weight, improve health",
+    "metadata": {
+      "type": "profile",
+      "userId": "37f82e76-7165-4d66-bfbd-a6b41b38da66",
+      "timestamp": "2025-09-06T21:47:18.417Z",
+      "id": "37f82e76-7165-4d66-bfbd-a6b41b38da66",
+      "name": "Sofia Martinez",
+      "age": 35,
+      "gender": "female",
+      "height": 165,
+      "weight": 68,
+      "bodyType": "rounded",
+      "culture": "mediterranean",
+      "goals": [
+        "lose weight",
+        "improve health"
+      ],
+      "activity_level": "moderate",
+      "createdAt": "2025-09-06T21:47:18.417Z",
+      "updatedAt": "2025-09-06T21:47:18.417Z"
+    },
+    "timestamp": "2025-09-06T21:47:18.417Z"
   }
 }

@@ -39,8 +39,9 @@ Content-Type: application/json
   "height": 175,
   "weight": 70,
   "bodyType": "mesomorph",
-  "culture": "western",
-  "goals": ["lose weight", "build muscle", "improve health"]
+  "culture": "indian",
+  "goals": ["lose weight", "build muscle", "improve health"],
+  "activity_level": "moderate"
 }
 ```
 
@@ -58,6 +59,7 @@ Content-Type: application/json
     "bodyType": "mesomorph",
     "culture": "western",
     "goals": ["lose weight", "build muscle", "improve health"],
+    "activity_level": "moderate",
     "created_at": "2025-09-06T21:00:00Z"
   },
   "message": "Profile created successfully"
@@ -83,6 +85,7 @@ GET /api/profile
     "bodyType": "mesomorph",
     "culture": "western",
     "goals": ["lose weight", "build muscle", "improve health"],
+    "activity_level": "moderate",
     "created_at": "2025-09-06T21:00:00Z"
   }
 }
@@ -461,8 +464,8 @@ curl -X POST http://localhost:3001/api/profile \
     "gender": "female",
     "height": 165,
     "weight": 60,
-    "bodyType": "ectomorph",
-    "culture": "asian",
+    "bodyType": "lean",
+    "culture": "mediterranean",
     "goals": ["gain weight", "build strength"]
   }'
 ```
@@ -494,6 +497,54 @@ curl -X POST http://localhost:3001/api/logging \
 
 ### Test Photo Upload
 ```bash
+### Profile Field Options
+
+The profile API now supports the following field options:
+
+#### **gender**
+- `male`
+- `female`
+- `other`
+
+#### **culture** (UPDATED)
+- `asian` - Asian cultural background
+- `indian` - Indian cultural background
+- `western` - Western cultural background
+- `african` - African cultural background
+- `european` - European cultural background
+- `mediterranean` - Mediterranean cultural background
+
+#### **bodyType** (UPDATED)
+- `lean` - Lean body type
+- `athletic` - Athletic body type
+- `rounded` - Rounded body type
+
+#### **activity_level**
+- `very_light` - Minimal physical activity (desk job, little exercise)
+- `light` - Light physical activity (light exercise 1-3 days/week)
+- `moderate` - Moderate physical activity (moderate exercise 3-5 days/week)
+- `vigorous` - Vigorous physical activity (hard exercise 6-7 days/week)
+- `very_hard` - Very hard physical activity (very hard exercise, physical job)
+- `max_effort` - Maximum effort physical activity (training twice a day, competitive athlete)
+
+### Updated Profile Creation Example
+
+```bash
+curl -X POST http://localhost:3001/api/profile \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "Alex Smith",
+    "age": 28,
+    "gender": "male",
+    "height": 175,
+    "weight": 70,
+    "bodyType": "athletic",
+    "culture": "indian",
+    "goals": ["lose weight", "build muscle", "improve health"],
+    "activity_level": "moderate"
+  }'
+```
+
 # Create a sample PNG file
 echo "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==" | base64 -d > /tmp/sample.png
 
