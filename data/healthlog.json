@@ -1,0 +1,242 @@
+[
+  {
+    "id": "log001",
+    "user_id": "user123",
+    "timestamp": "2025-06-05T08:15:00Z",
+    "type": "exercise",
+    "input_method": "text",
+    "content": "Jogged 30 minutes"
+  },
+  {
+    "id": "log002",
+    "user_id": "user123",
+    "timestamp": "2025-06-05T12:30:00Z",
+    "type": "food",
+    "input_method": "photo",
+    "content": "salad.jpg"
+  },
+  {
+    "id": "log003",
+    "user_id": "user123",
+    "timestamp": "2025-06-05T18:00:00Z",
+    "type": "hydration",
+    "input_method": "text",
+    "content": "Drank 500ml water"
+  },
+  {
+    "id": "log004",
+    "user_id": "user123",
+    "timestamp": "2025-06-06T07:45:00Z",
+    "type": "exercise",
+    "input_method": "voice",
+    "content": "Yoga 20 minutes"
+  },
+  {
+    "id": "log005",
+    "user_id": "user123",
+    "timestamp": "2025-06-06T13:00:00Z",
+    "type": "food",
+    "input_method": "text",
+    "content": "Grilled chicken sandwich"
+  },
+  {
+    "id": "log006",
+    "user_id": "user123",
+    "timestamp": "2025-06-06T17:30:00Z",
+    "type": "hydration",
+    "input_method": "text",
+    "content": "Drank 300ml water"
+  },
+  {
+    "id": "log007",
+    "user_id": "user123",
+    "timestamp": "2025-06-07T06:50:00Z",
+    "type": "exercise",
+    "input_method": "text",
+    "content": "Ran 5km"
+  },
+  {
+    "id": "log008",
+    "user_id": "user123",
+    "timestamp": "2025-06-07T12:15:00Z",
+    "type": "food",
+    "input_method": "photo",
+    "content": "pasta.jpg"
+  },
+  {
+    "id": "log009",
+    "user_id": "user123",
+    "timestamp": "2025-06-07T19:00:00Z",
+    "type": "hydration",
+    "input_method": "voice",
+    "content": "Drank 400ml water"
+  },
+  {
+    "id": "log010",
+    "user_id": "user123",
+    "timestamp": "2025-06-08T08:10:00Z",
+    "type": "exercise",
+    "input_method": "text",
+    "content": "HIIT 25 minutes"
+  },
+  {
+    "id": "log011",
+    "user_id": "user123",
+    "timestamp": "2025-06-08T12:45:00Z",
+    "type": "food",
+    "input_method": "text",
+    "content": "Chicken salad"
+  },
+  {
+    "id": "log012",
+    "user_id": "user123",
+    "timestamp": "2025-06-08T18:30:00Z",
+    "type": "hydration",
+    "input_method": "text",
+    "content": "Drank 600ml water"
+  },
+  {
+    "id": "log013",
+    "user_id": "user123",
+    "timestamp": "2025-06-09T07:30:00Z",
+    "type": "exercise",
+    "input_method": "voice",
+    "content": "Swim 30 minutes"
+  },
+  {
+    "id": "log014",
+    "user_id": "user123",
+    "timestamp": "2025-06-09T12:00:00Z",
+    "type": "food",
+    "input_method": "photo",
+    "content": "sandwich.jpg"
+  },
+  {
+    "id": "log015",
+    "user_id": "user123",
+    "timestamp": "2025-06-09T18:15:00Z",
+    "type": "hydration",
+    "input_method": "text",
+    "content": "Drank 500ml water"
+  },
+  {
+    "id": "log016",
+    "user_id": "user123",
+    "timestamp": "2025-06-10T06:45:00Z",
+    "type": "exercise",
+    "input_method": "text",
+    "content": "Cycling 10km"
+  },
+  {
+    "id": "log017",
+    "user_id": "user123",
+    "timestamp": "2025-06-10T12:20:00Z",
+    "type": "food",
+    "input_method": "text",
+    "content": "Veggie wrap"
+  },
+  {
+    "id": "log018",
+    "user_id": "user123",
+    "timestamp": "2025-06-10T17:50:00Z",
+    "type": "hydration",
+    "input_method": "voice",
+    "content": "Drank 400ml water"
+  },
+  {
+    "id": "log019",
+    "user_id": "user123",
+    "timestamp": "2025-06-11T07:15:00Z",
+    "type": "exercise",
+    "input_method": "text",
+    "content": "Pilates 30 minutes"
+  },
+  {
+    "id": "log020",
+    "user_id": "user123",
+    "timestamp": "2025-06-11T12:30:00Z",
+    "type": "food",
+    "input_method": "photo",
+    "content": "burger.jpg"
+  },
+  {
+    "id": "log021",
+    "user_id": "user123",
+    "timestamp": "2025-06-11T19:10:00Z",
+    "type": "hydration",
+    "input_method": "text",
+    "content": "Drank 600ml water"
+  },
+  {
+    "id": "log022",
+    "user_id": "user123",
+    "timestamp": "2025-06-12T07:00:00Z",
+    "type": "exercise",
+    "input_method": "voice",
+    "content": "Jog 20 minutes"
+  },
+  {
+    "id": "log023",
+    "user_id": "user123",
+    "timestamp": "2025-06-12T12:10:00Z",
+    "type": "food",
+    "input_method": "text",
+    "content": "Sushi"
+  },
+  {
+    "id": "log024",
+    "user_id": "user123",
+    "timestamp": "2025-06-12T18:00:00Z",
+    "type": "hydration",
+    "input_method": "text",
+    "content": "Drank 500ml water"
+  },
+  {
+    "id": "log025",
+    "user_id": "user123",
+    "timestamp": "2025-06-13T06:55:00Z",
+    "type": "exercise",
+    "input_method": "text",
+    "content": "Run 5km"
+  },
+  {
+    "id": "log026",
+    "user_id": "user123",
+    "timestamp": "2025-06-13T12:35:00Z",
+    "type": "food",
+    "input_method": "photo",
+    "content": "pasta.jpg"
+  },
+  {
+    "id": "log027",
+    "user_id": "user123",
+    "timestamp": "2025-06-13T18:20:00Z",
+    "type": "hydration",
+    "input_method": "voice",
+    "content": "Drank 400ml water"
+  },
+  {
+    "id": "log028",
+    "user_id": "user123",
+    "timestamp": "2025-06-14T07:10:00Z",
+    "type": "exercise",
+    "input_method": "text",
+    "content": "Yoga 25 minutes"
+  },
+  {
+    "id": "log029",
+    "user_id": "user123",
+    "timestamp": "2025-06-14T12:25:00Z",
+    "type": "food",
+    "input_method": "text",
+    "content": "Grilled salmon"
+  },
+  {
+    "id": "log030",
+    "user_id": "user123",
+    "timestamp": "2025-06-14T17:45:00Z",
+    "type": "hydration",
+    "input_method": "text",
+    "content": "Drank 500ml water"
+  }
+]
