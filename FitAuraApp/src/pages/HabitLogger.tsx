@@ -6,37 +6,89 @@ interface HabitLoggerProps {
 }
 
 const HabitLogger: React.FC<HabitLoggerProps> = ({ userId }) => {
-  const [logText, setLogText] = useState('');
+  const [inputMethod, setInputMethod] = useState<'text' | 'voice' | 'photo'>('text');
+  const [textInput, setTextInput] = useState('');
+  const [voiceBlob, setVoiceBlob] = useState<Blob | null>(null);
+  const [photoFile, setPhotoFile] = useState<File | null>(null);
 
-  const handleLog = async (type: string) => {
-    if (!logText) return;
+  const handleSubmit = async () => {
+    let content: string = '';
+    if (inputMethod === 'text') content = textInput;
+    else if (inputMethod === 'voice' && voiceBlob) content = 'voice_record.wav'; // placeholder
+    else if (inputMethod === 'photo' && photoFile) content = photoFile.name;
+
+    if (!content) {
+      alert('Please provide input before logging!');
+      return;
+    }
+
+    const logEntry = {
+      id: `log_${Date.now()}`,
+      user_id: userId,
+      timestamp: new Date().toISOString(),
+      input_method: inputMethod,
+      content,
+    };
+
     try {
-      await axios.post('http://localhost:5000/log', {
-        user_id: userId,
-        type,
-        timestamp: new Date().toISOString(),
-        input_method: 'text',
-        content: logText,
-      });
-      setLogText('');
-      alert('Log saved!');
+      await axios.post('http://localhost:3001/health/api/log', logEntry);
+      alert('Habit logged!');
+      setTextInput('');
+      setVoiceBlob(null);
+      setPhotoFile(null);
     } catch (err) {
       console.error(err);
+      alert('Failed to log habit.');
     }
   };
 
+  const handleVoiceCapture = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setVoiceBlob(event.target.files?.[0] || null);
+  };
+
+  const handlePhotoCapture = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setPhotoFile(event.target.files?.[0] || null);
+  };
+
   return (
-    <section className='habit-logger-container'>
-      <h2>Habit Logger</h2>
-      <input
-        type='text'
-        placeholder='Enter habit (exercise, food, hydration)'
-        value={logText}
-        onChange={(e) => setLogText(e.target.value)}
-      />
-      <button onClick={() => handleLog('exercise')}>Exercise</button>
-      <button onClick={() => handleLog('food')}>Food</button>
-      <button onClick={() => handleLog('hydration')}>Hydration</button>
+    <section className='habit-logger'>
+      <h3>Log a Habit</h3>
+
+      {/* Input method selector */}
+      <select value={inputMethod} onChange={(e) => setInputMethod(e.target.value as any)}>
+        <option value='text'>Text</option>
+        <option value='voice'>Voice</option>
+        <option value='photo'>Photo</option>
+      </select>
+
+      {/* Conditional input fields */}
+      {inputMethod === 'text' && (
+        <input type='text' placeholder='Enter habit details' value={textInput} onChange={(e) => setTextInput(e.target.value)} />
+      )}
+
+      {inputMethod === 'voice' && (
+        <>
+          <input type='file' accept='audio/*' capture='microphone' onChange={handleVoiceCapture} />
+          {voiceBlob && (
+            <audio controls>
+              <source src={URL.createObjectURL(voiceBlob)} type={voiceBlob.type} />
+              <track kind='captions' src='' label='No captions' />
+              Your browser does not support the audio element.
+            </audio>
+          )}
+        </>
+      )}
+
+      {inputMethod === 'photo' && (
+        <>
+          <input type='file' accept='image/*' capture='environment' onChange={handlePhotoCapture} />
+          {photoFile && (
+            <img src={URL.createObjectURL(photoFile)} alt='Preview' style={{ maxWidth: '200px', marginTop: '10px', borderRadius: '8px' }} />
+          )}
+        </>
+      )}
+
+      <button onClick={handleSubmit}>Log Habit</button>
     </section>
   );
 };

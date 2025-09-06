@@ -13,9 +13,28 @@ const profileSchema = Joi.object({
   gender: Joi.string().valid('male', 'female', 'other').required(),
   height: Joi.number().min(100).max(250).required(),
   weight: Joi.number().min(30).max(300).required(),
-  bodyType: Joi.string().valid('ectomorph', 'mesomorph', 'endomorph').required(),
-  culture: Joi.string().min(2).max(100).required(),
-  goals: Joi.array().items(Joi.string().min(2).max(100)).min(1).max(10).required()
+  bodyType: Joi.string().valid(
+    'lean',                // Lean body type
+    'athletic',            // Athletic body type
+    'rounded'              // Rounded body type
+  ).required(),
+  culture: Joi.string().valid(
+    'asian',               // Asian cultural background
+    'indian',              // Indian cultural background
+    'western',             // Western cultural background
+    'african',             // African cultural background
+    'european',            // European cultural background
+    'mediterranean'        // Mediterranean cultural background
+  ).required(),
+  goals: Joi.array().items(Joi.string().min(2).max(100)).min(1).max(10).required(),
+  activity_level: Joi.string().valid(
+    'very_light',          // Minimal physical activity
+    'light',               // Light physical activity
+    'moderate',            // Moderate physical activity
+    'vigorous',            // Vigorous physical activity
+    'very_hard',           // Very hard physical activity
+    'max_effort'           // Maximum effort physical activity
+  ).required()
 });
 
 // Create or update user profile
@@ -41,7 +60,7 @@ router.post('/', async (req, res) => {
     // Store in Weaviate
     await weaviateService.addDocument({
       id: profileId,
-      content: `User profile: ${profile.name}, ${profile.age} year old ${profile.gender}, ${profile.bodyType} body type, ${profile.culture} background, goals: ${profile.goals.join(', ')}`,
+      content: `User profile: ${profile.name}, ${profile.age} year old ${profile.gender}, ${profile.bodyType} body type, ${profile.activity_level} activity level, ${profile.culture} background, goals: ${profile.goals.join(', ')}`,
       metadata: {
         type: 'profile',
         userId: profileId,
@@ -118,7 +137,7 @@ router.put('/:userId', async (req, res) => {
     // Update in Weaviate
     await weaviateService.updateDocument(userId, {
       id: userId,
-      content: `User profile: ${updatedProfile.name}, ${updatedProfile.age} year old ${updatedProfile.gender}, ${updatedProfile.bodyType} body type, ${updatedProfile.culture} background, goals: ${updatedProfile.goals.join(', ')}`,
+      content: `User profile: ${updatedProfile.name}, ${updatedProfile.age} year old ${updatedProfile.gender}, ${updatedProfile.bodyType} body type, ${updatedProfile.activity_level} activity level, ${updatedProfile.culture} background, goals: ${updatedProfile.goals.join(', ')}`,
       metadata: {
         type: 'profile',
         userId: userId,

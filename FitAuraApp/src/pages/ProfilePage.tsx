@@ -1,44 +1,104 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 
-interface Profile {
+interface ProfileData {
   name: string;
-  age: string;
+  age: number;
   gender: string;
+  weight: number;
+  height: number;
+  bodyType: string;
+  goal: string;
+  activityLevel: string;
+  culture: string;
 }
 
 interface ProfilePageProps {
   userId: string;
+  onSave: (profile: ProfileData) => void;
 }
 
-const ProfilePage: React.FC<ProfilePageProps> = ({ userId }) => {
-  const [profile, setProfile] = useState<Profile>({ name: '', age: '', gender: '' });
+const ProfilePage: React.FC<ProfilePageProps> = ({ userId, onSave }) => {
+  const [profile, setProfile] = useState<ProfileData>({
+    name: '',
+    age: 0,
+    gender: 'male',
+    weight: 0,
+    height: 0,
+    bodyType: 'lean',
+    goal: 'weight loss',
+    activityLevel: 'moderate',
+    culture: 'Western',
+  });
 
+  // Load from localStorage on mount
   useEffect(() => {
-    // Optional: fetch existing profile from backend
-    // axios.get(`http://localhost:5000/profile?user_id=${userId}`).then(...)
-  }, []);
+    const savedProfile = localStorage.getItem(`profile_${userId}`);
+    if (savedProfile) {
+      setProfile(JSON.parse(savedProfile));
+    }
+  }, [userId]);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setProfile({ ...profile, [e.target.name]: e.target.value });
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    setProfile((prev) => ({
+      ...prev,
+      [name]: name === 'age' || name === 'weight' || name === 'height' ? Number(value) : value,
+    }));
   };
 
-  const handleSubmit = async () => {
-    try {
-      await axios.post('http://localhost:5000/profile', { ...profile, user_id: userId });
-      alert('Profile saved!');
-    } catch (err) {
-      console.error(err);
-    }
+  const handleSave = () => {
+    localStorage.setItem(`profile_${userId}`, JSON.stringify(profile));
+    onSave(profile);
+    alert('Profile saved!');
   };
 
   return (
-    <section>
-      <h2>Profile Setup</h2>
-      <input name='name' placeholder='Name' value={profile.name} onChange={handleChange} />
-      <input name='age' placeholder='Age' value={profile.age} onChange={handleChange} />
-      <input name='gender' placeholder='Gender' value={profile.gender} onChange={handleChange} />
-      <button onClick={handleSubmit}>Save Profile</button>
+    <section className='profile-page'>
+      <h2>Edit Profile</h2>
+
+      <input type='text' name='name' placeholder='Name' value={profile.name} onChange={handleChange} />
+
+      <input type='number' name='age' placeholder='Age' value={profile.age || ''} onChange={handleChange} />
+
+      <select name='gender' value={profile.gender} onChange={handleChange}>
+        <option value='male'>Male</option>
+        <option value='female'>Female</option>
+        <option value='other'>Other</option>
+      </select>
+
+      <input type='number' name='weight' placeholder='Weight (kg)' value={profile.weight || ''} onChange={handleChange} />
+
+      <input type='number' name='height' placeholder='Height (cm)' value={profile.height || ''} onChange={handleChange} />
+
+      <select name='bodyType' value={profile.bodyType} onChange={handleChange}>
+        <option value='lean'>Lean</option>
+        <option value='athletic'>Athletic</option>
+        <option value='rounded'>Rounded</option>
+      </select>
+
+      <select name='goal' value={profile.goal} onChange={handleChange}>
+        <option value='weight loss'>Weight Loss</option>
+        <option value='weight gain'>Weight Gain</option>
+      </select>
+
+      <select name='activityLevel' value={profile.activityLevel} onChange={handleChange}>
+        <option value='very light'>Very Light</option>
+        <option value='light'>Light</option>
+        <option value='moderate'>Moderate</option>
+        <option value='vigorous'>Vigorous</option>
+        <option value='very high and intense'>Very High & Intense</option>
+      </select>
+
+      <select name='culture' value={profile.culture} onChange={handleChange}>
+        <option value='African'>African</option>
+        <option value='Asian'>Asian</option>
+        <option value='European'>European</option>
+        <option value='Indian'>Indian</option>
+        <option value='Mediterranean'>Mediterranean</option>
+        <option value='Western'>Western</option>
+      </select>
+
+      <button onClick={handleSave}>Save Profile</button>
     </section>
   );
 };

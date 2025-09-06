@@ -1,0 +1,92 @@
+{
+  "description": "Sample response for GET /api/insights endpoint",
+  "endpoint": "GET /api/insights",
+  "parameters": {
+    "userId": "string (required) - The user ID to get insights for",
+    "days": "number (optional, default: 1) - Number of days to analyze",
+    "includeRecommendations": "boolean (optional, default: true) - Whether to include dinner recommendations"
+  },
+  "examples": {
+    "basic_request": {
+      "url": "GET /api/insights?userId=f2519195-0c7f-4c95-8de7-9ddbe70997ff",
+      "response": {
+        "success": true,
+        "data": {
+          "summary": "You've logged 2 entries today using text entries and photos. Your focus on gain weight, build muscle, improve strength is showing great commitment. Keep up the consistent tracking to build healthy habits!"
+        }
+      }
+    },
+    "with_recommendations": {
+      "url": "GET /api/insights?userId=f2519195-0c7f-4c95-8de7-9ddbe70997ff&includeRecommendations=true",
+      "response": {
+        "success": true,
+        "data": {
+          "summary": "You've logged 2 entries today using text entries and photos. Your focus on gain weight, build muscle, improve strength is showing great commitment. Keep up the consistent tracking to build healthy habits!",
+          "dinnerRecommendation": "Consider steamed fish with brown rice and vegetables. Add healthy fats like avocado or nuts to increase calories."
+        }
+      }
+    },
+    "different_user_profile": {
+      "url": "GET /api/insights?userId=0a730f2b-7238-4243-98fa-bb004d96025b&includeRecommendations=true",
+      "description": "Example with different body type (athletic) and culture (African)",
+      "response": {
+        "success": true,
+        "data": {
+          "summary": "You've logged 2 entries today using photos and voice notes. Your focus on maintain fitness, build endurance is showing great commitment. Keep up the consistent tracking to build healthy habits!",
+          "dinnerRecommendation": "Consider lean meat with sweet potato and leafy greens."
+        }
+      }
+    },
+    "no_activity": {
+      "url": "GET /api/insights?userId=new-user-id&includeRecommendations=true",
+      "description": "Example for user with no logged activities",
+      "response": {
+        "success": true,
+        "data": {
+          "summary": "No activity logged for today. Consider starting your health journey by logging your meals, exercise, or wellness activities.",
+          "dinnerRecommendation": "A grilled chicken salad with mixed greens would be perfect. Focus on portion control and include plenty of fiber-rich vegetables."
+        }
+      }
+    },
+    "error_user_not_found": {
+      "url": "GET /api/insights?userId=non-existent-user",
+      "response": {
+        "success": false,
+        "error": "Profile not found",
+        "message": "No profile found for this user"
+      }
+    },
+    "error_missing_userid": {
+      "url": "GET /api/insights",
+      "response": {
+        "success": false,
+        "error": "Missing required parameter",
+        "message": "userId is required as a query parameter"
+      }
+    }
+  },
+  "personalization_factors": {
+    "summary_generation": [
+      "Number of entries logged in the timeframe",
+      "Input methods used (text, photos, voice)",
+      "User's health goals",
+      "Encouragement for habit building"
+    ],
+    "dinner_recommendations": [
+      "Body type (lean, athletic, rounded, ectomorph, mesomorph, endomorph)",
+      "Cultural background (asian, indian, western, african, european, mediterranean)",
+      "Health goals (lose weight, gain weight, build muscle, improve health, etc.)",
+      "Goal-specific dietary advice"
+    ]
+  },
+  "vector_database_integration": {
+    "note": "The endpoint includes comprehensive TODO comments for future vector database integration",
+    "planned_features": [
+      "Similar user pattern analysis",
+      "Trend analysis from historical data",
+      "Personalized recommendations based on successful user journeys",
+      "Correlation analysis between activities and outcomes",
+      "Semantic search for relevant health recommendations"
+    ]
+  }
+}

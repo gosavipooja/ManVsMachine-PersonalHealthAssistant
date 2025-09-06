@@ -57,12 +57,63 @@ section {
 }
 
 /* --- Dashboard Cards --- */
-.dashboard-card {
-  background-color: #f1f2f6;
-  padding: 15px 20px;
+.dashboard-nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #2f3640;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.dashboard-nav button {
+  background: none;
+  border: none;
+  color: #f5f6fa;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.dashboard-nav button:hover {
+  background-color: #353b48;
+}
+
+.dashboard-nav .active {
+  background-color: #44bd32;
+  color: white;
+}
+
+.logout-btn {
+  background-color: #e84118 !important;
+  color: white !important;
+}
+
+.tab-content {
+  background: white;
+  padding: 20px;
   border-radius: 12px;
-  margin: 10px 0;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styling */
+.home-tab table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.home-tab th,
+.home-tab td {
+  border: 1px solid #dcdde1;
+  padding: 10px;
+  text-align: left;
+}
+
+.home-tab th {
+  background-color: #f1f2f6;
 }
 
 /* --- Progress Bar --- */
@@ -124,4 +175,165 @@ section {
 
 .habit-logger-container button:last-child {
   margin-right: 0;
+}
+
+/* --- Profile Setup / Edit Profile Section --- */
+section.profile-page {
+  background-color: #f4f6fb;
+  border: 2px solid #4cd137;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 500px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.profile-tab {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.profile-tab h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #2f3640;
+  text-align: center;
+}
+
+.profile-tab ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.profile-tab li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #f1f2f6;
+}
+
+.profile-tab li:last-child {
+  border-bottom: none;
+}
+
+.profile-tab strong {
+  color: #718093;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.profile-tab li span {
+  color: #2f3640;
+  font-weight: 500;
+}
+
+.profile-tab button {
+  display: block;
+  width: 100%;
+  background-color: #44bd32;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.profile-tab button:hover {
+  background-color: #4cd137;
+}
+
+section.profile-page h2 {
+  color: #4cd137;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section.profile-page input,
+section.profile-page select {
+  display: block;
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto 12px auto;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #dcdde1;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+section.profile-page button {
+  display: block;
+  width: 90%;
+  max-width: 400px;
+  margin: 20px auto 0 auto;
+  background-color: #4cd137;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+section.profile-page button:hover {
+  background-color: #44bd32;
+}
+
+/** --- Habit Logger section --- **/
+section.habit-logger {
+  background-color: #fff8f0;
+  border: 2px solid #ffa502;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+section.habit-logger h3 {
+  color: #ffa502;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+section.habit-logger select,
+section.habit-logger input {
+  display: block;
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto 12px auto;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #dcdde1;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+section.habit-logger button {
+  display: block;
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #ffa502;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+section.habit-logger button:hover {
+  background-color: #e09b00;
 }

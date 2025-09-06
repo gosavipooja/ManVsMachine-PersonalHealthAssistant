@@ -141,7 +141,7 @@ class PersistentStorageService {
     try {
       const results = [];
       for (const [id, doc] of this.documents) {
-        if (doc.metadata.type === type) {
+        if (doc.metadata && doc.metadata.type === type) {
           if (!userId || doc.metadata.userId === userId) {
             results.push({
               content: doc.content,

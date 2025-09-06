@@ -1,0 +1,35 @@
+{
+    "metadata": {
+      "user_id": "4b514588-a40b-4b8d-9236-8df8dcef25f7",
+      "timestamp": "2025-09-06T21:04:30Z",
+      "source": "audio",
+      "id": "db0110a5-9654-4516-b853-5492a192d006",
+      "file_name": "db0110a5-9654-4516-b853-5492a192d006.wav",
+      "transcript": "I ran for 25 minutes and walked for 30 minutes, and ate two bananas.",
+      "transcript_confidence": 0.93
+    },
+    "proposed_logs": [
+      {
+        "type": "exercise",
+        "items": [
+          { "activity": "running", "duration_min": 25, "calories_burned": 311, "effort_level": "vigorous" },
+          { "activity": "walking", "duration_min": 30, "calories_burned": 200, "effort_level": "moderate" }
+        ],
+        "parser_confidence": 0.91
+      },
+      {
+        "type": "food",
+        "items": [
+          {
+            "name": "banana",
+            "quantity": 2,
+            "unit": "count",
+            "macros": { "calories": 210, "carbs_g": 54, "protein_g": 2.6, "fat_g": 0.8 },
+            "source_ref": { "provider": "Nutritionix", "id": "best_match" }
+          }
+        ],
+        "parser_confidence": 0.96
+      }
+    ]
+  }
+  
