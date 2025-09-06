@@ -1,6 +1,6 @@
 const express = require('express');
-const { weaviateService } = require('../services/weaviate');
-const { aiCoach } = require('../services/openai');
+const { weaviateService } = require('../services/memory-storage');
+const { aiCoach } = require('../services/mock-openai');
 
 const router = express.Router();
 
@@ -111,7 +111,7 @@ function calculateHabitProgress(logs, specificHabitId = null) {
   return habits.map(habitId => {
     const habitLogs = logs.filter(log => log.habitId === habitId);
     const total = habitLogs.reduce((sum, log) => sum + log.value, 0);
-    const target = habitTargets[habitId]?.target || 1;
+    const target = (habitTargets[habitId] && habitTargets[habitId].target) || 1;
     
     return {
       habitId,

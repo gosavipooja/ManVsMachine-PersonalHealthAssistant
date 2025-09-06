@@ -1,13 +1,14 @@
 const express = require('express');
 const { v4: uuidv4 } = require('uuid');
 const Joi = require('joi');
-const { weaviateService } = require('../services/weaviate');
-const { aiCoach } = require('../services/openai');
+const { weaviateService } = require('../services/memory-storage');
+const { aiCoach } = require('../services/mock-openai');
 
 const router = express.Router();
 
 // Validation schemas
 const profileSchema = Joi.object({
+  name: Joi.string().min(2).max(100).required(),
   age: Joi.number().integer().min(13).max(120).required(),
   gender: Joi.string().valid('male', 'female', 'other').required(),
   height: Joi.number().min(100).max(250).required(),
@@ -40,7 +41,7 @@ router.post('/', async (req, res) => {
     // Store in Weaviate
     await weaviateService.addDocument({
       id: profileId,
-      content: `User profile: ${profile.age} year old ${profile.gender}, ${profile.bodyType} body type, ${profile.culture} background, goals: ${profile.goals.join(', ')}`,
+      content: `User profile: ${profile.name}, ${profile.age} year old ${profile.gender}, ${profile.bodyType} body type, ${profile.culture} background, goals: ${profile.goals.join(', ')}`,
       metadata: {
         type: 'profile',
         userId: profileId,
@@ -117,7 +118,7 @@ router.put('/:userId', async (req, res) => {
     // Update in Weaviate
     await weaviateService.updateDocument(userId, {
       id: userId,
-      content: `User profile: ${updatedProfile.age} year old ${updatedProfile.gender}, ${updatedProfile.bodyType} body type, ${updatedProfile.culture} background, goals: ${updatedProfile.goals.join(', ')}`,
+      content: `User profile: ${updatedProfile.name}, ${updatedProfile.age} year old ${updatedProfile.gender}, ${updatedProfile.bodyType} body type, ${updatedProfile.culture} background, goals: ${updatedProfile.goals.join(', ')}`,
       metadata: {
         type: 'profile',
         userId: userId,

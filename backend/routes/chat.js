@@ -1,7 +1,7 @@
 const express = require('express');
 const { v4: uuidv4 } = require('uuid');
-const { weaviateService } = require('../services/weaviate');
-const { aiCoach } = require('../services/openai');
+const { weaviateService } = require('../services/memory-storage');
+const { aiCoach } = require('../services/mock-openai');
 
 const router = express.Router();
 
@@ -36,7 +36,8 @@ router.post('/:userId/message', async (req, res) => {
     const logs = logDocs.map(doc => doc.metadata);
 
     // Generate AI response
-    const aiResponse = await aiCoach.generateCoachingResponse(profile, logs, message);
+    const aiResponseData = await aiCoach.generateChatResponse(message, profile, logs);
+    const aiResponse = aiResponseData.response;
 
     // Store both user message and AI response
     const userMessageId = uuidv4();

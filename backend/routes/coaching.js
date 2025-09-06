@@ -1,7 +1,7 @@
 const express = require('express');
 const { v4: uuidv4 } = require('uuid');
-const { weaviateService } = require('../services/weaviate');
-const { aiCoach } = require('../services/openai');
+const { weaviateService } = require('../services/memory-storage');
+const { aiCoach } = require('../services/mock-openai');
 
 const router = express.Router();
 
@@ -35,7 +35,7 @@ router.get('/:userId/motivation', async (req, res) => {
       .slice(0, 20);
 
     // Generate motivation
-    const motivation = await aiCoach.generateDailyMotivation(profile, todayLogs, recentLogs);
+    const motivation = await aiCoach.generateMotivation(profile, recentLogs);
 
     // Store coaching response
     const coachingId = uuidv4();
@@ -89,7 +89,7 @@ router.get('/:userId/nutrition', async (req, res) => {
     const logDocs = await weaviateService.getDocumentsByType('log', userId, 20);
     const foodLogs = logDocs
       .map(doc => doc.metadata)
-      .filter(log => log.habitId === 'nutrition' || log.metadata?.foodItems);
+      .filter(log => log.habitId === 'nutrition' || (log.metadata && log.metadata.foodItems));
 
     // Generate nutrition suggestions
     const suggestions = await aiCoach.generateNutritionSuggestions(profile, foodLogs);
