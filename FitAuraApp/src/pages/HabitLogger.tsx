@@ -1,12 +1,43 @@
-import React from 'react';
+import React, { useState } from 'react';
+import axios from 'axios';
 
-const HabitLogger: React.FC = () => {
-  // TODO: wire up text / voice / photo logging
+interface HabitLoggerProps {
+  userId: string;
+}
+
+const HabitLogger: React.FC<HabitLoggerProps> = ({ userId }) => {
+  const [logText, setLogText] = useState('');
+
+  const handleLog = async (type: string) => {
+    if (!logText) return;
+    try {
+      await axios.post('http://localhost:5000/log', {
+        user_id: userId,
+        type,
+        timestamp: new Date().toISOString(),
+        input_method: 'text',
+        content: logText,
+      });
+      setLogText('');
+      alert('Log saved!');
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
   return (
-    <div className='reminder-modal'>
-      <p>Time to log your habit!</p>
-      <button onClick={() => console.log('Reminder dismissed')}>Dismiss</button>
-    </div>
+    <section className='habit-logger-container'>
+      <h2>Habit Logger</h2>
+      <input
+        type='text'
+        placeholder='Enter habit (exercise, food, hydration)'
+        value={logText}
+        onChange={(e) => setLogText(e.target.value)}
+      />
+      <button onClick={() => handleLog('exercise')}>Exercise</button>
+      <button onClick={() => handleLog('food')}>Food</button>
+      <button onClick={() => handleLog('hydration')}>Hydration</button>
+    </section>
   );
 };
 

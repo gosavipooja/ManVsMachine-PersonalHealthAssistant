@@ -1,13 +1,24 @@
-# This project is Node.js/JavaScript based
-# Python is NOT required for this hackathon project
-# 
-# All dependencies are managed via:
-# - Frontend: package.json (Next.js, React, TypeScript)
-# - Backend: backend/package.json (Express, Node.js)
-#
-# To install dependencies:
-# npm install
-# cd backend && npm install
-#
-# Python virtual environment (hackathon-env) is optional
-# and only needed if you want to run Python-based AI experiments
+# Core ML & Audio
+openai-whisper
+torch
+torchaudio
+numpy
+
+# Image processing
+opencv-python
+pillow
+scikit-image
+
+# NLP & Parsing
+spacy
+transformers
+
+# API calls
+requests
+python-dotenv
+
+# Optional: for JSON validation/logging
+pydantic
+
+# Vector Database
+weaviate-client
