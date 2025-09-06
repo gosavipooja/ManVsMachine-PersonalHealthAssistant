@@ -50,5 +50,56 @@
       "updatedAt": "2025-09-06T22:50:00.000Z"
     },
     "timestamp": "2025-09-06T22:50:00.000Z"
+  },
+  "emma_chen": {
+    "id": "emma_chen",
+    "content": "User profile: Emma Chen, 24 year old female, lean body type, light activity level, asian background, goals: gain weight, build muscle, improve strength",
+    "metadata": {
+      "type": "profile",
+      "userId": "emma_chen",
+      "timestamp": "2025-09-06T22:55:00.000Z",
+      "id": "emma_chen",
+      "name": "Emma Chen",
+      "age": 24,
+      "gender": "female",
+      "height": 165,
+      "weight": 55,
+      "bodyType": "lean",
+      "culture": "asian",
+      "goals": [
+        "gain weight",
+        "build muscle",
+        "improve strength"
+      ],
+      "activity_level": "light",
+      "createdAt": "2025-09-06T22:55:00.000Z",
+      "updatedAt": "2025-09-06T22:55:00.000Z"
+    },
+    "timestamp": "2025-09-06T22:55:00.000Z"
+  },
+  "marcus_johnson": {
+    "id": "marcus_johnson",
+    "content": "User profile: Marcus Johnson, 29 year old male, athletic body type, vigorous activity level, african background, goals: maintain fitness, build endurance",
+    "metadata": {
+      "type": "profile",
+      "userId": "marcus_johnson",
+      "timestamp": "2025-09-06T22:55:00.000Z",
+      "id": "marcus_johnson",
+      "name": "Marcus Johnson",
+      "age": 29,
+      "gender": "male",
+      "height": 180,
+      "weight": 80,
+      "bodyType": "athletic",
+      "culture": "african",
+      "goals": [
+        "maintain fitness",
+        "build endurance"
+      ],
+      "activity_level": "vigorous",
+      "createdAt": "2025-09-06T22:55:00.000Z",
+      "updatedAt": "2025-09-06T22:55:00.000Z"
+    },
+    "timestamp": "2025-09-06T22:55:00.000Z"
   }
 }

@@ -24,5 +24,1224 @@
       "original_data": "{\"id\":\"mf8u4h138pcbo6xeomi\",\"type\":\"food\",\"userId\":\"09e5516c-e1a6-4cc1-83f9-275a8d23a721\",\"timestamp\":\"2025-09-06T22:25:00.000Z\",\"data\":{\"type\":\"food\",\"user_id\":\"09e5516c-e1a6-4cc1-83f9-275a8d23a721\",\"timestamp\":\"2025-09-06T22:25:00.000Z\",\"items\":[{\"name\":\"salmon fillet\",\"quantity\":1,\"unit\":\"piece\",\"macros\":{\"calories\":280,\"carbs_g\":0,\"protein_g\":39,\"fat_g\":12},\"source_ref\":{\"provider\":\"USDA\",\"id\":\"salmon_fillet\"}}],\"source\":\"simple_vector_test\",\"provenance\":{\"input_file\":\"test_simple_vector.wav\",\"transcript_confidence\":0.97,\"parser_confidence\":0.99}},\"metadata\":{\"type\":\"food\",\"userId\":\"09e5516c-e1a6-4cc1-83f9-275a8d23a721\",\"timestamp\":\"2025-09-06T22:25:00.000Z\",\"source\":\"simple_vector_test\",\"provenance\":{\"input_file\":\"test_simple_vector.wav\",\"transcript_confidence\":0.97,\"parser_confidence\":0.99}}}"
     },
     "created_at": "2025-09-06T22:27:51.735Z"
+  },
+  "profile_09e5516c-e1a6-4cc1-83f9-275a8d23a721": {
+    "id": "profile_09e5516c-e1a6-4cc1-83f9-275a8d23a721",
+    "content": "\n      User Profile: Alex Smith, 28 year old male, \n      mesomorph body type, western background, \n      moderate activity level, \n      height: 175cm, weight: 70kg,\n      goals: lose weight, build muscle, improve health\n    ",
+    "metadata": {
+      "type": "profile",
+      "userId": "09e5516c-e1a6-4cc1-83f9-275a8d23a721",
+      "name": "Alex Smith",
+      "age": 28,
+      "gender": "male",
+      "bodyType": "mesomorph",
+      "culture": "western",
+      "activityLevel": "moderate",
+      "goals": [
+        "lose weight",
+        "build muscle",
+        "improve health"
+      ]
+    },
+    "timestamp": "2025-09-06T22:54:47.284Z"
+  },
+  "profile_user123": {
+    "id": "profile_user123",
+    "content": "\n      User Profile: Test User, 28 year old male, \n      mesomorph body type, western background, \n      moderate activity level, \n      height: 175cm, weight: 70kg,\n      goals: lose weight, build muscle, improve health\n    ",
+    "metadata": {
+      "type": "profile",
+      "userId": "user123",
+      "name": "Test User",
+      "age": 28,
+      "gender": "male",
+      "bodyType": "mesomorph",
+      "culture": "western",
+      "activityLevel": "moderate",
+      "goals": [
+        "lose weight",
+        "build muscle",
+        "improve health"
+      ]
+    },
+    "timestamp": "2025-09-06T22:54:47.531Z"
+  },
+  "log_8f5e3762-bd1a-423e-9fcd-54dfd75bab21": {
+    "id": "log_8f5e3762-bd1a-423e-9fcd-54dfd75bab21",
+    "content": "\n      Log Entry: text - Started my new fitness routine today! Feeling motivated with my lean body type goals.\n      User: emma_chen, Timestamp: 2025-09-06T21:47:00Z\n    ",
+    "metadata": {
+      "type": "log",
+      "userId": "emma_chen",
+      "inputMethod": "text",
+      "timestamp": "2025-09-06T21:47:00Z",
+      "content": "Started my new fitness routine today! Feeling motivated with my lean body type goals."
+    },
+    "timestamp": "2025-09-06T22:54:48.073Z"
+  },
+  "log_eb7542b3-41e7-4cdc-a905-d69a00b3cefe": {
+    "id": "log_eb7542b3-41e7-4cdc-a905-d69a00b3cefe",
+    "content": "\n      Log Entry: photo - Image file (0.1 KB)\n      User: marcus_johnson, Timestamp: 2025-09-06T21:47:30Z\n    ",
+    "metadata": {
+      "type": "log",
+      "userId": "marcus_johnson",
+      "inputMethod": "photo",
+      "timestamp": "2025-09-06T21:47:30Z",
+      "content": "Image file (0.1 KB)"
+    },
+    "timestamp": "2025-09-06T22:54:48.308Z"
+  },
+  "log_92fbe1ab-19e7-4d0c-b682-594b33479a6b": {
+    "id": "log_92fbe1ab-19e7-4d0c-b682-594b33479a6b",
+    "content": "\n      Log Entry: photo - Image file (0.1 KB)\n      User: emma_chen, Timestamp: 2025-09-06T21:55:00Z\n    ",
+    "metadata": {
+      "type": "log",
+      "userId": "emma_chen",
+      "inputMethod": "photo",
+      "timestamp": "2025-09-06T21:55:00Z",
+      "content": "Image file (0.1 KB)"
+    },
+    "timestamp": "2025-09-06T22:54:48.510Z"
+  },
+  "log_711ce200-9151-430e-a2d2-b74998e7e9f1": {
+    "id": "log_711ce200-9151-430e-a2d2-b74998e7e9f1",
+    "content": "\n      Log Entry: voice - Audio recording (0.0 KB)\n      User: marcus_johnson, Timestamp: 2025-09-06T21:56:00Z\n    ",
+    "metadata": {
+      "type": "log",
+      "userId": "marcus_johnson",
+      "inputMethod": "voice",
+      "timestamp": "2025-09-06T21:56:00Z",
+      "content": "Audio recording (0.0 KB)"
+    },
+    "timestamp": "2025-09-06T22:54:49.627Z"
+  },
+  "log_6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86": {
+    "id": "log_6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+    "content": "\n      Log Entry: text - This is a log for 25 minute run.\n      User: user123, Timestamp: 2025-09-06T21:47:00Z\n    ",
+    "metadata": {
+      "type": "log",
+      "userId": "user123",
+      "inputMethod": "text",
+      "timestamp": "2025-09-06T21:47:00Z",
+      "content": "This is a log for 25 minute run."
+    },
+    "timestamp": "2025-09-06T22:54:49.754Z"
+  },
+  "rec_1757199214408_1tws5avaw": {
+    "id": "rec_1757199214408_1tws5avaw",
+    "content": "\n      Recommendation: High-Protein Breakfast for Muscle Building\n      Category: nutrition, \n      Description: Start your day with Greek yogurt, berries, and nuts for sustained energy and muscle recovery\n      For: athletic body type, muscle building goals\n    ",
+    "metadata": {
+      "type": "recommendation",
+      "category": "nutrition",
+      "title": "High-Protein Breakfast for Muscle Building",
+      "targetAudience": "athletic body type, muscle building goals"
+    },
+    "timestamp": "2025-09-06T22:53:34.772Z"
+  },
+  "rec_1757199214775_o92jnf5d7": {
+    "id": "rec_1757199214775_o92jnf5d7",
+    "content": "\n      Recommendation: Cardio for Weight Loss\n      Category: exercise, \n      Description: 30 minutes of moderate-intensity cardio 5 times per week for effective weight loss\n      For: weight loss goals, moderate activity level\n    ",
+    "metadata": {
+      "type": "recommendation",
+      "category": "exercise",
+      "title": "Cardio for Weight Loss",
+      "targetAudience": "weight loss goals, moderate activity level"
+    },
+    "timestamp": "2025-09-06T22:53:35.005Z"
+  },
+  "rec_1757199215009_2ox1085yu": {
+    "id": "rec_1757199215009_2ox1085yu",
+    "content": "\n      Recommendation: Mediterranean Diet Benefits\n      Category: nutrition, \n      Description: Focus on olive oil, fish, vegetables, and whole grains for heart health and longevity\n      For: mediterranean culture, health improvement goals\n    ",
+    "metadata": {
+      "type": "recommendation",
+      "category": "nutrition",
+      "title": "Mediterranean Diet Benefits",
+      "targetAudience": "mediterranean culture, health improvement goals"
+    },
+    "timestamp": "2025-09-06T22:53:35.107Z"
+  },
+  "rec_1757199215112_t8clqkemt": {
+    "id": "rec_1757199215112_t8clqkemt",
+    "content": "\n      Recommendation: Strength Training for Lean Body Type\n      Category: exercise, \n      Description: Compound movements with progressive overload to build lean muscle mass\n      For: lean body type, muscle building goals\n    ",
+    "metadata": {
+      "type": "recommendation",
+      "category": "exercise",
+      "title": "Strength Training for Lean Body Type",
+      "targetAudience": "lean body type, muscle building goals"
+    },
+    "timestamp": "2025-09-06T22:53:35.297Z"
+  },
+  "rec_1757199215301_k3de8k0uk": {
+    "id": "rec_1757199215301_k3de8k0uk",
+    "content": "\n      Recommendation: Asian-Inspired Healthy Meals\n      Category: nutrition, \n      Description: Steamed fish with brown rice and vegetables for balanced nutrition\n      For: asian culture, health improvement goals\n    ",
+    "metadata": {
+      "type": "recommendation",
+      "category": "nutrition",
+      "title": "Asian-Inspired Healthy Meals",
+      "targetAudience": "asian culture, health improvement goals"
+    },
+    "timestamp": "2025-09-06T22:53:35.423Z"
+  },
+  "rec_1757199215428_ai0r6899s": {
+    "id": "rec_1757199215428_ai0r6899s",
+    "content": "\n      Recommendation: Consistent Sleep Schedule\n      Category: lifestyle, \n      Description: Maintain regular sleep hours for better recovery and health outcomes\n      For: all body types, health improvement goals\n    ",
+    "metadata": {
+      "type": "recommendation",
+      "category": "lifestyle",
+      "title": "Consistent Sleep Schedule",
+      "targetAudience": "all body types, health improvement goals"
+    },
+    "timestamp": "2025-09-06T22:53:36.351Z"
+  },
+  "profile_emma_chen": {
+    "id": "profile_emma_chen",
+    "content": "\n      User Profile: Emma Chen, 24 year old female, \n      lean body type, asian background, \n      light activity level, \n      height: 165cm, weight: 55kg,\n      goals: gain weight, build muscle, improve strength\n    ",
+    "metadata": {
+      "type": "profile",
+      "userId": "emma_chen",
+      "name": "Emma Chen",
+      "age": 24,
+      "gender": "female",
+      "bodyType": "lean",
+      "culture": "asian",
+      "activityLevel": "light",
+      "goals": [
+        "gain weight",
+        "build muscle",
+        "improve strength"
+      ]
+    },
+    "timestamp": "2025-09-06T22:54:47.738Z"
+  },
+  "profile_marcus_johnson": {
+    "id": "profile_marcus_johnson",
+    "content": "\n      User Profile: Marcus Johnson, 29 year old male, \n      athletic body type, african background, \n      vigorous activity level, \n      height: 180cm, weight: 80kg,\n      goals: maintain fitness, build endurance\n    ",
+    "metadata": {
+      "type": "profile",
+      "userId": "marcus_johnson",
+      "name": "Marcus Johnson",
+      "age": 29,
+      "gender": "male",
+      "bodyType": "athletic",
+      "culture": "african",
+      "activityLevel": "vigorous",
+      "goals": [
+        "maintain fitness",
+        "build endurance"
+      ]
+    },
+    "timestamp": "2025-09-06T22:54:47.904Z"
+  },
+  "rec_1757199289760_71emb1hll": {
+    "id": "rec_1757199289760_71emb1hll",
+    "content": "\n      Recommendation: High-Protein Breakfast for Muscle Building\n      Category: nutrition, \n      Description: Start your day with Greek yogurt, berries, and nuts for sustained energy and muscle recovery\n      For: athletic body type, muscle building goals\n    ",
+    "metadata": {
+      "type": "recommendation",
+      "category": "nutrition",
+      "title": "High-Protein Breakfast for Muscle Building",
+      "targetAudience": "athletic body type, muscle building goals"
+    },
+    "timestamp": "2025-09-06T22:54:49.956Z"
+  },
+  "rec_1757199289964_0kwi2383p": {
+    "id": "rec_1757199289964_0kwi2383p",
+    "content": "\n      Recommendation: Cardio for Weight Loss\n      Category: exercise, \n      Description: 30 minutes of moderate-intensity cardio 5 times per week for effective weight loss\n      For: weight loss goals, moderate activity level\n    ",
+    "metadata": {
+      "type": "recommendation",
+      "category": "exercise",
+      "title": "Cardio for Weight Loss",
+      "targetAudience": "weight loss goals, moderate activity level"
+    },
+    "timestamp": "2025-09-06T22:54:50.104Z"
+  },
+  "rec_1757199290112_ieq0gmah1": {
+    "id": "rec_1757199290112_ieq0gmah1",
+    "content": "\n      Recommendation: Mediterranean Diet Benefits\n      Category: nutrition, \n      Description: Focus on olive oil, fish, vegetables, and whole grains for heart health and longevity\n      For: mediterranean culture, health improvement goals\n    ",
+    "metadata": {
+      "type": "recommendation",
+      "category": "nutrition",
+      "title": "Mediterranean Diet Benefits",
+      "targetAudience": "mediterranean culture, health improvement goals"
+    },
+    "timestamp": "2025-09-06T22:54:50.539Z"
+  },
+  "rec_1757199290546_o9ij9vrhv": {
+    "id": "rec_1757199290546_o9ij9vrhv",
+    "content": "\n      Recommendation: Strength Training for Lean Body Type\n      Category: exercise, \n      Description: Compound movements with progressive overload to build lean muscle mass\n      For: lean body type, muscle building goals\n    ",
+    "metadata": {
+      "type": "recommendation",
+      "category": "exercise",
+      "title": "Strength Training for Lean Body Type",
+      "targetAudience": "lean body type, muscle building goals"
+    },
+    "timestamp": "2025-09-06T22:54:50.696Z"
+  },
+  "rec_1757199290703_qzz32rb3y": {
+    "id": "rec_1757199290703_qzz32rb3y",
+    "content": "\n      Recommendation: Asian-Inspired Healthy Meals\n      Category: nutrition, \n      Description: Steamed fish with brown rice and vegetables for balanced nutrition\n      For: asian culture, health improvement goals\n    ",
+    "metadata": {
+      "type": "recommendation",
+      "category": "nutrition",
+      "title": "Asian-Inspired Healthy Meals",
+      "targetAudience": "asian culture, health improvement goals"
+    },
+    "timestamp": "2025-09-06T22:54:50.842Z"
+  },
+  "rec_1757199290849_gg3id73wq": {
+    "id": "rec_1757199290849_gg3id73wq",
+    "content": "\n      Recommendation: Consistent Sleep Schedule\n      Category: lifestyle, \n      Description: Maintain regular sleep hours for better recovery and health outcomes\n      For: all body types, health improvement goals\n    ",
+    "metadata": {
+      "type": "recommendation",
+      "category": "lifestyle",
+      "title": "Consistent Sleep Schedule",
+      "targetAudience": "all body types, health improvement goals"
+    },
+    "timestamp": "2025-09-06T22:54:51.029Z"
+  },
+  "ai_response_1757199615152_f2wpzmu8b": {
+    "id": "ai_response_1757199615152_f2wpzmu8b",
+    "content": "\n      AI Response: Great job on completing a 25-minute run in your recent activity log! Running is an excellent way to improve cardiovascular health, burn calories, and boost your overall fitness level. Your dedication to staying active is commendable and will definitely help you in achieving your goals of losing weight and building muscle.\n\nAs a mesomorph body type, you have the advantage of being able to build muscle easily, so incorporating strength training exercises into your routine can further enhance your progress. Keep up the good work with your moderate activity level, as consistency is key to seeing long-term results.\n\nRemember to also focus on nutrition to support your fitness goals. Eating a balanced diet with plenty of lean protein, whole grains, fruits, and vegetables will help fuel your workouts and promote muscle growth.\n\nStay motivated and continue pushing yourself towards a healthier and stronger version of yourself. You're on the right track, and I'm here to support you every step of the way!\n      Context: insights_summary - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-06T23:00:15.150Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "insights_summary",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "Great job on completing a 25-minute run in your recent activity log! Running is an excellent way to improve cardiovascular health, burn calories, and boost your overall fitness level. Your dedication to staying active is commendable and will definitely help you in achieving your goals of losing weight and building muscle.\n\nAs a mesomorph body type, you have the advantage of being able to build muscle easily, so incorporating strength training exercises into your routine can further enhance your progress. Keep up the good work with your moderate activity level, as consistency is key to seeing long-term results.\n\nRemember to also focus on nutrition to support your fitness goals. Eating a balanced diet with plenty of lean protein, whole grains, fruits, and vegetables will help fuel your workouts and promote muscle growth.\n\nStay motivated and continue pushing yourself towards a healthier and stronger version of yourself. You're on the right track, and I'm here to support you every step of the way!",
+      "context": {
+        "type": "insights_summary",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-06T23:00:15.152Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-06T23:00:15.368Z"
+  },
+  "ai_response_1757199615379_rw5jq4yfk": {
+    "id": "ai_response_1757199615379_rw5jq4yfk",
+    "content": "\n      AI Response: **Motivational Message:**\n      Context: motivation - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-06T23:00:15.379Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "motivation",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "**Motivational Message:**",
+      "context": {
+        "type": "motivation",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-06T23:00:15.379Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-06T23:00:15.614Z"
+  },
+  "ai_response_1757199615622_rhjbx4p13": {
+    "id": "ai_response_1757199615622_rhjbx4p13",
+    "content": "\n      AI Response: Congratulations on taking the step to prioritize your health and well-being! Remember, your journey to better health is a marathon, not a sprint. Stay focused on your goals and trust the process. Your consistency and dedication will lead to long-lasting results.\n      Context: suggestions - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-06T23:00:15.622Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "suggestions",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "Congratulations on taking the step to prioritize your health and well-being! Remember, your journey to better health is a marathon, not a sprint. Stay focused on your goals and trust the process. Your consistency and dedication will lead to long-lasting results.",
+      "context": {
+        "type": "suggestions",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-06T23:00:15.622Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-06T23:00:15.867Z"
+  },
+  "ai_response_1757199615875_a5wxxfvrv": {
+    "id": "ai_response_1757199615875_a5wxxfvrv",
+    "content": "\n      AI Response: Based on your profile and goals, a great dinner option for you could be a grilled lemon herb chicken breast served with a side of quinoa and roasted vegetables. \n\nGrilled chicken is a lean source of protein that will help support your muscle-building goals, while quinoa provides complex carbohydrates for energy and fiber to keep you full. The roasted vegetables will add vitamins, minerals, and antioxidants to support your overall health and weight loss efforts.\n\nTo make the meal more flavorful and culturally-appropriate, you can season the chicken with a mix of herbs like oregano, thyme, and rosemary, and squeeze fresh lemon juice over it before grilling. You can also roast the vegetables with some garlic and olive oil for added flavor.\n\nRemember to stay consistent with your balanced meals and moderate activity level to reach your goals. Keep up the good work and enjoy your delicious and nutritious dinner!\n      Context: dinner_recommendation - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-06T23:00:15.874Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "dinner_recommendation",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "Based on your profile and goals, a great dinner option for you could be a grilled lemon herb chicken breast served with a side of quinoa and roasted vegetables. \n\nGrilled chicken is a lean source of protein that will help support your muscle-building goals, while quinoa provides complex carbohydrates for energy and fiber to keep you full. The roasted vegetables will add vitamins, minerals, and antioxidants to support your overall health and weight loss efforts.\n\nTo make the meal more flavorful and culturally-appropriate, you can season the chicken with a mix of herbs like oregano, thyme, and rosemary, and squeeze fresh lemon juice over it before grilling. You can also roast the vegetables with some garlic and olive oil for added flavor.\n\nRemember to stay consistent with your balanced meals and moderate activity level to reach your goals. Keep up the good work and enjoy your delicious and nutritious dinner!",
+      "context": {
+        "type": "dinner_recommendation",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-06T23:00:15.875Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-06T23:00:16.047Z"
+  },
+  "ai_response_1757199936710_9oloqy8cv": {
+    "id": "ai_response_1757199936710_9oloqy8cv",
+    "content": "\n      AI Response: Great job on completing a 25-minute run! Your dedication to staying active is truly commendable. This consistent effort will certainly help you in achieving your goals of losing weight, building muscle, and improving your overall health.\n\nBased on your mesomorph body type and moderate activity level, running is an excellent choice to boost your cardiovascular fitness and support your weight loss and muscle-building goals. Keep up the good work!\n\nRemember, consistency is key, so finding activities you enjoy and can sustain long-term is crucial. It's fantastic to see you sticking to your fitness routine, and I encourage you to continue incorporating a mix of cardiovascular exercises like running with strength training to help build muscle and increase metabolism.\n\nAs your personal health coach, I'm here to support you every step of the way. Let's keep building on your progress and working towards your health and fitness goals together. If you have any questions or need further guidance, feel free to reach out. Keep up the great work!\n      Context: insights_summary - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-06T23:05:36.710Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "insights_summary",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "Great job on completing a 25-minute run! Your dedication to staying active is truly commendable. This consistent effort will certainly help you in achieving your goals of losing weight, building muscle, and improving your overall health.\n\nBased on your mesomorph body type and moderate activity level, running is an excellent choice to boost your cardiovascular fitness and support your weight loss and muscle-building goals. Keep up the good work!\n\nRemember, consistency is key, so finding activities you enjoy and can sustain long-term is crucial. It's fantastic to see you sticking to your fitness routine, and I encourage you to continue incorporating a mix of cardiovascular exercises like running with strength training to help build muscle and increase metabolism.\n\nAs your personal health coach, I'm here to support you every step of the way. Let's keep building on your progress and working towards your health and fitness goals together. If you have any questions or need further guidance, feel free to reach out. Keep up the great work!",
+      "context": {
+        "type": "insights_summary",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-06T23:05:36.710Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-06T23:05:36.862Z"
+  },
+  "ai_response_1757199936872_6e8cycn8v": {
+    "id": "ai_response_1757199936872_6e8cycn8v",
+    "content": "\n      AI Response: ### Motivational Message:\n      Context: motivation - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-06T23:05:36.872Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "motivation",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "### Motivational Message:",
+      "context": {
+        "type": "motivation",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-06T23:05:36.872Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-06T23:05:36.995Z"
+  },
+  "ai_response_1757199937008_wooop2fu8": {
+    "id": "ai_response_1757199937008_wooop2fu8",
+    "content": "\n      AI Response: Remember, progress is not always linear. Embrace the journey, stay consistent, and trust in your ability to make positive changes for your health and well-being.\n      Context: suggestions - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-06T23:05:37.008Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "suggestions",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "Remember, progress is not always linear. Embrace the journey, stay consistent, and trust in your ability to make positive changes for your health and well-being.",
+      "context": {
+        "type": "suggestions",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-06T23:05:37.008Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-06T23:05:37.266Z"
+  },
+  "ai_response_1757199937276_2hmcyuctf": {
+    "id": "ai_response_1757199937276_2hmcyuctf",
+    "content": "\n      AI Response: Based on your profile and goals, a balanced dinner option for you could be grilled chicken breast with a side of quinoa and roasted vegetables. This meal is high in protein to support muscle growth, while also providing essential nutrients and fiber for weight loss and overall health.\n\nTo prepare the grilled chicken, season it with herbs and spices of your choice and cook it on a grill or stovetop until fully cooked. Quinoa is a great source of complex carbohydrates and protein, which can help replenish energy stores after your run and support muscle recovery. Pair it with a variety of colorful roasted vegetables like bell peppers, zucchini, and cherry tomatoes for added vitamins, minerals, and fiber.\n\nThis dinner is not only delicious but also aligns with your goals of losing weight, building muscle, and improving your health. Remember to stay consistent with your workouts and healthy eating habits to see progress over time. Keep up the great work!\n      Context: dinner_recommendation - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-06T23:05:37.276Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "dinner_recommendation",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "Based on your profile and goals, a balanced dinner option for you could be grilled chicken breast with a side of quinoa and roasted vegetables. This meal is high in protein to support muscle growth, while also providing essential nutrients and fiber for weight loss and overall health.\n\nTo prepare the grilled chicken, season it with herbs and spices of your choice and cook it on a grill or stovetop until fully cooked. Quinoa is a great source of complex carbohydrates and protein, which can help replenish energy stores after your run and support muscle recovery. Pair it with a variety of colorful roasted vegetables like bell peppers, zucchini, and cherry tomatoes for added vitamins, minerals, and fiber.\n\nThis dinner is not only delicious but also aligns with your goals of losing weight, building muscle, and improving your health. Remember to stay consistent with your workouts and healthy eating habits to see progress over time. Keep up the great work!",
+      "context": {
+        "type": "dinner_recommendation",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-06T23:05:37.276Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-06T23:05:37.422Z"
+  },
+  "ai_response_1757199956826_x61s6ugk4": {
+    "id": "ai_response_1757199956826_x61s6ugk4",
+    "content": "\n      AI Response: Hello! I'm thrilled to hear about your new fitness routine and the motivation you're feeling towards your goals of gaining weight, building muscle, and improving strength. Starting a new routine is a significant step towards progress, so congratulations on taking that leap!\n\nSince you have a lean body type, it's essential to focus on a balanced approach that includes strength training and a nutrition plan that supports muscle growth. Keep in mind that progress takes time, so be patient with yourself and trust the process.\n\nIf you have any specific questions or need guidance on your fitness routine or nutrition plan, feel free to reach out. Remember, consistency is key, and every small step you take is a step closer to your goals. Keep up the fantastic work, and I'm here to support you every step of the way!\n      Context: insights_summary - User: emma_chen\n      Profile: lean body type, asian culture\n      Goals: gain weight, build muscle, improve strength\n      Generated: 2025-09-06T23:05:56.826Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "insights_summary",
+      "userId": "emma_chen",
+      "profile": {
+        "type": "profile",
+        "userId": "emma_chen",
+        "timestamp": "2025-09-06T22:55:00.000Z",
+        "id": "emma_chen",
+        "name": "Emma Chen",
+        "age": 24,
+        "gender": "female",
+        "height": 165,
+        "weight": 55,
+        "bodyType": "lean",
+        "culture": "asian",
+        "goals": [
+          "gain weight",
+          "build muscle",
+          "improve strength"
+        ],
+        "activity_level": "light",
+        "createdAt": "2025-09-06T22:55:00.000Z",
+        "updatedAt": "2025-09-06T22:55:00.000Z"
+      },
+      "originalResponse": "Hello! I'm thrilled to hear about your new fitness routine and the motivation you're feeling towards your goals of gaining weight, building muscle, and improving strength. Starting a new routine is a significant step towards progress, so congratulations on taking that leap!\n\nSince you have a lean body type, it's essential to focus on a balanced approach that includes strength training and a nutrition plan that supports muscle growth. Keep in mind that progress takes time, so be patient with yourself and trust the process.\n\nIf you have any specific questions or need guidance on your fitness routine or nutrition plan, feel free to reach out. Remember, consistency is key, and every small step you take is a step closer to your goals. Keep up the fantastic work, and I'm here to support you every step of the way!",
+      "context": {
+        "type": "insights_summary",
+        "userId": "emma_chen",
+        "profile": {
+          "type": "profile",
+          "userId": "emma_chen",
+          "timestamp": "2025-09-06T22:55:00.000Z",
+          "id": "emma_chen",
+          "name": "Emma Chen",
+          "age": 24,
+          "gender": "female",
+          "height": 165,
+          "weight": 55,
+          "bodyType": "lean",
+          "culture": "asian",
+          "goals": [
+            "gain weight",
+            "build muscle",
+            "improve strength"
+          ],
+          "activity_level": "light",
+          "createdAt": "2025-09-06T22:55:00.000Z",
+          "updatedAt": "2025-09-06T22:55:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "emma_chen",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "8f5e3762-bd1a-423e-9fcd-54dfd75bab21",
+            "user_id": "emma_chen",
+            "input_method": "text",
+            "file_name": "8f5e3762-bd1a-423e-9fcd-54dfd75bab21.txt",
+            "created_at": "2025-09-06T21:47:37.299Z",
+            "content_preview": "Started my new fitness routine today! Feeling motivated with my lean body type goals."
+          },
+          {
+            "type": "log",
+            "userId": "emma_chen",
+            "timestamp": "2025-09-06T21:55:00Z",
+            "id": "92fbe1ab-19e7-4d0c-b682-594b33479a6b",
+            "user_id": "emma_chen",
+            "input_method": "photo",
+            "file_name": "92fbe1ab-19e7-4d0c-b682-594b33479a6b.png",
+            "created_at": "2025-09-06T21:55:45.240Z",
+            "file_size": 70,
+            "content_preview": "Image file (0.1 KB)"
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-06T23:05:56.827Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-06T23:05:57.001Z"
+  },
+  "ai_response_1757199957010_ubdzy76u1": {
+    "id": "ai_response_1757199957010_ubdzy76u1",
+    "content": "\n      AI Response: ### Motivational Message:\n      Context: motivation - User: emma_chen\n      Profile: lean body type, asian culture\n      Goals: gain weight, build muscle, improve strength\n      Generated: 2025-09-06T23:05:57.010Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "motivation",
+      "userId": "emma_chen",
+      "profile": {
+        "type": "profile",
+        "userId": "emma_chen",
+        "timestamp": "2025-09-06T22:55:00.000Z",
+        "id": "emma_chen",
+        "name": "Emma Chen",
+        "age": 24,
+        "gender": "female",
+        "height": 165,
+        "weight": 55,
+        "bodyType": "lean",
+        "culture": "asian",
+        "goals": [
+          "gain weight",
+          "build muscle",
+          "improve strength"
+        ],
+        "activity_level": "light",
+        "createdAt": "2025-09-06T22:55:00.000Z",
+        "updatedAt": "2025-09-06T22:55:00.000Z"
+      },
+      "originalResponse": "### Motivational Message:",
+      "context": {
+        "type": "motivation",
+        "userId": "emma_chen",
+        "profile": {
+          "type": "profile",
+          "userId": "emma_chen",
+          "timestamp": "2025-09-06T22:55:00.000Z",
+          "id": "emma_chen",
+          "name": "Emma Chen",
+          "age": 24,
+          "gender": "female",
+          "height": 165,
+          "weight": 55,
+          "bodyType": "lean",
+          "culture": "asian",
+          "goals": [
+            "gain weight",
+            "build muscle",
+            "improve strength"
+          ],
+          "activity_level": "light",
+          "createdAt": "2025-09-06T22:55:00.000Z",
+          "updatedAt": "2025-09-06T22:55:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "emma_chen",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "8f5e3762-bd1a-423e-9fcd-54dfd75bab21",
+            "user_id": "emma_chen",
+            "input_method": "text",
+            "file_name": "8f5e3762-bd1a-423e-9fcd-54dfd75bab21.txt",
+            "created_at": "2025-09-06T21:47:37.299Z",
+            "content_preview": "Started my new fitness routine today! Feeling motivated with my lean body type goals."
+          },
+          {
+            "type": "log",
+            "userId": "emma_chen",
+            "timestamp": "2025-09-06T21:55:00Z",
+            "id": "92fbe1ab-19e7-4d0c-b682-594b33479a6b",
+            "user_id": "emma_chen",
+            "input_method": "photo",
+            "file_name": "92fbe1ab-19e7-4d0c-b682-594b33479a6b.png",
+            "created_at": "2025-09-06T21:55:45.240Z",
+            "file_size": 70,
+            "content_preview": "Image file (0.1 KB)"
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-06T23:05:57.010Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-06T23:05:57.232Z"
+  },
+  "ai_response_1757199957242_eokcondaz": {
+    "id": "ai_response_1757199957242_eokcondaz",
+    "content": "\n      AI Response: Congratulations on taking the step to focus on your health and well-being! Remember that your health is your greatest asset, and investing time and effort in taking care of yourself will have long-lasting benefits. Stay committed to your journey, and remember that small, consistent efforts lead to significant results over time.\n      Context: suggestions - User: emma_chen\n      Profile: lean body type, asian culture\n      Goals: gain weight, build muscle, improve strength\n      Generated: 2025-09-06T23:05:57.242Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "suggestions",
+      "userId": "emma_chen",
+      "profile": {
+        "type": "profile",
+        "userId": "emma_chen",
+        "timestamp": "2025-09-06T22:55:00.000Z",
+        "id": "emma_chen",
+        "name": "Emma Chen",
+        "age": 24,
+        "gender": "female",
+        "height": 165,
+        "weight": 55,
+        "bodyType": "lean",
+        "culture": "asian",
+        "goals": [
+          "gain weight",
+          "build muscle",
+          "improve strength"
+        ],
+        "activity_level": "light",
+        "createdAt": "2025-09-06T22:55:00.000Z",
+        "updatedAt": "2025-09-06T22:55:00.000Z"
+      },
+      "originalResponse": "Congratulations on taking the step to focus on your health and well-being! Remember that your health is your greatest asset, and investing time and effort in taking care of yourself will have long-lasting benefits. Stay committed to your journey, and remember that small, consistent efforts lead to significant results over time.",
+      "context": {
+        "type": "suggestions",
+        "userId": "emma_chen",
+        "profile": {
+          "type": "profile",
+          "userId": "emma_chen",
+          "timestamp": "2025-09-06T22:55:00.000Z",
+          "id": "emma_chen",
+          "name": "Emma Chen",
+          "age": 24,
+          "gender": "female",
+          "height": 165,
+          "weight": 55,
+          "bodyType": "lean",
+          "culture": "asian",
+          "goals": [
+            "gain weight",
+            "build muscle",
+            "improve strength"
+          ],
+          "activity_level": "light",
+          "createdAt": "2025-09-06T22:55:00.000Z",
+          "updatedAt": "2025-09-06T22:55:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "emma_chen",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "8f5e3762-bd1a-423e-9fcd-54dfd75bab21",
+            "user_id": "emma_chen",
+            "input_method": "text",
+            "file_name": "8f5e3762-bd1a-423e-9fcd-54dfd75bab21.txt",
+            "created_at": "2025-09-06T21:47:37.299Z",
+            "content_preview": "Started my new fitness routine today! Feeling motivated with my lean body type goals."
+          },
+          {
+            "type": "log",
+            "userId": "emma_chen",
+            "timestamp": "2025-09-06T21:55:00Z",
+            "id": "92fbe1ab-19e7-4d0c-b682-594b33479a6b",
+            "user_id": "emma_chen",
+            "input_method": "photo",
+            "file_name": "92fbe1ab-19e7-4d0c-b682-594b33479a6b.png",
+            "created_at": "2025-09-06T21:55:45.240Z",
+            "file_size": 70,
+            "content_preview": "Image file (0.1 KB)"
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-06T23:05:57.242Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-06T23:05:57.348Z"
+  },
+  "ai_response_1757199957358_txsdbex78": {
+    "id": "ai_response_1757199957358_txsdbex78",
+    "content": "\n      AI Response: That's great to hear that you've started your fitness routine! For dinner, I recommend a delicious and nutritious Asian-inspired meal that will help you in your goal to gain weight, build muscle, and improve strength.\n\nHow about a stir-fry dish with lean protein like chicken or tofu, plenty of colorful vegetables like bell peppers, broccoli, and carrots, and a serving of brown rice or quinoa? You can season it with soy sauce, ginger, garlic, and a touch of sesame oil for that authentic Asian flavor.\n\nThis meal is packed with protein, complex carbohydrates, and essential nutrients to support your muscle-building goals. It's also a balanced and filling option for dinner that will keep you satisfied and energized.\n\nRemember to listen to your body, stay consistent with your fitness routine, and enjoy the process of nourishing yourself with delicious and wholesome meals. Keep up the great work and stay motivated on your journey to a stronger and healthier you!\n      Context: dinner_recommendation - User: emma_chen\n      Profile: lean body type, asian culture\n      Goals: gain weight, build muscle, improve strength\n      Generated: 2025-09-06T23:05:57.358Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "dinner_recommendation",
+      "userId": "emma_chen",
+      "profile": {
+        "type": "profile",
+        "userId": "emma_chen",
+        "timestamp": "2025-09-06T22:55:00.000Z",
+        "id": "emma_chen",
+        "name": "Emma Chen",
+        "age": 24,
+        "gender": "female",
+        "height": 165,
+        "weight": 55,
+        "bodyType": "lean",
+        "culture": "asian",
+        "goals": [
+          "gain weight",
+          "build muscle",
+          "improve strength"
+        ],
+        "activity_level": "light",
+        "createdAt": "2025-09-06T22:55:00.000Z",
+        "updatedAt": "2025-09-06T22:55:00.000Z"
+      },
+      "originalResponse": "That's great to hear that you've started your fitness routine! For dinner, I recommend a delicious and nutritious Asian-inspired meal that will help you in your goal to gain weight, build muscle, and improve strength.\n\nHow about a stir-fry dish with lean protein like chicken or tofu, plenty of colorful vegetables like bell peppers, broccoli, and carrots, and a serving of brown rice or quinoa? You can season it with soy sauce, ginger, garlic, and a touch of sesame oil for that authentic Asian flavor.\n\nThis meal is packed with protein, complex carbohydrates, and essential nutrients to support your muscle-building goals. It's also a balanced and filling option for dinner that will keep you satisfied and energized.\n\nRemember to listen to your body, stay consistent with your fitness routine, and enjoy the process of nourishing yourself with delicious and wholesome meals. Keep up the great work and stay motivated on your journey to a stronger and healthier you!",
+      "context": {
+        "type": "dinner_recommendation",
+        "userId": "emma_chen",
+        "profile": {
+          "type": "profile",
+          "userId": "emma_chen",
+          "timestamp": "2025-09-06T22:55:00.000Z",
+          "id": "emma_chen",
+          "name": "Emma Chen",
+          "age": 24,
+          "gender": "female",
+          "height": 165,
+          "weight": 55,
+          "bodyType": "lean",
+          "culture": "asian",
+          "goals": [
+            "gain weight",
+            "build muscle",
+            "improve strength"
+          ],
+          "activity_level": "light",
+          "createdAt": "2025-09-06T22:55:00.000Z",
+          "updatedAt": "2025-09-06T22:55:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "emma_chen",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "8f5e3762-bd1a-423e-9fcd-54dfd75bab21",
+            "user_id": "emma_chen",
+            "input_method": "text",
+            "file_name": "8f5e3762-bd1a-423e-9fcd-54dfd75bab21.txt",
+            "created_at": "2025-09-06T21:47:37.299Z",
+            "content_preview": "Started my new fitness routine today! Feeling motivated with my lean body type goals."
+          },
+          {
+            "type": "log",
+            "userId": "emma_chen",
+            "timestamp": "2025-09-06T21:55:00Z",
+            "id": "92fbe1ab-19e7-4d0c-b682-594b33479a6b",
+            "user_id": "emma_chen",
+            "input_method": "photo",
+            "file_name": "92fbe1ab-19e7-4d0c-b682-594b33479a6b.png",
+            "created_at": "2025-09-06T21:55:45.240Z",
+            "file_size": 70,
+            "content_preview": "Image file (0.1 KB)"
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-06T23:05:57.358Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-06T23:05:57.580Z"
   }
 }

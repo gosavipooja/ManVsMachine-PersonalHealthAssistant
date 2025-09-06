@@ -1,6 +1,8 @@
 const express = require('express');
 const { weaviateService } = require('../services/persistent-storage');
 const { aiCoach } = require('../services/openai');
+const { embeddingsService } = require('../services/embeddings');
+const { vectorDB } = require('../services/vector-db');
 
 const router = express.Router();
 
@@ -34,40 +36,63 @@ router.get('/', async (req, res) => {
     const logDocs = await weaviateService.getDocumentsByType('log', userId, parseInt(days) * 2);
     const logs = logDocs.map(doc => doc.metadata);
 
-    // TODO: Implement vector database integration for advanced insights
-    // This is where we would:
-    // 1. Query vector database for similar user patterns and behaviors
-    // 2. Retrieve embeddings of user's health data and goals
-    // 3. Find similar users with comparable profiles and successful outcomes
-    // 4. Extract insights from successful user journeys and patterns
-    // 5. Use semantic search to find relevant health recommendations
-    // 6. Analyze trends and correlations in user's historical data
-    // 
-    // Example vector DB operations:
-    // - vectorDB.findSimilarUsers(profile, { limit: 10, threshold: 0.8 })
-    // - vectorDB.searchHealthPatterns(logs, profile.goals)
-    // - vectorDB.getRecommendations(profile, logs, { type: 'nutrition', 'exercise', 'lifestyle' })
-    // - vectorDB.analyzeTrends(userId, { timeframe: days, categories: ['all'] })
-
-    // Generate comprehensive insights using AI coach
-    const aiInsights = await aiCoach.generateComprehensiveInsights(profile, logs);
-
-    // Generate AI-powered summary based on user's recent activity and profile
-    const summary = await aiCoach.generatePersonalizedSummary(profile, logs, parseInt(days));
+    // Vector database integration for advanced insights
+    console.log('🔍 Using vector database for enhanced insights...');
     
-    // Prepare insights response with AI-generated content
+    // 1. Find similar users with comparable profiles and successful outcomes
+    const similarUsers = await embeddingsService.findSimilarUsersForInsights(profile);
+    
+    // 2. Get relevant recommendations based on user profile and patterns
+    const relevantRecommendations = await embeddingsService.findRelevantRecommendations(profile, logs);
+    
+    // 3. Analyze user patterns and trends
+    const userPatterns = await embeddingsService.analyzeUserPatterns(userId, parseInt(days));
+    
+    // 4. Find similar successful patterns from other users
+    const similarPatterns = await vectorDB.searchSimilar(
+      `successful health patterns for ${profile.bodyType} body type ${profile.culture} culture ${profile.goals.join(' ')}`,
+      {
+        limit: 3,
+        threshold: 0.7,
+        where: { type: 'pattern' }
+      }
+    );
+
+    // 5. Get user's personal context from vector database for personalized insights
+    const userContext = await embeddingsService.getUserContextForPrompts(userId, profile, logs, parseInt(days));
+
+    // Generate comprehensive insights using AI coach with user context
+    const aiInsights = await aiCoach.generateComprehensiveInsights(profile, logs, userContext);
+
+    // Generate AI-powered summary based on user's recent activity and profile with context
+    const summary = await aiCoach.generatePersonalizedSummary(profile, logs, parseInt(days), userContext);
+    
+    // Prepare insights response with AI-generated content and vector database insights
     const insights = {
       summary: summary || generateDailySummary(profile, logs, parseInt(days)),
       motivation: aiInsights.motivationMessage,
       suggestions: aiInsights.suggestions,
       keyInsights: aiInsights.insights,
       progressSummary: aiInsights.progressSummary,
-      nextSteps: aiInsights.nextSteps
+      nextSteps: aiInsights.nextSteps,
+      // Vector database insights
+      similarUsers: similarUsers,
+      relevantRecommendations: relevantRecommendations,
+      userPatterns: userPatterns,
+      similarPatterns: similarPatterns
     };
 
     // Add dinner recommendation if requested
     if (includeRecommendations === 'true') {
       insights.dinnerRecommendation = await aiCoach.generateDinnerRecommendation(profile, logs);
+    }
+
+    // Save AI responses to vector database for learning
+    console.log('💾 Saving AI responses to vector database...');
+    try {
+      await embeddingsService.saveInsightsResponse(insights, profile, logs, parseInt(days));
+    } catch (error) {
+      console.error('Warning: Failed to save AI responses to vector database:', error.message);
     }
 
     // Prepare metadata for response
@@ -90,6 +115,11 @@ router.get('/', async (req, res) => {
           earliest: logs[logs.length - 1]?.timestamp,
           latest: logs[0]?.timestamp
         } : null
+      },
+      userContext: {
+        totalInteractions: userContext.totalInteractions,
+        lastInteraction: userContext.lastInteraction,
+        hasHistory: userContext.totalInteractions > 0
       }
     };
 
@@ -177,5 +207,113 @@ function generateDinnerRecommendation(profile, logs) {
 
   return `${culturalSuggestion}.${goalAddition}`;
 }
+
+// POST /insights/initialize - Initialize vector database with existing data
+router.post('/initialize', async (req, res) => {
+  try {
+    console.log('🚀 Initializing vector database...');
+    
+    const result = await embeddingsService.indexExistingData();
+    
+    res.json({
+      success: true,
+      message: 'Vector database initialized successfully',
+      data: result
+    });
+  } catch (error) {
+    console.error('Vector database initialization error:', error);
+    res.status(500).json({
+      success: false,
+      error: 'Failed to initialize vector database',
+      message: error.message
+    });
+  }
+});
+
+// GET /insights/stats - Get vector database statistics
+router.get('/stats', async (req, res) => {
+  try {
+    const stats = await embeddingsService.getVectorStats();
+    
+    res.json({
+      success: true,
+      data: stats
+    });
+  } catch (error) {
+    console.error('Error getting vector stats:', error);
+    res.status(500).json({
+      success: false,
+      error: 'Failed to get vector database statistics',
+      message: error.message
+    });
+  }
+});
+
+// GET /insights/responses/search - Search for similar AI responses
+router.get('/responses/search', async (req, res) => {
+  try {
+    const { query, userId, responseType, limit = 5, threshold = 0.7 } = req.query;
+    
+    if (!query) {
+      return res.status(400).json({
+        success: false,
+        error: 'Missing required parameter',
+        message: 'query is required as a query parameter'
+      });
+    }
+
+    const results = await embeddingsService.findSimilarResponses(query, {
+      limit: parseInt(limit),
+      threshold: parseFloat(threshold),
+      responseType: responseType || null,
+      userId: userId || null
+    });
+
+    res.json({
+      success: true,
+      data: {
+        query,
+        results,
+        count: results.length
+      }
+    });
+  } catch (error) {
+    console.error('Error searching AI responses:', error);
+    res.status(500).json({
+      success: false,
+      error: 'Failed to search AI responses',
+      message: error.message
+    });
+  }
+});
+
+// GET /insights/responses/history/:userId - Get AI response history for a user
+router.get('/responses/history/:userId', async (req, res) => {
+  try {
+    const { userId } = req.params;
+    const { responseType, limit = 10 } = req.query;
+    
+    const history = await embeddingsService.getResponseHistory(userId, {
+      limit: parseInt(limit),
+      responseType: responseType || null
+    });
+
+    res.json({
+      success: true,
+      data: {
+        userId,
+        history,
+        count: history.length
+      }
+    });
+  } catch (error) {
+    console.error('Error getting AI response history:', error);
+    res.status(500).json({
+      success: false,
+      error: 'Failed to get AI response history',
+      message: error.message
+    });
+  }
+});
 
 module.exports = router;
