@@ -1,5 +1,5 @@
 const express = require('express');
-const { weaviateService } = require('../services/memory-storage');
+const { weaviateService } = require('../services/persistent-storage');
 const { aiCoach } = require('../services/mock-openai');
 
 const router = express.Router();
