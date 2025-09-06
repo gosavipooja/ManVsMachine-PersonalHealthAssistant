@@ -1,6 +1,6 @@
 const express = require('express');
 const { weaviateService } = require('../services/persistent-storage');
-const { aiCoach } = require('../services/mock-openai');
+const { aiCoach } = require('../services/openai');
 
 const router = express.Router();
 
@@ -52,36 +52,51 @@ router.get('/', async (req, res) => {
     // Generate comprehensive insights using AI coach
     const aiInsights = await aiCoach.generateComprehensiveInsights(profile, logs);
 
-    // Generate summary based on user's recent activity and profile
-    const summary = generateDailySummary(profile, logs, parseInt(days));
+    // Generate AI-powered summary based on user's recent activity and profile
+    const summary = await aiCoach.generatePersonalizedSummary(profile, logs, parseInt(days));
     
-    // Prepare insights response
+    // Prepare insights response with AI-generated content
     const insights = {
-      summary,
-      // TODO: Add vector DB insights here
-      // This is where we would:
-      // 1. Query vector database for similar user patterns and behaviors
-      // 2. Retrieve embeddings of user's health data and goals
-      // 3. Find similar users with comparable profiles and successful outcomes
-      // 4. Extract insights from successful user journeys and patterns
-      // 5. Use semantic search to find relevant health recommendations
-      // 6. Analyze trends and correlations in user's historical data
-      //
-      // Example vector DB operations:
-      // - vectorDB.findSimilarUsers(profile, { limit: 10, threshold: 0.8 })
-      // - vectorDB.searchHealthPatterns(logs, profile.goals)
-      // - vectorDB.getRecommendations(profile, logs, { type: 'nutrition', 'exercise', 'lifestyle' })
-      // - vectorDB.analyzeTrends(userId, { timeframe: days, categories: ['all'] })
+      summary: summary || generateDailySummary(profile, logs, parseInt(days)),
+      motivation: aiInsights.motivationMessage,
+      suggestions: aiInsights.suggestions,
+      keyInsights: aiInsights.insights,
+      progressSummary: aiInsights.progressSummary,
+      nextSteps: aiInsights.nextSteps
     };
 
     // Add dinner recommendation if requested
     if (includeRecommendations === 'true') {
-      insights.dinnerRecommendation = generateDinnerRecommendation(profile, logs);
+      insights.dinnerRecommendation = await aiCoach.generateDinnerRecommendation(profile, logs);
     }
+
+    // Prepare metadata for response
+    const metadata = {
+      userId: userId,
+      analysisTimeframe: `${days} ${days === 1 ? 'day' : 'days'}`,
+      generatedAt: new Date().toISOString(),
+      personalizationFactors: {
+        bodyType: profile.bodyType,
+        culture: profile.culture,
+        goals: profile.goals,
+        activityLevel: profile.activity_level,
+        age: profile.age,
+        gender: profile.gender
+      },
+      dataPoints: {
+        totalLogs: logs.length,
+        logTypes: [...new Set(logs.map(log => log.input_method))],
+        timeRange: logs.length > 0 ? {
+          earliest: logs[logs.length - 1]?.timestamp,
+          latest: logs[0]?.timestamp
+        } : null
+      }
+    };
 
     res.json({
       success: true,
-      data: insights
+      data: insights,
+      metadata: metadata
     });
 
   } catch (error) {

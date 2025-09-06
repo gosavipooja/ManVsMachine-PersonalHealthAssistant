@@ -189,6 +189,94 @@ Provide comprehensive insights including:
     `.trim();
   }
 
+  async generatePersonalizedSummary(profile, logs, days) {
+    const prompt = this.buildSummaryPrompt(profile, logs, days);
+    
+    try {
+      const response = await openai.chat.completions.create({
+        model: 'gpt-3.5-turbo',
+        messages: [
+          {
+            role: 'system',
+            content: 'You are a personal health coach. Provide a personalized summary of the user\'s recent activity and progress. Be encouraging, specific, and culturally aware.'
+          },
+          {
+            role: 'user',
+            content: prompt
+          }
+        ],
+        max_tokens: 300,
+        temperature: 0.7,
+      });
+
+      return response.choices[0]?.message?.content || 'Keep up the great work on your health journey!';
+    } catch (error) {
+      console.error('Error generating personalized summary:', error);
+      return 'You\'re making great progress on your health goals!';
+    }
+  }
+
+  async generateDinnerRecommendation(profile, logs) {
+    const prompt = this.buildDinnerPrompt(profile, logs);
+    
+    try {
+      const response = await openai.chat.completions.create({
+        model: 'gpt-3.5-turbo',
+        messages: [
+          {
+            role: 'system',
+            content: 'You are a nutritionist and personal chef. Provide a specific, culturally-appropriate dinner recommendation based on the user\'s profile, goals, and recent activity. Be practical and encouraging.'
+          },
+          {
+            role: 'user',
+            content: prompt
+          }
+        ],
+        max_tokens: 250,
+        temperature: 0.6,
+      });
+
+      return response.choices[0]?.message?.content || 'Consider a balanced meal with lean protein and vegetables.';
+    } catch (error) {
+      console.error('Error generating dinner recommendation:', error);
+      return 'For tonight\'s dinner, I recommend a balanced meal with lean protein and plenty of vegetables.';
+    }
+  }
+
+  buildSummaryPrompt(profile, logs, days) {
+    const timeframe = days === 1 ? 'today' : `the past ${days} days`;
+    const recentActivity = logs.slice(0, 5).map(log => {
+      const method = log.input_method;
+      const content = log.content_preview || log.content || 'Activity logged';
+      return `${method}: ${content}`;
+    }).join(', ');
+
+    return `
+User Profile: ${profile.age} year old ${profile.gender}, ${profile.bodyType} body type, ${profile.culture} background
+Goals: ${profile.goals.join(', ')}
+Activity Level: ${profile.activity_level}
+Recent Activity (${timeframe}): ${recentActivity || 'No recent activity logged'}
+
+Write a personalized summary of their recent progress and activity. Be encouraging and specific about their achievements.
+    `.trim();
+  }
+
+  buildDinnerPrompt(profile, logs) {
+    const recentFood = logs.filter(log => log.input_method === 'text' || log.input_method === 'photo')
+      .slice(0, 3)
+      .map(log => log.content_preview || log.content || 'meal logged')
+      .join(', ');
+
+    return `
+User Profile: ${profile.age} year old ${profile.gender}, ${profile.bodyType} body type, ${profile.culture} background
+Goals: ${profile.goals.join(', ')}
+Activity Level: ${profile.activity_level}
+Recent Meals: ${recentFood || 'No recent meals logged'}
+
+Suggest a specific dinner recommendation that aligns with their goals, body type, and cultural preferences. Be practical and encouraging.
+    `.trim();
+  }
+
   parseCoachingResponse(content) {
     const lines = content.split('\n').filter(line => line.trim());
     

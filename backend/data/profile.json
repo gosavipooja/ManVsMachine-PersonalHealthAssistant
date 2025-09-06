@@ -1,78 +1,54 @@
 {
-  "emma_chen": {
-    "id": "emma_chen",
-    "content": "User profile: Emma Chen, 24 year old female, lean body type, light activity level, asian background, goals: gain weight, build muscle, improve strength",
+  "09e5516c-e1a6-4cc1-83f9-275a8d23a721": {
+    "id": "09e5516c-e1a6-4cc1-83f9-275a8d23a721",
+    "content": "User profile: Alex Smith, 28 year old male, mesomorph body type, moderate activity level, western background, goals: lose weight, build muscle, improve health",
     "metadata": {
       "type": "profile",
-      "userId": "emma_chen",
-      "timestamp": "2025-09-06T21:46:58.043Z",
-      "id": "emma_chen",
-      "name": "Emma Chen",
-      "age": 24,
-      "gender": "female",
-      "height": 162,
-      "weight": 52,
-      "bodyType": "lean",
-      "culture": "asian",
-      "goals": [
-        "gain weight",
-        "build muscle",
-        "improve strength"
-      ],
-      "activity_level": "light",
-      "createdAt": "2025-09-06T21:46:58.043Z",
-      "updatedAt": "2025-09-06T21:46:58.043Z"
-    },
-    "timestamp": "2025-09-06T21:46:58.044Z"
-  },
-  "marcus_johnson": {
-    "id": "marcus_johnson",
-    "content": "User profile: Marcus Johnson, 29 year old male, athletic body type, vigorous activity level, african background, goals: maintain fitness, build endurance",
-    "metadata": {
-      "type": "profile",
-      "userId": "marcus_johnson",
-      "timestamp": "2025-09-06T21:47:18.407Z",
-      "id": "marcus_johnson",
-      "name": "Marcus Johnson",
-      "age": 29,
+      "userId": "09e5516c-e1a6-4cc1-83f9-275a8d23a721",
+      "timestamp": "2025-09-06T21:37:13.181Z",
+      "id": "09e5516c-e1a6-4cc1-83f9-275a8d23a721",
+      "name": "Alex Smith",
+      "age": 28,
       "gender": "male",
-      "height": 178,
-      "weight": 75,
-      "bodyType": "athletic",
-      "culture": "african",
-      "goals": [
-        "maintain fitness",
-        "build endurance"
-      ],
-      "activity_level": "vigorous",
-      "createdAt": "2025-09-06T21:47:18.407Z",
-      "updatedAt": "2025-09-06T21:47:18.407Z"
-    },
-    "timestamp": "2025-09-06T21:47:18.407Z"
-  },
-  "sofia_martinez": {
-    "id": "sofia_martinez",
-    "content": "User profile: Sofia Martinez, 35 year old female, rounded body type, moderate activity level, mediterranean background, goals: lose weight, improve health",
-    "metadata": {
-      "type": "profile",
-      "userId": "sofia_martinez",
-      "timestamp": "2025-09-06T21:47:18.417Z",
-      "id": "sofia_martinez",
-      "name": "Sofia Martinez",
-      "age": 35,
-      "gender": "female",
-      "height": 165,
-      "weight": 68,
-      "bodyType": "rounded",
-      "culture": "mediterranean",
+      "height": 175,
+      "weight": 70,
+      "bodyType": "mesomorph",
+      "culture": "western",
       "goals": [
         "lose weight",
+        "build muscle",
         "improve health"
       ],
       "activity_level": "moderate",
-      "createdAt": "2025-09-06T21:47:18.417Z",
-      "updatedAt": "2025-09-06T21:47:18.417Z"
+      "createdAt": "2025-09-06T21:37:13.181Z",
+      "updatedAt": "2025-09-06T21:37:13.181Z"
     },
-    "timestamp": "2025-09-06T21:47:18.417Z"
+    "timestamp": "2025-09-06T21:37:13.182Z"
+  },
+  "user123": {
+    "id": "user123",
+    "content": "User profile: Test User, 28 year old male, mesomorph body type, moderate activity level, western background, goals: lose weight, build muscle, improve health",
+    "metadata": {
+      "type": "profile",
+      "userId": "user123",
+      "timestamp": "2025-09-06T22:50:00.000Z",
+      "id": "user123",
+      "name": "Test User",
+      "age": 28,
+      "gender": "male",
+      "height": 175,
+      "weight": 70,
+      "bodyType": "mesomorph",
+      "culture": "western",
+      "goals": [
+        "lose weight",
+        "build muscle",
+        "improve health"
+      ],
+      "activity_level": "moderate",
+      "createdAt": "2025-09-06T22:50:00.000Z",
+      "updatedAt": "2025-09-06T22:50:00.000Z"
+    },
+    "timestamp": "2025-09-06T22:50:00.000Z"
   }
 }
