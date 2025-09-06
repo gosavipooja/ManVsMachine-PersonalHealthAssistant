@@ -107,7 +107,18 @@ const Dashboard: React.FC<DashboardProps> = ({ userId, onLogout }) => {
                     <tr key={log.id}>
                       <td>{new Date(log.timestamp).toLocaleTimeString()}</td>
                       <td>{log.input_method}</td>
-                      <td>{log.content_preview || log.content}</td>
+                      <td>
+                        {log.input_method === 'text' && log.content_preview}
+                        {log.input_method === 'photo' && (
+                          <img src={log.content} alt='Habit' style={{ maxWidth: '150px', borderRadius: '8px' }} />
+                        )}
+                        {log.input_method === 'voice' && (
+                          <audio controls>
+                            <source src={log.content} type='audio/*' />
+                            Your browser does not support the audio element.
+                          </audio>
+                        )}
+                      </td>
                     </tr>
                   ))}
                 </tbody>

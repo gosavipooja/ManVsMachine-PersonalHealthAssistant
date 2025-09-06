@@ -116,6 +116,27 @@ section {
   background-color: #f1f2f6;
 }
 
+/* --- Home Tab Table Media Styling --- */
+.home-tab td img {
+  max-width: 150px; /* constrain width */
+  max-height: 120px; /* constrain height */
+  border-radius: 8px; /* rounded corners */
+  object-fit: cover; /* maintain aspect ratio */
+  display: block;
+  margin: 5px 0;
+}
+
+.home-tab td audio {
+  width: 100%; /* take full cell width */
+  max-width: 250px; /* optional max width */
+  margin: 5px 0;
+}
+
+/* Optional: make table rows taller if media is present */
+.home-tab td {
+  vertical-align: middle;
+}
+
 /* --- Progress Bar --- */
 .progress-bar-container {
   background-color: #dcdde1;
