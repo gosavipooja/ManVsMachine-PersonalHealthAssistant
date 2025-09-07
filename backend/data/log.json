@@ -198,20 +198,148 @@
     },
     "timestamp": "2025-09-07T00:01:29.476Z"
   },
-  "203a83c6-ddc6-422d-b517-ec1985be75cc": {
-    "id": "203a83c6-ddc6-422d-b517-ec1985be75cc",
-    "content": "Log entry: text - Ate a salad today for lunch.",
+  "7c48ad1b-8791-410a-9938-601b0ccccc29": {
+    "id": "7c48ad1b-8791-410a-9938-601b0ccccc29",
+    "content": "Log entry: text - Test log entry",
     "metadata": {
       "type": "log",
       "userId": "user123",
-      "timestamp": "2025-09-07T21:47:00Z",
-      "id": "203a83c6-ddc6-422d-b517-ec1985be75cc",
+      "timestamp": "2025-01-06T17:25:00.000Z",
+      "id": "7c48ad1b-8791-410a-9938-601b0ccccc29",
       "user_id": "user123",
       "input_method": "text",
-      "file_name": "203a83c6-ddc6-422d-b517-ec1985be75cc.txt",
-      "created_at": "2025-09-07T00:20:33.500Z",
-      "content_preview": "Ate a salad today for lunch."
+      "file_name": "7c48ad1b-8791-410a-9938-601b0ccccc29.txt",
+      "created_at": "2025-09-07T00:25:23.620Z",
+      "content_preview": "Test log entry"
     },
-    "timestamp": "2025-09-07T00:20:33.501Z"
+    "timestamp": "2025-09-07T00:25:23.626Z"
+  },
+  "cc20006b-88d6-451f-ad7d-5f65e79f56ff": {
+    "id": "cc20006b-88d6-451f-ad7d-5f65e79f56ff",
+    "content": "Log entry: text - Had a healthy breakfast with oatmeal and fruits",
+    "metadata": {
+      "type": "log",
+      "userId": "user123",
+      "timestamp": "2025-01-06T17:30:00.000Z",
+      "id": "cc20006b-88d6-451f-ad7d-5f65e79f56ff",
+      "user_id": "user123",
+      "input_method": "text",
+      "file_name": "cc20006b-88d6-451f-ad7d-5f65e79f56ff.txt",
+      "created_at": "2025-09-07T00:26:06.381Z",
+      "content_preview": "Had a healthy breakfast with oatmeal and fruits"
+    },
+    "timestamp": "2025-09-07T00:26:06.388Z"
+  },
+  "19206576-72ec-4313-8181-fd43125b845f": {
+    "id": "19206576-72ec-4313-8181-fd43125b845f",
+    "content": "Log entry: text - Test from frontend",
+    "metadata": {
+      "type": "log",
+      "userId": "user123",
+      "timestamp": "2025-01-06T17:35:00.000Z",
+      "id": "19206576-72ec-4313-8181-fd43125b845f",
+      "user_id": "user123",
+      "input_method": "text",
+      "file_name": "19206576-72ec-4313-8181-fd43125b845f.txt",
+      "created_at": "2025-09-07T00:27:25.375Z",
+      "content_preview": "Test from frontend"
+    },
+    "timestamp": "2025-09-07T00:27:25.379Z"
+  },
+  "190f394a-152e-4bfb-a037-3a7d1a451b42": {
+    "id": "190f394a-152e-4bfb-a037-3a7d1a451b42",
+    "content": "Log entry: text - Test after CORS fix",
+    "metadata": {
+      "type": "log",
+      "userId": "user123",
+      "timestamp": "2025-01-06T17:40:00.000Z",
+      "id": "190f394a-152e-4bfb-a037-3a7d1a451b42",
+      "user_id": "user123",
+      "input_method": "text",
+      "file_name": "190f394a-152e-4bfb-a037-3a7d1a451b42.txt",
+      "created_at": "2025-09-07T00:27:49.757Z",
+      "content_preview": "Test after CORS fix"
+    },
+    "timestamp": "2025-09-07T00:27:49.759Z"
+  },
+  "862925e1-974e-4d05-9697-ae42e7a42e81": {
+    "id": "862925e1-974e-4d05-9697-ae42e7a42e81",
+    "content": "Log entry: text - CORS test",
+    "metadata": {
+      "type": "log",
+      "userId": "user123",
+      "timestamp": "2025-01-06T17:41:00.000Z",
+      "id": "862925e1-974e-4d05-9697-ae42e7a42e81",
+      "user_id": "user123",
+      "input_method": "text",
+      "file_name": "862925e1-974e-4d05-9697-ae42e7a42e81.txt",
+      "created_at": "2025-09-07T00:27:57.755Z",
+      "content_preview": "CORS test"
+    },
+    "timestamp": "2025-09-07T00:27:57.758Z"
+  },
+  "0f00089e-b207-47b2-a2a5-6e4d98de52a3": {
+    "id": "0f00089e-b207-47b2-a2a5-6e4d98de52a3",
+    "content": "Log entry: text - i ate muskmelon",
+    "metadata": {
+      "type": "log",
+      "userId": "user123",
+      "timestamp": "2025-09-07T00:29:19.895Z",
+      "id": "0f00089e-b207-47b2-a2a5-6e4d98de52a3",
+      "user_id": "user123",
+      "input_method": "text",
+      "file_name": "0f00089e-b207-47b2-a2a5-6e4d98de52a3.txt",
+      "created_at": "2025-09-07T00:29:19.921Z",
+      "content_preview": "i ate muskmelon"
+    },
+    "timestamp": "2025-09-07T00:29:19.923Z"
+  },
+  "2b6e66f8-b707-42d6-9dd4-ec9e83bc140c": {
+    "id": "2b6e66f8-b707-42d6-9dd4-ec9e83bc140c",
+    "content": "Log entry: text - Test modern UI",
+    "metadata": {
+      "type": "log",
+      "userId": "user123",
+      "timestamp": "2025-01-06T17:50:00.000Z",
+      "id": "2b6e66f8-b707-42d6-9dd4-ec9e83bc140c",
+      "user_id": "user123",
+      "input_method": "text",
+      "file_name": "2b6e66f8-b707-42d6-9dd4-ec9e83bc140c.txt",
+      "created_at": "2025-09-07T00:34:38.721Z",
+      "content_preview": "Test modern UI"
+    },
+    "timestamp": "2025-09-07T00:34:38.733Z"
+  },
+  "fc6fc1f4-d75f-44da-ad94-046a31b93e79": {
+    "id": "fc6fc1f4-d75f-44da-ad94-046a31b93e79",
+    "content": "Log entry: text - Testing the beautiful new UI!",
+    "metadata": {
+      "type": "log",
+      "userId": "user123",
+      "timestamp": "2025-01-06T17:51:00.000Z",
+      "id": "fc6fc1f4-d75f-44da-ad94-046a31b93e79",
+      "user_id": "user123",
+      "input_method": "text",
+      "file_name": "fc6fc1f4-d75f-44da-ad94-046a31b93e79.txt",
+      "created_at": "2025-09-07T00:34:44.704Z",
+      "content_preview": "Testing the beautiful new UI!"
+    },
+    "timestamp": "2025-09-07T00:34:44.705Z"
+  },
+  "5e0cea10-cc72-4e84-990c-88dbe9b4ca0c": {
+    "id": "5e0cea10-cc72-4e84-990c-88dbe9b4ca0c",
+    "content": "Log entry: text - Testing the new configuration system!",
+    "metadata": {
+      "type": "log",
+      "userId": "user123",
+      "timestamp": "2025-01-06T18:00:00.000Z",
+      "id": "5e0cea10-cc72-4e84-990c-88dbe9b4ca0c",
+      "user_id": "user123",
+      "input_method": "text",
+      "file_name": "5e0cea10-cc72-4e84-990c-88dbe9b4ca0c.txt",
+      "created_at": "2025-09-07T00:36:32.975Z",
+      "content_preview": "Testing the new configuration system!"
+    },
+    "timestamp": "2025-09-07T00:36:32.976Z"
   }
 }

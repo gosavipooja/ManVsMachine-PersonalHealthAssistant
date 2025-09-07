@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import { apiService } from '../services/api';
 import HabitLogger from './HabitLogger';
 import ProfilePage from './ProfilePage';
 
@@ -26,9 +26,9 @@ const Dashboard: React.FC<DashboardProps> = ({ userId, onLogout }) => {
   const handleGetRecommendations = async () => {
     setLoadingRecommendations(true);
     try {
-      const res = await axios.get(`http://localhost:3001/api/insights?userId=${userId}&days=7&includeRecommendations=true`);
-      if (res.data.success) {
-        setRecommendationsData(res.data.data);
+      const res = await apiService.getInsights(userId, 7, true);
+      if (res.success) {
+        setRecommendationsData(res.data);
         setRecommendationsModalOpen(true);
       } else {
         alert('Failed to fetch recommendations.');
@@ -44,9 +44,9 @@ const Dashboard: React.FC<DashboardProps> = ({ userId, onLogout }) => {
   const handleGetSummary = async () => {
     setLoadingSummary(true);
     try {
-      const res = await axios.get(`http://localhost:3001/api/insights?userId=${userId}&days=7&includeRecommendations=false`);
-      if (res.data.success) {
-        setSummaryData(res.data.data);
+      const res = await apiService.getInsights(userId, 7, false);
+      if (res.success) {
+        setSummaryData(res.data);
         setSummaryModalOpen(true);
       } else {
         alert('Failed to fetch summary.');
@@ -63,9 +63,9 @@ const Dashboard: React.FC<DashboardProps> = ({ userId, onLogout }) => {
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        const res = await axios.get(`http://localhost:3001/api/profile/${userId}`);
-        if (res.data.success && res.data.data) {
-          const data = res.data.data;
+        const res = await apiService.getProfile(userId);
+        if (res.success && res.data) {
+          const data = res.data;
           setProfile({
             name: data.name || '',
             age: data.age || 0,
@@ -85,9 +85,9 @@ const Dashboard: React.FC<DashboardProps> = ({ userId, onLogout }) => {
 
     const fetchLogs = async () => {
       try {
-        const res = await axios.get(`http://localhost:3001/api/logging/${userId}`);
-        if (res.data.success && Array.isArray(res.data.data)) {
-          setLogs(res.data.data);
+        const res = await apiService.getLogs(userId);
+        if (res.success && Array.isArray(res.data)) {
+          setLogs(res.data);
         }
       } catch (err) {
         console.error('Failed to fetch logs:', err);
@@ -113,117 +113,200 @@ const Dashboard: React.FC<DashboardProps> = ({ userId, onLogout }) => {
   const todaysLogs = logs.filter((log) => log.timestamp.startsWith(today));
 
   return (
-    <div className='dashboard'>
+    <div className='dashboard animate-fade-in'>
       {/* Navigation Tabs */}
       <nav className='dashboard-nav'>
-        <button onClick={() => setActiveTab('home')} className={activeTab === 'home' ? 'active' : ''}>
-          Home
+        <button 
+          onClick={() => setActiveTab('home')} 
+          className={`btn ${activeTab === 'home' ? 'btn-primary' : 'btn-ghost'}`}
+        >
+          🏠 Home
         </button>
-        <button onClick={() => setActiveTab('profile')} className={activeTab === 'profile' ? 'active' : ''}>
-          Profile
+        <button 
+          onClick={() => setActiveTab('profile')} 
+          className={`btn ${activeTab === 'profile' ? 'btn-primary' : 'btn-ghost'}`}
+        >
+          👤 Profile
         </button>
-        <button onClick={() => setActiveTab('log')} className={activeTab === 'log' ? 'active' : ''}>
-          Log
+        <button 
+          onClick={() => setActiveTab('log')} 
+          className={`btn ${activeTab === 'log' ? 'btn-primary' : 'btn-ghost'}`}
+        >
+          📝 Log
         </button>
-        <button onClick={() => setActiveTab('chat')} className={activeTab === 'chat' ? 'active' : ''}>
-          Chat
+        <button 
+          onClick={() => setActiveTab('chat')} 
+          className={`btn ${activeTab === 'chat' ? 'btn-primary' : 'btn-ghost'}`}
+        >
+          💬 Chat
         </button>
-        <button className='logout-btn' onClick={onLogout}>
-          Logout
+        <button className='btn btn-secondary' onClick={onLogout}>
+          🚪 Logout
         </button>
       </nav>
 
       {/* Tab Content */}
       <div className='tab-content'>
         {activeTab === 'home' && (
-          <section className='home-tab'>
-            <h2>Today's Logs</h2>
-
-            {/* summary buttons */}
-            <div style={{ display: 'flex', gap: '10px', marginBottom: '15px', justifyContent: 'center' }}>
-              <button onClick={handleGetSummary} disabled={loadingSummary}>
-                {loadingSummary ? 'Loading...' : 'Get Summary'}
-              </button>
-              <button onClick={handleGetRecommendations} disabled={loadingRecommendations}>
-                {loadingRecommendations ? 'Loading...' : 'Get Recommendations'}
-              </button>
+          <section className='home-tab animate-slide-up'>
+            {/* Welcome Card */}
+            <div className='glass-card' style={{ padding: 'var(--space-xl)', marginBottom: 'var(--space-xl)', textAlign: 'center' }}>
+              <h2>Welcome back, {profile?.name || 'User'}! 👋</h2>
+              <p style={{ color: 'rgba(255, 255, 255, 0.8)', marginTop: 'var(--space-sm)' }}>
+                Ready to track your health journey today?
+              </p>
             </div>
 
-            {todaysLogs.length > 0 ? (
-              <table>
-                <thead>
-                  <tr>
-                    <th>Time</th>
-                    <th>Input Method</th>
-                    <th>Content</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {todaysLogs.map((log) => (
-                    <tr key={log.id}>
-                      <td>{new Date(log.timestamp).toLocaleTimeString()}</td>
-                      <td>{log.input_method}</td>
-                      <td>
-                        {log.input_method === 'text' && log.content_preview && <span>{log.content_preview}</span>}
-                        {log.input_method === 'image' && log.content_preview && <img src={`data:image/*;base64,${log.content_preview}`} alt='Habit' />}
+            {/* AI Insights Card */}
+            <div className='glass-card' style={{ padding: 'var(--space-xl)', marginBottom: 'var(--space-xl)' }}>
+              <h3>🤖 AI Health Insights</h3>
+              <p style={{ color: 'rgba(255, 255, 255, 0.8)', marginBottom: 'var(--space-lg)' }}>
+                Get personalized insights and recommendations based on your health data
+              </p>
+              <div style={{ display: 'flex', gap: 'var(--space-md)', flexWrap: 'wrap' }}>
+                <button 
+                  onClick={handleGetSummary} 
+                  disabled={loadingSummary}
+                  className='btn btn-success'
+                >
+                  {loadingSummary ? (
+                    <>
+                      <div className='loading-spinner' style={{ width: '16px', height: '16px', borderWidth: '2px' }}></div>
+                      Loading...
+                    </>
+                  ) : (
+                    <>
+                      📊 Get Summary
+                    </>
+                  )}
+                </button>
+                <button 
+                  onClick={handleGetRecommendations} 
+                  disabled={loadingRecommendations}
+                  className='btn btn-secondary'
+                >
+                  {loadingRecommendations ? (
+                    <>
+                      <div className='loading-spinner' style={{ width: '16px', height: '16px', borderWidth: '2px' }}></div>
+                      Loading...
+                    </>
+                  ) : (
+                    <>
+                      🍽️ Get Recommendations
+                    </>
+                  )}
+                </button>
+              </div>
+            </div>
 
-                        {log.input_method === 'voice' && log.content_preview && (
-                          <audio controls>
-                            <source src={`data:audio/*;base64,${log.content_preview}`} />
-                          </audio>
-                        )}
-
-                        {/* Fallback for any unexpected type */}
-                        {!['text', 'image', 'voice'].includes(log.input_method) && <span>{log.content_preview}</span>}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            ) : (
-              <p>No logs yet today.</p>
-            )}
+            {/* Today's Logs Card */}
+            <div className='glass-card' style={{ padding: 'var(--space-xl)' }}>
+              <h3>📅 Today's Activity Logs</h3>
+              {todaysLogs.length > 0 ? (
+                <div style={{ overflowX: 'auto' }}>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>⏰ Time</th>
+                        <th>📝 Method</th>
+                        <th>📄 Content</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {todaysLogs.map((log) => (
+                        <tr key={log.id}>
+                          <td>{new Date(log.timestamp).toLocaleTimeString()}</td>
+                          <td>
+                            <span style={{ 
+                              padding: 'var(--space-xs) var(--space-sm)', 
+                              borderRadius: 'var(--radius-sm)', 
+                              background: 'rgba(255, 255, 255, 0.1)',
+                              fontSize: '0.8rem'
+                            }}>
+                              {log.input_method}
+                            </span>
+                          </td>
+                          <td>
+                            {log.input_method === 'text' && log.content_preview && (
+                              <span style={{ color: 'rgba(255, 255, 255, 0.9)' }}>{log.content_preview}</span>
+                            )}
+                            {log.input_method === 'image' && log.content_preview && (
+                              <img 
+                                src={`data:image/*;base64,${log.content_preview}`} 
+                                alt='Habit' 
+                                style={{ maxWidth: '100px', borderRadius: 'var(--radius-md)' }}
+                              />
+                            )}
+                            {log.input_method === 'voice' && log.content_preview && (
+                              <audio controls style={{ maxWidth: '200px' }}>
+                                <source src={`data:audio/*;base64,${log.content_preview}`} />
+                              </audio>
+                            )}
+                            {!['text', 'image', 'voice'].includes(log.input_method) && (
+                              <span style={{ color: 'rgba(255, 255, 255, 0.9)' }}>{log.content_preview}</span>
+                            )}
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              ) : (
+                <div style={{ textAlign: 'center', padding: 'var(--space-xl)', color: 'rgba(255, 255, 255, 0.7)' }}>
+                  <p style={{ fontSize: '1.1rem', marginBottom: 'var(--space-md)' }}>No logs yet today</p>
+                  <p>Start tracking your health habits by clicking the "📝 Log" tab above!</p>
+                </div>
+              )}
+            </div>
           </section>
         )}
 
         {activeTab === 'profile' && (
-          <section className='profile-tab'>
+          <section className='profile-tab animate-slide-up'>
             {profile ? (
-              <div>
-                <h2>Profile Details</h2>
-                <ul>
-                  <li>
-                    <strong>Name:</strong> <span>{profile.name}</span>
-                  </li>
-                  <li>
-                    <strong>Age:</strong> <span>{profile.age}</span>
-                  </li>
-                  <li>
-                    <strong>Gender:</strong> <span>{profile.gender}</span>
-                  </li>
-                  <li>
-                    <strong>Weight:</strong> <span>{profile.weight} kg</span>
-                  </li>
-                  <li>
-                    <strong>Height:</strong> <span>{profile.height} cm</span>
-                  </li>
-                  <li>
-                    <strong>Body Type:</strong> <span>{profile.bodyType}</span>
-                  </li>
-                  <li>
-                    <strong>Goal:</strong> <span>{profile.goal}</span>
-                  </li>
-                  <li>
-                    <strong>Activity Level:</strong> <span>{profile.activityLevel}</span>
-                  </li>
-                  <li>
-                    <strong>Culture:</strong> <span>{profile.culture}</span>
-                  </li>
-                </ul>
-                <button onClick={() => setActiveTab('edit-profile')}>Edit Profile</button>
+              <div className='glass-card' style={{ padding: 'var(--space-xl)' }}>
+                <h2>👤 Profile Details</h2>
+                <div className='metadata-grid' style={{ marginBottom: 'var(--space-xl)' }}>
+                  <div className='metadata-item'>
+                    <strong>👤 Name:</strong> <span>{profile.name}</span>
+                  </div>
+                  <div className='metadata-item'>
+                    <strong>🎂 Age:</strong> <span>{profile.age} years</span>
+                  </div>
+                  <div className='metadata-item'>
+                    <strong>⚧ Gender:</strong> <span>{profile.gender}</span>
+                  </div>
+                  <div className='metadata-item'>
+                    <strong>⚖️ Weight:</strong> <span>{profile.weight} kg</span>
+                  </div>
+                  <div className='metadata-item'>
+                    <strong>📏 Height:</strong> <span>{profile.height} cm</span>
+                  </div>
+                  <div className='metadata-item'>
+                    <strong>🏃 Body Type:</strong> <span>{profile.bodyType}</span>
+                  </div>
+                  <div className='metadata-item'>
+                    <strong>🎯 Goal:</strong> <span>{profile.goal}</span>
+                  </div>
+                  <div className='metadata-item'>
+                    <strong>💪 Activity Level:</strong> <span>{profile.activityLevel}</span>
+                  </div>
+                  <div className='metadata-item'>
+                    <strong>🌍 Culture:</strong> <span>{profile.culture}</span>
+                  </div>
+                </div>
+                <button 
+                  onClick={() => setActiveTab('edit-profile')}
+                  className='btn btn-primary'
+                >
+                  ✏️ Edit Profile
+                </button>
               </div>
             ) : (
-              <p>Loading profile...</p>
+              <div className='loading-container'>
+                <div className='loading-spinner'></div>
+                <p>Loading profile...</p>
+              </div>
             )}
           </section>
         )}
@@ -243,8 +326,23 @@ const Dashboard: React.FC<DashboardProps> = ({ userId, onLogout }) => {
         {activeTab === 'log' && <HabitLogger userId={userId} onNewLog={handleNewLog} />}
 
         {activeTab === 'chat' && (
-          <section className='chat-tab'>
-            <h2>Chat (Coming Soon)</h2>
+          <section className='chat-tab animate-slide-up'>
+            <div className='glass-card' style={{ padding: 'var(--space-xl)', textAlign: 'center' }}>
+              <h2>💬 AI Health Chat</h2>
+              <p style={{ color: 'rgba(255, 255, 255, 0.8)', marginBottom: 'var(--space-lg)' }}>
+                Coming Soon! Chat with your AI health assistant for personalized advice and support.
+              </p>
+              <div style={{ 
+                padding: 'var(--space-xl)', 
+                background: 'rgba(255, 255, 255, 0.05)', 
+                borderRadius: 'var(--radius-lg)',
+                border: '1px solid var(--glass-border)'
+              }}>
+                <p style={{ color: 'rgba(255, 255, 255, 0.7)' }}>
+                  🚧 This feature is under development. Stay tuned for updates!
+                </p>
+              </div>
+            </div>
           </section>
         )}
       </div>
