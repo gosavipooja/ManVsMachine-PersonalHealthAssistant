@@ -1,13 +1,13 @@
 {
-  "user123": {
-    "id": "user123",
-    "content": "User profile: Test User, 28 year old male, mesomorph body type, moderate activity level, western background, goals: lose weight, build muscle, improve health",
+  "09e5516c-e1a6-4cc1-83f9-275a8d23a721": {
+    "id": "09e5516c-e1a6-4cc1-83f9-275a8d23a721",
+    "content": "User profile: Alex Smith, 28 year old male, mesomorph body type, moderate activity level, western background, goals: lose weight, build muscle, improve health",
     "metadata": {
       "type": "profile",
-      "userId": "user123",
-      "timestamp": "2025-09-06T22:50:00.000Z",
-      "id": "user123",
-      "name": "Test User",
+      "userId": "09e5516c-e1a6-4cc1-83f9-275a8d23a721",
+      "timestamp": "2025-09-06T21:37:13.181Z",
+      "id": "09e5516c-e1a6-4cc1-83f9-275a8d23a721",
+      "name": "Alex Smith",
       "age": 28,
       "gender": "male",
       "height": 175,
@@ -20,10 +20,10 @@
         "improve health"
       ],
       "activity_level": "moderate",
-      "createdAt": "2025-09-06T22:50:00.000Z",
-      "updatedAt": "2025-09-06T22:50:00.000Z"
+      "createdAt": "2025-09-06T21:37:13.181Z",
+      "updatedAt": "2025-09-06T21:37:13.181Z"
     },
-    "timestamp": "2025-09-06T22:50:00.000Z"
+    "timestamp": "2025-09-06T21:37:13.182Z"
   },
   "emma_chen": {
     "id": "emma_chen",
@@ -75,5 +75,28 @@
       "updatedAt": "2025-09-06T22:55:00.000Z"
     },
     "timestamp": "2025-09-06T22:55:00.000Z"
+  },
+  "user123": {
+    "id": "user123",
+    "content": "User profile: John Doe, 28 year old male, rounded body type, moderate activity level, western background, goals: lose weight",
+    "metadata": {
+      "type": "profile",
+      "userId": "user123",
+      "timestamp": "2025-09-07T01:09:13.989Z",
+      "id": "user123",
+      "name": "John Doe",
+      "age": 28,
+      "gender": "male",
+      "weight": 70,
+      "height": 175,
+      "bodyType": "rounded",
+      "culture": "western",
+      "goals": [
+        "lose weight"
+      ],
+      "activity_level": "moderate",
+      "updatedAt": "2025-09-07T01:09:13.989Z"
+    },
+    "timestamp": "2025-09-07T01:09:13.992Z"
   }
 }
