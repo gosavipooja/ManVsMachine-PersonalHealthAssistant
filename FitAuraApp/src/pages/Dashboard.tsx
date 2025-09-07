@@ -9,18 +9,55 @@ interface DashboardProps {
   onLogout: () => void;
 }
 
-const handleGetSummary = () => {
-  alert('Summary feature coming soon!');
-};
-
-const handleGetRecommendations = () => {
-  alert('Recommendations feature coming soon!');
-};
-
 const Dashboard: React.FC<DashboardProps> = ({ userId, onLogout }) => {
   const [activeTab, setActiveTab] = useState<'home' | 'profile' | 'edit-profile' | 'log' | 'chat'>('home');
   const [profile, setProfile] = useState<any>(null);
   const [logs, setLogs] = useState<any[]>([]);
+
+  const [summaryModalOpen, setSummaryModalOpen] = useState(false);
+  const [summaryData, setSummaryData] = useState<any>(null);
+
+  const [recommendationsModalOpen, setRecommendationsModalOpen] = useState(false);
+  const [recommendationsData, setRecommendationsData] = useState<any>(null);
+
+  const [loadingSummary, setLoadingSummary] = useState(false);
+  const [loadingRecommendations, setLoadingRecommendations] = useState(false);
+
+  const handleGetRecommendations = async () => {
+    setLoadingRecommendations(true);
+    try {
+      const res = await axios.get(`http://localhost:3001/api/insights?userId=${userId}&days=7&includeRecommendations=true`);
+      if (res.data.success) {
+        setRecommendationsData(res.data.data);
+        setRecommendationsModalOpen(true);
+      } else {
+        alert('Failed to fetch recommendations.');
+      }
+    } catch (err) {
+      console.error(err);
+      alert('Error fetching recommendations.');
+    } finally {
+      setLoadingRecommendations(false);
+    }
+  };
+
+  const handleGetSummary = async () => {
+    setLoadingSummary(true);
+    try {
+      const res = await axios.get(`http://localhost:3001/api/insights?userId=${userId}&days=7&includeRecommendations=false`);
+      if (res.data.success) {
+        setSummaryData(res.data.data);
+        setSummaryModalOpen(true);
+      } else {
+        alert('Failed to fetch summary.');
+      }
+    } catch (err) {
+      console.error(err);
+      alert('Error fetching summary.');
+    } finally {
+      setLoadingSummary(false);
+    }
+  };
 
   // Fetch profile from backend
   useEffect(() => {
@@ -102,10 +139,14 @@ const Dashboard: React.FC<DashboardProps> = ({ userId, onLogout }) => {
           <section className='home-tab'>
             <h2>Today's Logs</h2>
 
-            {/* New buttons */}
-            <div className='home-actions'>
-              <button onClick={() => handleGetSummary()}>Get Summary</button>
-              <button onClick={() => handleGetRecommendations()}>Get Recommendations</button>
+            {/* summary buttons */}
+            <div style={{ display: 'flex', gap: '10px', marginBottom: '15px', justifyContent: 'center' }}>
+              <button onClick={handleGetSummary} disabled={loadingSummary}>
+                {loadingSummary ? 'Loading...' : 'Get Summary'}
+              </button>
+              <button onClick={handleGetRecommendations} disabled={loadingRecommendations}>
+                {loadingRecommendations ? 'Loading...' : 'Get Recommendations'}
+              </button>
             </div>
 
             {todaysLogs.length > 0 ? (
@@ -123,17 +164,17 @@ const Dashboard: React.FC<DashboardProps> = ({ userId, onLogout }) => {
                       <td>{new Date(log.timestamp).toLocaleTimeString()}</td>
                       <td>{log.input_method}</td>
                       <td>
-                        {log.input_method === 'text' && log.content && <span>{log.content}</span>}
-                        {log.input_method === 'image' && log.content && <img src={`data:image/*;base64,${log.content}`} alt='Habit' />}
+                        {log.input_method === 'text' && log.content_preview && <span>{log.content_preview}</span>}
+                        {log.input_method === 'image' && log.content_preview && <img src={`data:image/*;base64,${log.content_preview}`} alt='Habit' />}
 
-                        {log.input_method === 'voice' && log.content && (
+                        {log.input_method === 'voice' && log.content_preview && (
                           <audio controls>
-                            <source src={`data:audio/*;base64,${log.content}`} />
+                            <source src={`data:audio/*;base64,${log.content_preview}`} />
                           </audio>
                         )}
 
                         {/* Fallback for any unexpected type */}
-                        {!['text', 'image', 'voice'].includes(log.input_method) && <span>{log.content}</span>}
+                        {!['text', 'image', 'voice'].includes(log.input_method) && <span>{log.content_preview}</span>}
                       </td>
                     </tr>
                   ))}
@@ -207,6 +248,119 @@ const Dashboard: React.FC<DashboardProps> = ({ userId, onLogout }) => {
           </section>
         )}
       </div>
+
+      {/* Summary Modal */}
+      {summaryModalOpen && summaryData && (
+        <div className='summary-modal'>
+          <div className='summary-modal-content'>
+            <h2>Weekly Summary</h2>
+
+            <section>
+              <h3>Summary</h3>
+              <p>{summaryData.summary}</p>
+            </section>
+
+            <section>
+              <h3>Motivation</h3>
+              <p>{summaryData.motivation}</p>
+            </section>
+
+            <section>
+              <h3>Suggestions</h3>
+              <ul>
+                {summaryData.suggestions.map((s: string, idx: number) => (
+                  <li key={idx}>{s}</li>
+                ))}
+              </ul>
+            </section>
+
+            <section>
+              <h3>Key Insights</h3>
+              <ul>
+                {summaryData.keyInsights.map((i: string, idx: number) => (
+                  <li key={idx}>{i}</li>
+                ))}
+              </ul>
+            </section>
+
+            <section>
+              <h3>Progress Summary</h3>
+              <p>{summaryData.progressSummary}</p>
+            </section>
+
+            <section>
+              <h3>Next Steps</h3>
+              <ul>
+                {summaryData.nextSteps.map((s: string, idx: number) => (
+                  <li key={idx}>{s}</li>
+                ))}
+              </ul>
+            </section>
+
+            <button onClick={() => setSummaryModalOpen(false)}>Close</button>
+          </div>
+        </div>
+      )}
+
+      {/* Recommendations Modal */}
+      {recommendationsModalOpen && recommendationsData && (
+        <div className='summary-modal'>
+          <div className='summary-modal-content'>
+            <h2>Weekly Recommendations</h2>
+
+            <section>
+              <h3>Summary</h3>
+              <p>{recommendationsData.summary}</p>
+            </section>
+
+            <section>
+              <h3>Motivation</h3>
+              <p>{recommendationsData.motivation}</p>
+            </section>
+
+            <section>
+              <h3>Suggestions</h3>
+              <ul>
+                {recommendationsData.suggestions.map((s: string, idx: number) => (
+                  <li key={idx}>{s}</li>
+                ))}
+              </ul>
+            </section>
+
+            <section>
+              <h3>Key Insights</h3>
+              <ul>
+                {recommendationsData.keyInsights.map((i: string, idx: number) => (
+                  <li key={idx}>{i}</li>
+                ))}
+              </ul>
+            </section>
+
+            <section>
+              <h3>Progress Summary</h3>
+              <p>{recommendationsData.progressSummary}</p>
+            </section>
+
+            <section>
+              <h3>Next Steps</h3>
+              <ul>
+                {recommendationsData.nextSteps.map((s: string, idx: number) => (
+                  <li key={idx}>{s}</li>
+                ))}
+              </ul>
+            </section>
+
+            {recommendationsData.dinnerRecommendation && (
+              <section>
+                <h3>Dinner Recommendation</h3>
+                <p>{recommendationsData.dinnerRecommendation}</p>
+              </section>
+            )}
+
+            <button onClick={() => setRecommendationsModalOpen(false)}>Close</button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
