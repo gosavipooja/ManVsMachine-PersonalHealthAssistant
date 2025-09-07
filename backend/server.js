@@ -8,6 +8,7 @@ require('dotenv').config();
 const profileRoutes = require('./routes/profile');
 const insightsRoutes = require('./routes/insights');
 const loggingRoutes = require('./routes/logging');
+const chatbotRoutes = require('./routes/chatbot');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -43,6 +44,7 @@ app.get('/health', (req, res) => {
 app.use('/api/profile', profileRoutes);
 app.use('/api/insights', insightsRoutes);
 app.use('/api/logging', loggingRoutes);
+app.use('/api/chatbot', chatbotRoutes);
 
 // Error handling middleware
 app.use((err, req, res, next) => {
