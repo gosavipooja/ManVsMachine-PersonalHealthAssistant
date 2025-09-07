@@ -4559,5 +4559,4529 @@
       "tokens": 0
     },
     "timestamp": "2025-09-06T23:29:40.120Z"
+  },
+  "ai_response_1757203586797_fk9g9pe45": {
+    "id": "ai_response_1757203586797_fk9g9pe45",
+    "content": "\n      AI Response: You've made a great start with your recent 25-minute run and nutritious meals like chicken breast with rice and broccoli. Your choice of oatmeal with banana and almonds for breakfast shows you're prioritizing healthy options, which is fantastic for your goals!\n      Context: insights_summary - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-07T00:06:26.797Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "insights_summary",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "You've made a great start with your recent 25-minute run and nutritious meals like chicken breast with rice and broccoli. Your choice of oatmeal with banana and almonds for breakfast shows you're prioritizing healthy options, which is fantastic for your goals!",
+      "context": {
+        "type": "insights_summary",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T12:00:00Z",
+            "id": "d310c2a1-46a9-46fc-8925-3d727615858d",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "d310c2a1-46a9-46fc-8925-3d727615858d.txt",
+            "created_at": "2025-09-06T23:17:08.362Z",
+            "content_preview": "Had chicken breast with rice and broccoli for lunch"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T08:00:00Z",
+            "id": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c.txt",
+            "created_at": "2025-09-06T23:17:14.473Z",
+            "content_preview": "Breakfast: oatmeal with banana and almonds"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:38:45.879Z",
+            "id": "b7c7222c-6326-4406-afde-6bfc2d33a7b3",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "b7c7222c-6326-4406-afde-6bfc2d33a7b3.png",
+            "created_at": "2025-09-06T23:38:45.905Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:43:33.518Z",
+            "id": "fa875d50-e733-4416-8b7e-9b71db568677",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "fa875d50-e733-4416-8b7e-9b71db568677.wav",
+            "created_at": "2025-09-06T23:43:33.561Z",
+            "file_size": 1188366,
+            "content_preview": "Audio recording (1160.5 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:12.779Z",
+            "id": "42a894c8-3b9b-449a-a672-ba5a03a2f057",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "42a894c8-3b9b-449a-a672-ba5a03a2f057.txt",
+            "created_at": "2025-09-07T00:01:12.805Z",
+            "content_preview": "I ate a banana today for breakfast along with Oats"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:21.795Z",
+            "id": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a.png",
+            "created_at": "2025-09-07T00:01:21.828Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:29.431Z",
+            "id": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87.wav",
+            "created_at": "2025-09-07T00:01:29.468Z",
+            "file_size": 485646,
+            "content_preview": "Audio recording (474.3 KB)"
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-07T00:06:26.797Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-07T00:06:26.977Z"
+  },
+  "ai_response_1757203587016_25dsrpi8e": {
+    "id": "ai_response_1757203587016_25dsrpi8e",
+    "content": "\n      AI Response: Remember, every small step counts towards your bigger goals; stay focused and keep pushing forward!\n      Context: motivation - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-07T00:06:27.016Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "motivation",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "Remember, every small step counts towards your bigger goals; stay focused and keep pushing forward!",
+      "context": {
+        "type": "motivation",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T12:00:00Z",
+            "id": "d310c2a1-46a9-46fc-8925-3d727615858d",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "d310c2a1-46a9-46fc-8925-3d727615858d.txt",
+            "created_at": "2025-09-06T23:17:08.362Z",
+            "content_preview": "Had chicken breast with rice and broccoli for lunch"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T08:00:00Z",
+            "id": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c.txt",
+            "created_at": "2025-09-06T23:17:14.473Z",
+            "content_preview": "Breakfast: oatmeal with banana and almonds"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:38:45.879Z",
+            "id": "b7c7222c-6326-4406-afde-6bfc2d33a7b3",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "b7c7222c-6326-4406-afde-6bfc2d33a7b3.png",
+            "created_at": "2025-09-06T23:38:45.905Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:43:33.518Z",
+            "id": "fa875d50-e733-4416-8b7e-9b71db568677",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "fa875d50-e733-4416-8b7e-9b71db568677.wav",
+            "created_at": "2025-09-06T23:43:33.561Z",
+            "file_size": 1188366,
+            "content_preview": "Audio recording (1160.5 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:12.779Z",
+            "id": "42a894c8-3b9b-449a-a672-ba5a03a2f057",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "42a894c8-3b9b-449a-a672-ba5a03a2f057.txt",
+            "created_at": "2025-09-07T00:01:12.805Z",
+            "content_preview": "I ate a banana today for breakfast along with Oats"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:21.795Z",
+            "id": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a.png",
+            "created_at": "2025-09-07T00:01:21.828Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:29.431Z",
+            "id": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87.wav",
+            "created_at": "2025-09-07T00:01:29.468Z",
+            "file_size": 485646,
+            "content_preview": "Audio recording (474.3 KB)"
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-07T00:06:27.016Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-07T00:06:27.305Z"
+  },
+  "ai_response_1757203637173_l6z1nkcks": {
+    "id": "ai_response_1757203637173_l6z1nkcks",
+    "content": "\n      AI Response: You've made some excellent choices this past week, including a 25-minute run and nutritious meals like chicken with rice and broccoli. Your dedication to a balanced breakfast with oatmeal, banana, and almonds is commendable and sets a strong foundation for your health goals.\n      Context: insights_summary - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-07T00:07:17.172Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "insights_summary",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "You've made some excellent choices this past week, including a 25-minute run and nutritious meals like chicken with rice and broccoli. Your dedication to a balanced breakfast with oatmeal, banana, and almonds is commendable and sets a strong foundation for your health goals.",
+      "context": {
+        "type": "insights_summary",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T12:00:00Z",
+            "id": "d310c2a1-46a9-46fc-8925-3d727615858d",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "d310c2a1-46a9-46fc-8925-3d727615858d.txt",
+            "created_at": "2025-09-06T23:17:08.362Z",
+            "content_preview": "Had chicken breast with rice and broccoli for lunch"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T08:00:00Z",
+            "id": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c.txt",
+            "created_at": "2025-09-06T23:17:14.473Z",
+            "content_preview": "Breakfast: oatmeal with banana and almonds"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:38:45.879Z",
+            "id": "b7c7222c-6326-4406-afde-6bfc2d33a7b3",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "b7c7222c-6326-4406-afde-6bfc2d33a7b3.png",
+            "created_at": "2025-09-06T23:38:45.905Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:43:33.518Z",
+            "id": "fa875d50-e733-4416-8b7e-9b71db568677",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "fa875d50-e733-4416-8b7e-9b71db568677.wav",
+            "created_at": "2025-09-06T23:43:33.561Z",
+            "file_size": 1188366,
+            "content_preview": "Audio recording (1160.5 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:12.779Z",
+            "id": "42a894c8-3b9b-449a-a672-ba5a03a2f057",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "42a894c8-3b9b-449a-a672-ba5a03a2f057.txt",
+            "created_at": "2025-09-07T00:01:12.805Z",
+            "content_preview": "I ate a banana today for breakfast along with Oats"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:21.795Z",
+            "id": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a.png",
+            "created_at": "2025-09-07T00:01:21.828Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:29.431Z",
+            "id": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87.wav",
+            "created_at": "2025-09-07T00:01:29.468Z",
+            "file_size": 485646,
+            "content_preview": "Audio recording (474.3 KB)"
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-07T00:07:17.173Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-07T00:07:17.344Z"
+  },
+  "ai_response_1757203693272_xwhkuoxbg": {
+    "id": "ai_response_1757203693272_xwhkuoxbg",
+    "content": "\n      AI Response: You've made a fantastic start with your recent activities, including a 25-minute run and a nutritious meal of chicken breast, rice, and broccoli. Balancing your diet with healthy options like oatmeal and bananas shows your commitment to improving your health.\n      Context: insights_summary - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-07T00:08:13.271Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "insights_summary",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "You've made a fantastic start with your recent activities, including a 25-minute run and a nutritious meal of chicken breast, rice, and broccoli. Balancing your diet with healthy options like oatmeal and bananas shows your commitment to improving your health.",
+      "context": {
+        "type": "insights_summary",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T12:00:00Z",
+            "id": "d310c2a1-46a9-46fc-8925-3d727615858d",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "d310c2a1-46a9-46fc-8925-3d727615858d.txt",
+            "created_at": "2025-09-06T23:17:08.362Z",
+            "content_preview": "Had chicken breast with rice and broccoli for lunch"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T08:00:00Z",
+            "id": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c.txt",
+            "created_at": "2025-09-06T23:17:14.473Z",
+            "content_preview": "Breakfast: oatmeal with banana and almonds"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:38:45.879Z",
+            "id": "b7c7222c-6326-4406-afde-6bfc2d33a7b3",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "b7c7222c-6326-4406-afde-6bfc2d33a7b3.png",
+            "created_at": "2025-09-06T23:38:45.905Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:43:33.518Z",
+            "id": "fa875d50-e733-4416-8b7e-9b71db568677",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "fa875d50-e733-4416-8b7e-9b71db568677.wav",
+            "created_at": "2025-09-06T23:43:33.561Z",
+            "file_size": 1188366,
+            "content_preview": "Audio recording (1160.5 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:12.779Z",
+            "id": "42a894c8-3b9b-449a-a672-ba5a03a2f057",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "42a894c8-3b9b-449a-a672-ba5a03a2f057.txt",
+            "created_at": "2025-09-07T00:01:12.805Z",
+            "content_preview": "I ate a banana today for breakfast along with Oats"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:21.795Z",
+            "id": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a.png",
+            "created_at": "2025-09-07T00:01:21.828Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:29.431Z",
+            "id": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87.wav",
+            "created_at": "2025-09-07T00:01:29.468Z",
+            "file_size": 485646,
+            "content_preview": "Audio recording (474.3 KB)"
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-07T00:08:13.272Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-07T00:08:13.440Z"
+  },
+  "ai_response_1757203693481_bd6nh2qpx": {
+    "id": "ai_response_1757203693481_bd6nh2qpx",
+    "content": "\n      AI Response: Stay focused on your goals—every small step counts towards building a healthier you!\n      Context: motivation - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-07T00:08:13.481Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "motivation",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "Stay focused on your goals—every small step counts towards building a healthier you!",
+      "context": {
+        "type": "motivation",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T12:00:00Z",
+            "id": "d310c2a1-46a9-46fc-8925-3d727615858d",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "d310c2a1-46a9-46fc-8925-3d727615858d.txt",
+            "created_at": "2025-09-06T23:17:08.362Z",
+            "content_preview": "Had chicken breast with rice and broccoli for lunch"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T08:00:00Z",
+            "id": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c.txt",
+            "created_at": "2025-09-06T23:17:14.473Z",
+            "content_preview": "Breakfast: oatmeal with banana and almonds"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:38:45.879Z",
+            "id": "b7c7222c-6326-4406-afde-6bfc2d33a7b3",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "b7c7222c-6326-4406-afde-6bfc2d33a7b3.png",
+            "created_at": "2025-09-06T23:38:45.905Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:43:33.518Z",
+            "id": "fa875d50-e733-4416-8b7e-9b71db568677",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "fa875d50-e733-4416-8b7e-9b71db568677.wav",
+            "created_at": "2025-09-06T23:43:33.561Z",
+            "file_size": 1188366,
+            "content_preview": "Audio recording (1160.5 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:12.779Z",
+            "id": "42a894c8-3b9b-449a-a672-ba5a03a2f057",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "42a894c8-3b9b-449a-a672-ba5a03a2f057.txt",
+            "created_at": "2025-09-07T00:01:12.805Z",
+            "content_preview": "I ate a banana today for breakfast along with Oats"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:21.795Z",
+            "id": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a.png",
+            "created_at": "2025-09-07T00:01:21.828Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:29.431Z",
+            "id": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87.wav",
+            "created_at": "2025-09-07T00:01:29.468Z",
+            "file_size": 485646,
+            "content_preview": "Audio recording (474.3 KB)"
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-07T00:08:13.481Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-07T00:08:13.692Z"
+  },
+  "ai_response_1757203731182_t5hxdm75f": {
+    "id": "ai_response_1757203731182_t5hxdm75f",
+    "content": "\n      AI Response: You've made a great start with your recent activities, including a solid 25-minute run and a nutritious meal choice. Your balanced diet with oatmeal, banana, and almonds for breakfast shows you're on the right track towards your health goals.\n      Context: insights_summary - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-07T00:08:51.181Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "insights_summary",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "You've made a great start with your recent activities, including a solid 25-minute run and a nutritious meal choice. Your balanced diet with oatmeal, banana, and almonds for breakfast shows you're on the right track towards your health goals.",
+      "context": {
+        "type": "insights_summary",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T12:00:00Z",
+            "id": "d310c2a1-46a9-46fc-8925-3d727615858d",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "d310c2a1-46a9-46fc-8925-3d727615858d.txt",
+            "created_at": "2025-09-06T23:17:08.362Z",
+            "content_preview": "Had chicken breast with rice and broccoli for lunch"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T08:00:00Z",
+            "id": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c.txt",
+            "created_at": "2025-09-06T23:17:14.473Z",
+            "content_preview": "Breakfast: oatmeal with banana and almonds"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:38:45.879Z",
+            "id": "b7c7222c-6326-4406-afde-6bfc2d33a7b3",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "b7c7222c-6326-4406-afde-6bfc2d33a7b3.png",
+            "created_at": "2025-09-06T23:38:45.905Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:43:33.518Z",
+            "id": "fa875d50-e733-4416-8b7e-9b71db568677",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "fa875d50-e733-4416-8b7e-9b71db568677.wav",
+            "created_at": "2025-09-06T23:43:33.561Z",
+            "file_size": 1188366,
+            "content_preview": "Audio recording (1160.5 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:12.779Z",
+            "id": "42a894c8-3b9b-449a-a672-ba5a03a2f057",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "42a894c8-3b9b-449a-a672-ba5a03a2f057.txt",
+            "created_at": "2025-09-07T00:01:12.805Z",
+            "content_preview": "I ate a banana today for breakfast along with Oats"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:21.795Z",
+            "id": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a.png",
+            "created_at": "2025-09-07T00:01:21.828Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:29.431Z",
+            "id": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87.wav",
+            "created_at": "2025-09-07T00:01:29.468Z",
+            "file_size": 485646,
+            "content_preview": "Audio recording (474.3 KB)"
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-07T00:08:51.182Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-07T00:08:51.363Z"
+  },
+  "ai_response_1757203731405_ivlxwd8c5": {
+    "id": "ai_response_1757203731405_ivlxwd8c5",
+    "content": "\n      AI Response: Remember, every small step counts towards your bigger goals. Keep pushing forward, and celebrate your progress!\n      Context: motivation - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-07T00:08:51.405Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "motivation",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "Remember, every small step counts towards your bigger goals. Keep pushing forward, and celebrate your progress!",
+      "context": {
+        "type": "motivation",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T12:00:00Z",
+            "id": "d310c2a1-46a9-46fc-8925-3d727615858d",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "d310c2a1-46a9-46fc-8925-3d727615858d.txt",
+            "created_at": "2025-09-06T23:17:08.362Z",
+            "content_preview": "Had chicken breast with rice and broccoli for lunch"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T08:00:00Z",
+            "id": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c.txt",
+            "created_at": "2025-09-06T23:17:14.473Z",
+            "content_preview": "Breakfast: oatmeal with banana and almonds"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:38:45.879Z",
+            "id": "b7c7222c-6326-4406-afde-6bfc2d33a7b3",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "b7c7222c-6326-4406-afde-6bfc2d33a7b3.png",
+            "created_at": "2025-09-06T23:38:45.905Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:43:33.518Z",
+            "id": "fa875d50-e733-4416-8b7e-9b71db568677",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "fa875d50-e733-4416-8b7e-9b71db568677.wav",
+            "created_at": "2025-09-06T23:43:33.561Z",
+            "file_size": 1188366,
+            "content_preview": "Audio recording (1160.5 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:12.779Z",
+            "id": "42a894c8-3b9b-449a-a672-ba5a03a2f057",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "42a894c8-3b9b-449a-a672-ba5a03a2f057.txt",
+            "created_at": "2025-09-07T00:01:12.805Z",
+            "content_preview": "I ate a banana today for breakfast along with Oats"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:21.795Z",
+            "id": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a.png",
+            "created_at": "2025-09-07T00:01:21.828Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:29.431Z",
+            "id": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87.wav",
+            "created_at": "2025-09-07T00:01:29.468Z",
+            "file_size": 485646,
+            "content_preview": "Audio recording (474.3 KB)"
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-07T00:08:51.405Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-07T00:08:51.566Z"
+  },
+  "ai_response_1757203731608_v5d3g1j4d": {
+    "id": "ai_response_1757203731608_v5d3g1j4d",
+    "content": "\n      AI Response: Incorporate strength training exercises into your routine at least twice a week to help build muscle.\nConsider meal prepping for the week to ensure you have healthy options readily available and avoid impulse eating.\nTry to increase your daily activity levels by incorporating walks or light exercises during breaks.\n      Context: suggestions - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-07T00:08:51.608Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "suggestions",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "Incorporate strength training exercises into your routine at least twice a week to help build muscle.\nConsider meal prepping for the week to ensure you have healthy options readily available and avoid impulse eating.\nTry to increase your daily activity levels by incorporating walks or light exercises during breaks.",
+      "context": {
+        "type": "suggestions",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T12:00:00Z",
+            "id": "d310c2a1-46a9-46fc-8925-3d727615858d",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "d310c2a1-46a9-46fc-8925-3d727615858d.txt",
+            "created_at": "2025-09-06T23:17:08.362Z",
+            "content_preview": "Had chicken breast with rice and broccoli for lunch"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T08:00:00Z",
+            "id": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c.txt",
+            "created_at": "2025-09-06T23:17:14.473Z",
+            "content_preview": "Breakfast: oatmeal with banana and almonds"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:38:45.879Z",
+            "id": "b7c7222c-6326-4406-afde-6bfc2d33a7b3",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "b7c7222c-6326-4406-afde-6bfc2d33a7b3.png",
+            "created_at": "2025-09-06T23:38:45.905Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:43:33.518Z",
+            "id": "fa875d50-e733-4416-8b7e-9b71db568677",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "fa875d50-e733-4416-8b7e-9b71db568677.wav",
+            "created_at": "2025-09-06T23:43:33.561Z",
+            "file_size": 1188366,
+            "content_preview": "Audio recording (1160.5 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:12.779Z",
+            "id": "42a894c8-3b9b-449a-a672-ba5a03a2f057",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "42a894c8-3b9b-449a-a672-ba5a03a2f057.txt",
+            "created_at": "2025-09-07T00:01:12.805Z",
+            "content_preview": "I ate a banana today for breakfast along with Oats"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:21.795Z",
+            "id": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a.png",
+            "created_at": "2025-09-07T00:01:21.828Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:29.431Z",
+            "id": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87.wav",
+            "created_at": "2025-09-07T00:01:29.468Z",
+            "file_size": 485646,
+            "content_preview": "Audio recording (474.3 KB)"
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-07T00:08:51.608Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-07T00:08:51.898Z"
+  },
+  "ai_response_1757203970385_3n05qt791": {
+    "id": "ai_response_1757203970385_3n05qt791",
+    "content": "\n      AI Response: You've made some excellent strides this past week with a consistent running routine and nutritious meals. Your balanced breakfast and protein-rich lunch are great choices for fueling your body and supporting your goals.\n      Context: insights_summary - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-07T00:12:50.385Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "insights_summary",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "You've made some excellent strides this past week with a consistent running routine and nutritious meals. Your balanced breakfast and protein-rich lunch are great choices for fueling your body and supporting your goals.",
+      "context": {
+        "type": "insights_summary",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T12:00:00Z",
+            "id": "d310c2a1-46a9-46fc-8925-3d727615858d",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "d310c2a1-46a9-46fc-8925-3d727615858d.txt",
+            "created_at": "2025-09-06T23:17:08.362Z",
+            "content_preview": "Had chicken breast with rice and broccoli for lunch"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T08:00:00Z",
+            "id": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c.txt",
+            "created_at": "2025-09-06T23:17:14.473Z",
+            "content_preview": "Breakfast: oatmeal with banana and almonds"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:38:45.879Z",
+            "id": "b7c7222c-6326-4406-afde-6bfc2d33a7b3",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "b7c7222c-6326-4406-afde-6bfc2d33a7b3.png",
+            "created_at": "2025-09-06T23:38:45.905Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:43:33.518Z",
+            "id": "fa875d50-e733-4416-8b7e-9b71db568677",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "fa875d50-e733-4416-8b7e-9b71db568677.wav",
+            "created_at": "2025-09-06T23:43:33.561Z",
+            "file_size": 1188366,
+            "content_preview": "Audio recording (1160.5 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:12.779Z",
+            "id": "42a894c8-3b9b-449a-a672-ba5a03a2f057",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "42a894c8-3b9b-449a-a672-ba5a03a2f057.txt",
+            "created_at": "2025-09-07T00:01:12.805Z",
+            "content_preview": "I ate a banana today for breakfast along with Oats"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:21.795Z",
+            "id": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a.png",
+            "created_at": "2025-09-07T00:01:21.828Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:29.431Z",
+            "id": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87.wav",
+            "created_at": "2025-09-07T00:01:29.468Z",
+            "file_size": 485646,
+            "content_preview": "Audio recording (474.3 KB)"
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-07T00:12:50.385Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-07T00:12:50.797Z"
+  },
+  "ai_response_1757203970826_3xzox6xvu": {
+    "id": "ai_response_1757203970826_3xzox6xvu",
+    "content": "\n      AI Response: Remember, every step you take brings you closer to your goals! Stay focused and keep pushing yourself to achieve the results you desire.\n      Context: motivation - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-07T00:12:50.826Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "motivation",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "Remember, every step you take brings you closer to your goals! Stay focused and keep pushing yourself to achieve the results you desire.",
+      "context": {
+        "type": "motivation",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T12:00:00Z",
+            "id": "d310c2a1-46a9-46fc-8925-3d727615858d",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "d310c2a1-46a9-46fc-8925-3d727615858d.txt",
+            "created_at": "2025-09-06T23:17:08.362Z",
+            "content_preview": "Had chicken breast with rice and broccoli for lunch"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T08:00:00Z",
+            "id": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c.txt",
+            "created_at": "2025-09-06T23:17:14.473Z",
+            "content_preview": "Breakfast: oatmeal with banana and almonds"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:38:45.879Z",
+            "id": "b7c7222c-6326-4406-afde-6bfc2d33a7b3",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "b7c7222c-6326-4406-afde-6bfc2d33a7b3.png",
+            "created_at": "2025-09-06T23:38:45.905Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:43:33.518Z",
+            "id": "fa875d50-e733-4416-8b7e-9b71db568677",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "fa875d50-e733-4416-8b7e-9b71db568677.wav",
+            "created_at": "2025-09-06T23:43:33.561Z",
+            "file_size": 1188366,
+            "content_preview": "Audio recording (1160.5 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:12.779Z",
+            "id": "42a894c8-3b9b-449a-a672-ba5a03a2f057",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "42a894c8-3b9b-449a-a672-ba5a03a2f057.txt",
+            "created_at": "2025-09-07T00:01:12.805Z",
+            "content_preview": "I ate a banana today for breakfast along with Oats"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:21.795Z",
+            "id": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a.png",
+            "created_at": "2025-09-07T00:01:21.828Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:29.431Z",
+            "id": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87.wav",
+            "created_at": "2025-09-07T00:01:29.468Z",
+            "file_size": 485646,
+            "content_preview": "Audio recording (474.3 KB)"
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-07T00:12:50.826Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-07T00:12:50.982Z"
+  },
+  "ai_response_1757203971021_buzbe6sa0": {
+    "id": "ai_response_1757203971021_buzbe6sa0",
+    "content": "\n      AI Response: Consider incorporating strength training exercises 2-3 times a week to build muscle effectively.\nTry to increase your run duration gradually to 30 minutes or more to enhance your cardiovascular fitness.\nExperiment with meal prepping to ensure you have healthy options readily available and avoid last-minute unhealthy choices.\n      Context: suggestions - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-07T00:12:51.021Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "suggestions",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "Consider incorporating strength training exercises 2-3 times a week to build muscle effectively.\nTry to increase your run duration gradually to 30 minutes or more to enhance your cardiovascular fitness.\nExperiment with meal prepping to ensure you have healthy options readily available and avoid last-minute unhealthy choices.",
+      "context": {
+        "type": "suggestions",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T12:00:00Z",
+            "id": "d310c2a1-46a9-46fc-8925-3d727615858d",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "d310c2a1-46a9-46fc-8925-3d727615858d.txt",
+            "created_at": "2025-09-06T23:17:08.362Z",
+            "content_preview": "Had chicken breast with rice and broccoli for lunch"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T08:00:00Z",
+            "id": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c.txt",
+            "created_at": "2025-09-06T23:17:14.473Z",
+            "content_preview": "Breakfast: oatmeal with banana and almonds"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:38:45.879Z",
+            "id": "b7c7222c-6326-4406-afde-6bfc2d33a7b3",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "b7c7222c-6326-4406-afde-6bfc2d33a7b3.png",
+            "created_at": "2025-09-06T23:38:45.905Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:43:33.518Z",
+            "id": "fa875d50-e733-4416-8b7e-9b71db568677",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "fa875d50-e733-4416-8b7e-9b71db568677.wav",
+            "created_at": "2025-09-06T23:43:33.561Z",
+            "file_size": 1188366,
+            "content_preview": "Audio recording (1160.5 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:12.779Z",
+            "id": "42a894c8-3b9b-449a-a672-ba5a03a2f057",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "42a894c8-3b9b-449a-a672-ba5a03a2f057.txt",
+            "created_at": "2025-09-07T00:01:12.805Z",
+            "content_preview": "I ate a banana today for breakfast along with Oats"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:21.795Z",
+            "id": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a.png",
+            "created_at": "2025-09-07T00:01:21.828Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:29.431Z",
+            "id": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87.wav",
+            "created_at": "2025-09-07T00:01:29.468Z",
+            "file_size": 485646,
+            "content_preview": "Audio recording (474.3 KB)"
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-07T00:12:51.021Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-07T00:12:51.170Z"
+  },
+  "ai_response_1757204021528_mhd8uena3": {
+    "id": "ai_response_1757204021528_mhd8uena3",
+    "content": "\n      AI Response: You've made some solid choices this week, especially with your balanced meals and consistent running. It's clear you're committed to your goals of losing weight and building muscle, and you're on the right track with a good mix of proteins and carbs.\n      Context: insights_summary - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-07T00:13:41.528Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "insights_summary",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "You've made some solid choices this week, especially with your balanced meals and consistent running. It's clear you're committed to your goals of losing weight and building muscle, and you're on the right track with a good mix of proteins and carbs.",
+      "context": {
+        "type": "insights_summary",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T12:00:00Z",
+            "id": "d310c2a1-46a9-46fc-8925-3d727615858d",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "d310c2a1-46a9-46fc-8925-3d727615858d.txt",
+            "created_at": "2025-09-06T23:17:08.362Z",
+            "content_preview": "Had chicken breast with rice and broccoli for lunch"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T08:00:00Z",
+            "id": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c.txt",
+            "created_at": "2025-09-06T23:17:14.473Z",
+            "content_preview": "Breakfast: oatmeal with banana and almonds"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:38:45.879Z",
+            "id": "b7c7222c-6326-4406-afde-6bfc2d33a7b3",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "b7c7222c-6326-4406-afde-6bfc2d33a7b3.png",
+            "created_at": "2025-09-06T23:38:45.905Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:43:33.518Z",
+            "id": "fa875d50-e733-4416-8b7e-9b71db568677",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "fa875d50-e733-4416-8b7e-9b71db568677.wav",
+            "created_at": "2025-09-06T23:43:33.561Z",
+            "file_size": 1188366,
+            "content_preview": "Audio recording (1160.5 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:12.779Z",
+            "id": "42a894c8-3b9b-449a-a672-ba5a03a2f057",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "42a894c8-3b9b-449a-a672-ba5a03a2f057.txt",
+            "created_at": "2025-09-07T00:01:12.805Z",
+            "content_preview": "I ate a banana today for breakfast along with Oats"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:21.795Z",
+            "id": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a.png",
+            "created_at": "2025-09-07T00:01:21.828Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:29.431Z",
+            "id": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87.wav",
+            "created_at": "2025-09-07T00:01:29.468Z",
+            "file_size": 485646,
+            "content_preview": "Audio recording (474.3 KB)"
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-07T00:13:41.528Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-07T00:13:41.681Z"
+  },
+  "ai_response_1757204021720_uinx5w4ay": {
+    "id": "ai_response_1757204021720_uinx5w4ay",
+    "content": "\n      AI Response: Keep pushing forward! Every small step you take is a step closer to your goals, and your dedication is inspiring.\n      Context: motivation - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-07T00:13:41.720Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "motivation",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "Keep pushing forward! Every small step you take is a step closer to your goals, and your dedication is inspiring.",
+      "context": {
+        "type": "motivation",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T12:00:00Z",
+            "id": "d310c2a1-46a9-46fc-8925-3d727615858d",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "d310c2a1-46a9-46fc-8925-3d727615858d.txt",
+            "created_at": "2025-09-06T23:17:08.362Z",
+            "content_preview": "Had chicken breast with rice and broccoli for lunch"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T08:00:00Z",
+            "id": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c.txt",
+            "created_at": "2025-09-06T23:17:14.473Z",
+            "content_preview": "Breakfast: oatmeal with banana and almonds"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:38:45.879Z",
+            "id": "b7c7222c-6326-4406-afde-6bfc2d33a7b3",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "b7c7222c-6326-4406-afde-6bfc2d33a7b3.png",
+            "created_at": "2025-09-06T23:38:45.905Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:43:33.518Z",
+            "id": "fa875d50-e733-4416-8b7e-9b71db568677",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "fa875d50-e733-4416-8b7e-9b71db568677.wav",
+            "created_at": "2025-09-06T23:43:33.561Z",
+            "file_size": 1188366,
+            "content_preview": "Audio recording (1160.5 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:12.779Z",
+            "id": "42a894c8-3b9b-449a-a672-ba5a03a2f057",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "42a894c8-3b9b-449a-a672-ba5a03a2f057.txt",
+            "created_at": "2025-09-07T00:01:12.805Z",
+            "content_preview": "I ate a banana today for breakfast along with Oats"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:21.795Z",
+            "id": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a.png",
+            "created_at": "2025-09-07T00:01:21.828Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:29.431Z",
+            "id": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87.wav",
+            "created_at": "2025-09-07T00:01:29.468Z",
+            "file_size": 485646,
+            "content_preview": "Audio recording (474.3 KB)"
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-07T00:13:41.720Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-07T00:13:41.971Z"
+  },
+  "ai_response_1757204022017_bfaet80yq": {
+    "id": "ai_response_1757204022017_bfaet80yq",
+    "content": "\n      AI Response: Incorporate healthy fats such as avocados, nuts, or olive oil in your meals to enhance nutrient absorption and support muscle growth.\nConsider adding more variety to your vegetables to ensure you're getting a wide range of vitamins and minerals.\nTry to increase your protein intake slightly after workouts to aid muscle recovery and growth.\n      Context: suggestions - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-07T00:13:42.017Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "suggestions",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "Incorporate healthy fats such as avocados, nuts, or olive oil in your meals to enhance nutrient absorption and support muscle growth.\nConsider adding more variety to your vegetables to ensure you're getting a wide range of vitamins and minerals.\nTry to increase your protein intake slightly after workouts to aid muscle recovery and growth.",
+      "context": {
+        "type": "suggestions",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T12:00:00Z",
+            "id": "d310c2a1-46a9-46fc-8925-3d727615858d",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "d310c2a1-46a9-46fc-8925-3d727615858d.txt",
+            "created_at": "2025-09-06T23:17:08.362Z",
+            "content_preview": "Had chicken breast with rice and broccoli for lunch"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T08:00:00Z",
+            "id": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c.txt",
+            "created_at": "2025-09-06T23:17:14.473Z",
+            "content_preview": "Breakfast: oatmeal with banana and almonds"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:38:45.879Z",
+            "id": "b7c7222c-6326-4406-afde-6bfc2d33a7b3",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "b7c7222c-6326-4406-afde-6bfc2d33a7b3.png",
+            "created_at": "2025-09-06T23:38:45.905Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:43:33.518Z",
+            "id": "fa875d50-e733-4416-8b7e-9b71db568677",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "fa875d50-e733-4416-8b7e-9b71db568677.wav",
+            "created_at": "2025-09-06T23:43:33.561Z",
+            "file_size": 1188366,
+            "content_preview": "Audio recording (1160.5 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:12.779Z",
+            "id": "42a894c8-3b9b-449a-a672-ba5a03a2f057",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "42a894c8-3b9b-449a-a672-ba5a03a2f057.txt",
+            "created_at": "2025-09-07T00:01:12.805Z",
+            "content_preview": "I ate a banana today for breakfast along with Oats"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:21.795Z",
+            "id": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a.png",
+            "created_at": "2025-09-07T00:01:21.828Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:29.431Z",
+            "id": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87.wav",
+            "created_at": "2025-09-07T00:01:29.468Z",
+            "file_size": 485646,
+            "content_preview": "Audio recording (474.3 KB)"
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-07T00:13:42.017Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-07T00:13:42.183Z"
+  },
+  "ai_response_1757204022219_ge6a9syqz": {
+    "id": "ai_response_1757204022219_ge6a9syqz",
+    "content": "\n      AI Response: For dinner, try grilled salmon with a side of quinoa and a mixed green salad topped with olive oil and nuts. This meal will provide healthy fats, protein, and fiber, supporting your weight loss and muscle-building goals while being culturally familiar.\n      Context: dinner_recommendation - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-07T00:13:42.219Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "dinner_recommendation",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "For dinner, try grilled salmon with a side of quinoa and a mixed green salad topped with olive oil and nuts. This meal will provide healthy fats, protein, and fiber, supporting your weight loss and muscle-building goals while being culturally familiar.",
+      "context": {
+        "type": "dinner_recommendation",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T12:00:00Z",
+            "id": "d310c2a1-46a9-46fc-8925-3d727615858d",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "d310c2a1-46a9-46fc-8925-3d727615858d.txt",
+            "created_at": "2025-09-06T23:17:08.362Z",
+            "content_preview": "Had chicken breast with rice and broccoli for lunch"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T08:00:00Z",
+            "id": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c.txt",
+            "created_at": "2025-09-06T23:17:14.473Z",
+            "content_preview": "Breakfast: oatmeal with banana and almonds"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:38:45.879Z",
+            "id": "b7c7222c-6326-4406-afde-6bfc2d33a7b3",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "b7c7222c-6326-4406-afde-6bfc2d33a7b3.png",
+            "created_at": "2025-09-06T23:38:45.905Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:43:33.518Z",
+            "id": "fa875d50-e733-4416-8b7e-9b71db568677",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "fa875d50-e733-4416-8b7e-9b71db568677.wav",
+            "created_at": "2025-09-06T23:43:33.561Z",
+            "file_size": 1188366,
+            "content_preview": "Audio recording (1160.5 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:12.779Z",
+            "id": "42a894c8-3b9b-449a-a672-ba5a03a2f057",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "42a894c8-3b9b-449a-a672-ba5a03a2f057.txt",
+            "created_at": "2025-09-07T00:01:12.805Z",
+            "content_preview": "I ate a banana today for breakfast along with Oats"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:21.795Z",
+            "id": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a.png",
+            "created_at": "2025-09-07T00:01:21.828Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:29.431Z",
+            "id": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87.wav",
+            "created_at": "2025-09-07T00:01:29.468Z",
+            "file_size": 485646,
+            "content_preview": "Audio recording (474.3 KB)"
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-07T00:13:42.219Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-07T00:13:42.400Z"
+  },
+  "ai_response_1757204184369_qtt7obfa3": {
+    "id": "ai_response_1757204184369_qtt7obfa3",
+    "content": "\n      AI Response: You've made great strides in your health journey this week, with consistent meals and an active lifestyle. Your balanced breakfast and lunch choices reflect a solid foundation to build upon.\n      Context: insights_summary - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-07T00:16:24.369Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "insights_summary",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "You've made great strides in your health journey this week, with consistent meals and an active lifestyle. Your balanced breakfast and lunch choices reflect a solid foundation to build upon.",
+      "context": {
+        "type": "insights_summary",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T12:00:00Z",
+            "id": "d310c2a1-46a9-46fc-8925-3d727615858d",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "d310c2a1-46a9-46fc-8925-3d727615858d.txt",
+            "created_at": "2025-09-06T23:17:08.362Z",
+            "content_preview": "Had chicken breast with rice and broccoli for lunch"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T08:00:00Z",
+            "id": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c.txt",
+            "created_at": "2025-09-06T23:17:14.473Z",
+            "content_preview": "Breakfast: oatmeal with banana and almonds"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:38:45.879Z",
+            "id": "b7c7222c-6326-4406-afde-6bfc2d33a7b3",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "b7c7222c-6326-4406-afde-6bfc2d33a7b3.png",
+            "created_at": "2025-09-06T23:38:45.905Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:43:33.518Z",
+            "id": "fa875d50-e733-4416-8b7e-9b71db568677",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "fa875d50-e733-4416-8b7e-9b71db568677.wav",
+            "created_at": "2025-09-06T23:43:33.561Z",
+            "file_size": 1188366,
+            "content_preview": "Audio recording (1160.5 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:12.779Z",
+            "id": "42a894c8-3b9b-449a-a672-ba5a03a2f057",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "42a894c8-3b9b-449a-a672-ba5a03a2f057.txt",
+            "created_at": "2025-09-07T00:01:12.805Z",
+            "content_preview": "I ate a banana today for breakfast along with Oats"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:21.795Z",
+            "id": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a.png",
+            "created_at": "2025-09-07T00:01:21.828Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:29.431Z",
+            "id": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87.wav",
+            "created_at": "2025-09-07T00:01:29.468Z",
+            "file_size": 485646,
+            "content_preview": "Audio recording (474.3 KB)"
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-07T00:16:24.369Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-07T00:16:24.524Z"
+  },
+  "ai_response_1757204184556_hafskod5e": {
+    "id": "ai_response_1757204184556_hafskod5e",
+    "content": "\n      AI Response: Keep up the momentum! Every step you take is a step closer to your goals of losing weight and building muscle.\n      Context: motivation - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-07T00:16:24.556Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "motivation",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "Keep up the momentum! Every step you take is a step closer to your goals of losing weight and building muscle.",
+      "context": {
+        "type": "motivation",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T12:00:00Z",
+            "id": "d310c2a1-46a9-46fc-8925-3d727615858d",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "d310c2a1-46a9-46fc-8925-3d727615858d.txt",
+            "created_at": "2025-09-06T23:17:08.362Z",
+            "content_preview": "Had chicken breast with rice and broccoli for lunch"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T08:00:00Z",
+            "id": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c.txt",
+            "created_at": "2025-09-06T23:17:14.473Z",
+            "content_preview": "Breakfast: oatmeal with banana and almonds"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:38:45.879Z",
+            "id": "b7c7222c-6326-4406-afde-6bfc2d33a7b3",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "b7c7222c-6326-4406-afde-6bfc2d33a7b3.png",
+            "created_at": "2025-09-06T23:38:45.905Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:43:33.518Z",
+            "id": "fa875d50-e733-4416-8b7e-9b71db568677",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "fa875d50-e733-4416-8b7e-9b71db568677.wav",
+            "created_at": "2025-09-06T23:43:33.561Z",
+            "file_size": 1188366,
+            "content_preview": "Audio recording (1160.5 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:12.779Z",
+            "id": "42a894c8-3b9b-449a-a672-ba5a03a2f057",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "42a894c8-3b9b-449a-a672-ba5a03a2f057.txt",
+            "created_at": "2025-09-07T00:01:12.805Z",
+            "content_preview": "I ate a banana today for breakfast along with Oats"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:21.795Z",
+            "id": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a.png",
+            "created_at": "2025-09-07T00:01:21.828Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:29.431Z",
+            "id": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87.wav",
+            "created_at": "2025-09-07T00:01:29.468Z",
+            "file_size": 485646,
+            "content_preview": "Audio recording (474.3 KB)"
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-07T00:16:24.556Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-07T00:16:24.768Z"
+  },
+  "ai_response_1757204184814_hwwcm2fhh": {
+    "id": "ai_response_1757204184814_hwwcm2fhh",
+    "content": "\n      AI Response: Incorporate healthy fats into your meals, such as avocado or olive oil, to enhance your nutrient intake.\nConsider adding a variety of vegetables to your meals to improve overall nutrient density.\nAim for strength training exercises at least twice a week to complement your running and further boost muscle growth.\n      Context: suggestions - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-07T00:16:24.814Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "suggestions",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "Incorporate healthy fats into your meals, such as avocado or olive oil, to enhance your nutrient intake.\nConsider adding a variety of vegetables to your meals to improve overall nutrient density.\nAim for strength training exercises at least twice a week to complement your running and further boost muscle growth.",
+      "context": {
+        "type": "suggestions",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T12:00:00Z",
+            "id": "d310c2a1-46a9-46fc-8925-3d727615858d",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "d310c2a1-46a9-46fc-8925-3d727615858d.txt",
+            "created_at": "2025-09-06T23:17:08.362Z",
+            "content_preview": "Had chicken breast with rice and broccoli for lunch"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T08:00:00Z",
+            "id": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c.txt",
+            "created_at": "2025-09-06T23:17:14.473Z",
+            "content_preview": "Breakfast: oatmeal with banana and almonds"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:38:45.879Z",
+            "id": "b7c7222c-6326-4406-afde-6bfc2d33a7b3",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "b7c7222c-6326-4406-afde-6bfc2d33a7b3.png",
+            "created_at": "2025-09-06T23:38:45.905Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:43:33.518Z",
+            "id": "fa875d50-e733-4416-8b7e-9b71db568677",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "fa875d50-e733-4416-8b7e-9b71db568677.wav",
+            "created_at": "2025-09-06T23:43:33.561Z",
+            "file_size": 1188366,
+            "content_preview": "Audio recording (1160.5 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:12.779Z",
+            "id": "42a894c8-3b9b-449a-a672-ba5a03a2f057",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "42a894c8-3b9b-449a-a672-ba5a03a2f057.txt",
+            "created_at": "2025-09-07T00:01:12.805Z",
+            "content_preview": "I ate a banana today for breakfast along with Oats"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:21.795Z",
+            "id": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a.png",
+            "created_at": "2025-09-07T00:01:21.828Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:29.431Z",
+            "id": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87.wav",
+            "created_at": "2025-09-07T00:01:29.468Z",
+            "file_size": 485646,
+            "content_preview": "Audio recording (474.3 KB)"
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-07T00:16:24.814Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-07T00:16:25.009Z"
+  },
+  "ai_response_1757204185053_36r4jxbpj": {
+    "id": "ai_response_1757204185053_36r4jxbpj",
+    "content": "\n      AI Response: Consider making a quinoa salad with grilled salmon, spinach, cherry tomatoes, and a drizzle of olive oil. This dish is rich in healthy fats, protein, and packed with various nutrients to support your goals.\n      Context: dinner_recommendation - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-07T00:16:25.053Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "dinner_recommendation",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "Consider making a quinoa salad with grilled salmon, spinach, cherry tomatoes, and a drizzle of olive oil. This dish is rich in healthy fats, protein, and packed with various nutrients to support your goals.",
+      "context": {
+        "type": "dinner_recommendation",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T12:00:00Z",
+            "id": "d310c2a1-46a9-46fc-8925-3d727615858d",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "d310c2a1-46a9-46fc-8925-3d727615858d.txt",
+            "created_at": "2025-09-06T23:17:08.362Z",
+            "content_preview": "Had chicken breast with rice and broccoli for lunch"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T08:00:00Z",
+            "id": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c.txt",
+            "created_at": "2025-09-06T23:17:14.473Z",
+            "content_preview": "Breakfast: oatmeal with banana and almonds"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:38:45.879Z",
+            "id": "b7c7222c-6326-4406-afde-6bfc2d33a7b3",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "b7c7222c-6326-4406-afde-6bfc2d33a7b3.png",
+            "created_at": "2025-09-06T23:38:45.905Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:43:33.518Z",
+            "id": "fa875d50-e733-4416-8b7e-9b71db568677",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "fa875d50-e733-4416-8b7e-9b71db568677.wav",
+            "created_at": "2025-09-06T23:43:33.561Z",
+            "file_size": 1188366,
+            "content_preview": "Audio recording (1160.5 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:12.779Z",
+            "id": "42a894c8-3b9b-449a-a672-ba5a03a2f057",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "42a894c8-3b9b-449a-a672-ba5a03a2f057.txt",
+            "created_at": "2025-09-07T00:01:12.805Z",
+            "content_preview": "I ate a banana today for breakfast along with Oats"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:21.795Z",
+            "id": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a.png",
+            "created_at": "2025-09-07T00:01:21.828Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:29.431Z",
+            "id": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87.wav",
+            "created_at": "2025-09-07T00:01:29.468Z",
+            "file_size": 485646,
+            "content_preview": "Audio recording (474.3 KB)"
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-07T00:16:25.053Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-07T00:16:25.252Z"
+  },
+  "ai_response_1757204196379_vm7h9a0bh": {
+    "id": "ai_response_1757204196379_vm7h9a0bh",
+    "content": "\n      AI Response: You've made some solid progress this week with a balanced diet and a consistent running routine. Your meals are nutritious, and your 25-minute run indicates a commitment to improving your fitness levels.\n      Context: insights_summary - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-07T00:16:36.379Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "insights_summary",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "You've made some solid progress this week with a balanced diet and a consistent running routine. Your meals are nutritious, and your 25-minute run indicates a commitment to improving your fitness levels.",
+      "context": {
+        "type": "insights_summary",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T12:00:00Z",
+            "id": "d310c2a1-46a9-46fc-8925-3d727615858d",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "d310c2a1-46a9-46fc-8925-3d727615858d.txt",
+            "created_at": "2025-09-06T23:17:08.362Z",
+            "content_preview": "Had chicken breast with rice and broccoli for lunch"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T08:00:00Z",
+            "id": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c.txt",
+            "created_at": "2025-09-06T23:17:14.473Z",
+            "content_preview": "Breakfast: oatmeal with banana and almonds"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:38:45.879Z",
+            "id": "b7c7222c-6326-4406-afde-6bfc2d33a7b3",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "b7c7222c-6326-4406-afde-6bfc2d33a7b3.png",
+            "created_at": "2025-09-06T23:38:45.905Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:43:33.518Z",
+            "id": "fa875d50-e733-4416-8b7e-9b71db568677",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "fa875d50-e733-4416-8b7e-9b71db568677.wav",
+            "created_at": "2025-09-06T23:43:33.561Z",
+            "file_size": 1188366,
+            "content_preview": "Audio recording (1160.5 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:12.779Z",
+            "id": "42a894c8-3b9b-449a-a672-ba5a03a2f057",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "42a894c8-3b9b-449a-a672-ba5a03a2f057.txt",
+            "created_at": "2025-09-07T00:01:12.805Z",
+            "content_preview": "I ate a banana today for breakfast along with Oats"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:21.795Z",
+            "id": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a.png",
+            "created_at": "2025-09-07T00:01:21.828Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:29.431Z",
+            "id": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87.wav",
+            "created_at": "2025-09-07T00:01:29.468Z",
+            "file_size": 485646,
+            "content_preview": "Audio recording (474.3 KB)"
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-07T00:16:36.379Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-07T00:16:36.659Z"
+  },
+  "ai_response_1757204196706_tyszjq0yj": {
+    "id": "ai_response_1757204196706_tyszjq0yj",
+    "content": "\n      AI Response: Keep pushing forward! Every small step you take is bringing you closer to your goals of losing weight and building muscle.\n      Context: motivation - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-07T00:16:36.706Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "motivation",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "Keep pushing forward! Every small step you take is bringing you closer to your goals of losing weight and building muscle.",
+      "context": {
+        "type": "motivation",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T12:00:00Z",
+            "id": "d310c2a1-46a9-46fc-8925-3d727615858d",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "d310c2a1-46a9-46fc-8925-3d727615858d.txt",
+            "created_at": "2025-09-06T23:17:08.362Z",
+            "content_preview": "Had chicken breast with rice and broccoli for lunch"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T08:00:00Z",
+            "id": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c.txt",
+            "created_at": "2025-09-06T23:17:14.473Z",
+            "content_preview": "Breakfast: oatmeal with banana and almonds"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:38:45.879Z",
+            "id": "b7c7222c-6326-4406-afde-6bfc2d33a7b3",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "b7c7222c-6326-4406-afde-6bfc2d33a7b3.png",
+            "created_at": "2025-09-06T23:38:45.905Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:43:33.518Z",
+            "id": "fa875d50-e733-4416-8b7e-9b71db568677",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "fa875d50-e733-4416-8b7e-9b71db568677.wav",
+            "created_at": "2025-09-06T23:43:33.561Z",
+            "file_size": 1188366,
+            "content_preview": "Audio recording (1160.5 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:12.779Z",
+            "id": "42a894c8-3b9b-449a-a672-ba5a03a2f057",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "42a894c8-3b9b-449a-a672-ba5a03a2f057.txt",
+            "created_at": "2025-09-07T00:01:12.805Z",
+            "content_preview": "I ate a banana today for breakfast along with Oats"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:21.795Z",
+            "id": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a.png",
+            "created_at": "2025-09-07T00:01:21.828Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:29.431Z",
+            "id": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87.wav",
+            "created_at": "2025-09-07T00:01:29.468Z",
+            "file_size": 485646,
+            "content_preview": "Audio recording (474.3 KB)"
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-07T00:16:36.706Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-07T00:16:37.001Z"
+  },
+  "ai_response_1757204197048_sq0814tds": {
+    "id": "ai_response_1757204197048_sq0814tds",
+    "content": "\n      AI Response: Incorporate strength training exercises at least 2-3 times a week to build muscle effectively.\nConsider tracking your caloric intake to ensure you're in a slight deficit for weight loss while still fueling your workouts.\nTry to add variety to your meals with different protein sources and vegetables to maintain excitement and nutrition.\n      Context: suggestions - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-07T00:16:37.048Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "suggestions",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "Incorporate strength training exercises at least 2-3 times a week to build muscle effectively.\nConsider tracking your caloric intake to ensure you're in a slight deficit for weight loss while still fueling your workouts.\nTry to add variety to your meals with different protein sources and vegetables to maintain excitement and nutrition.",
+      "context": {
+        "type": "suggestions",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T12:00:00Z",
+            "id": "d310c2a1-46a9-46fc-8925-3d727615858d",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "d310c2a1-46a9-46fc-8925-3d727615858d.txt",
+            "created_at": "2025-09-06T23:17:08.362Z",
+            "content_preview": "Had chicken breast with rice and broccoli for lunch"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T08:00:00Z",
+            "id": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c.txt",
+            "created_at": "2025-09-06T23:17:14.473Z",
+            "content_preview": "Breakfast: oatmeal with banana and almonds"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:38:45.879Z",
+            "id": "b7c7222c-6326-4406-afde-6bfc2d33a7b3",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "b7c7222c-6326-4406-afde-6bfc2d33a7b3.png",
+            "created_at": "2025-09-06T23:38:45.905Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:43:33.518Z",
+            "id": "fa875d50-e733-4416-8b7e-9b71db568677",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "fa875d50-e733-4416-8b7e-9b71db568677.wav",
+            "created_at": "2025-09-06T23:43:33.561Z",
+            "file_size": 1188366,
+            "content_preview": "Audio recording (1160.5 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:12.779Z",
+            "id": "42a894c8-3b9b-449a-a672-ba5a03a2f057",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "42a894c8-3b9b-449a-a672-ba5a03a2f057.txt",
+            "created_at": "2025-09-07T00:01:12.805Z",
+            "content_preview": "I ate a banana today for breakfast along with Oats"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:21.795Z",
+            "id": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a.png",
+            "created_at": "2025-09-07T00:01:21.828Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:29.431Z",
+            "id": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87.wav",
+            "created_at": "2025-09-07T00:01:29.468Z",
+            "file_size": 485646,
+            "content_preview": "Audio recording (474.3 KB)"
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-07T00:16:37.048Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-07T00:16:37.231Z"
+  },
+  "ai_response_1757204306069_htgh48n5k": {
+    "id": "ai_response_1757204306069_htgh48n5k",
+    "content": "\n      AI Response: You've made a great start with your running and balanced meals like chicken with rice and broccoli. It's clear that you're committed to improving your health, and with your mesomorph body type, you have the potential to build muscle effectively as you lose weight.\n      Context: insights_summary - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-07T00:18:26.069Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "insights_summary",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "You've made a great start with your running and balanced meals like chicken with rice and broccoli. It's clear that you're committed to improving your health, and with your mesomorph body type, you have the potential to build muscle effectively as you lose weight.",
+      "context": {
+        "type": "insights_summary",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T12:00:00Z",
+            "id": "d310c2a1-46a9-46fc-8925-3d727615858d",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "d310c2a1-46a9-46fc-8925-3d727615858d.txt",
+            "created_at": "2025-09-06T23:17:08.362Z",
+            "content_preview": "Had chicken breast with rice and broccoli for lunch"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T08:00:00Z",
+            "id": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c.txt",
+            "created_at": "2025-09-06T23:17:14.473Z",
+            "content_preview": "Breakfast: oatmeal with banana and almonds"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:38:45.879Z",
+            "id": "b7c7222c-6326-4406-afde-6bfc2d33a7b3",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "b7c7222c-6326-4406-afde-6bfc2d33a7b3.png",
+            "created_at": "2025-09-06T23:38:45.905Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:43:33.518Z",
+            "id": "fa875d50-e733-4416-8b7e-9b71db568677",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "fa875d50-e733-4416-8b7e-9b71db568677.wav",
+            "created_at": "2025-09-06T23:43:33.561Z",
+            "file_size": 1188366,
+            "content_preview": "Audio recording (1160.5 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:12.779Z",
+            "id": "42a894c8-3b9b-449a-a672-ba5a03a2f057",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "42a894c8-3b9b-449a-a672-ba5a03a2f057.txt",
+            "created_at": "2025-09-07T00:01:12.805Z",
+            "content_preview": "I ate a banana today for breakfast along with Oats"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:21.795Z",
+            "id": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a.png",
+            "created_at": "2025-09-07T00:01:21.828Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:29.431Z",
+            "id": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87.wav",
+            "created_at": "2025-09-07T00:01:29.468Z",
+            "file_size": 485646,
+            "content_preview": "Audio recording (474.3 KB)"
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-07T00:18:26.069Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-07T00:18:26.225Z"
+  },
+  "ai_response_1757204306274_7z8oryqnh": {
+    "id": "ai_response_1757204306274_7z8oryqnh",
+    "content": "\n      AI Response: Remember, every step you take is a step towards a healthier you! Stay focused on your goals, and celebrate the small victories along the way.\n      Context: motivation - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-07T00:18:26.274Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "motivation",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "Remember, every step you take is a step towards a healthier you! Stay focused on your goals, and celebrate the small victories along the way.",
+      "context": {
+        "type": "motivation",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T12:00:00Z",
+            "id": "d310c2a1-46a9-46fc-8925-3d727615858d",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "d310c2a1-46a9-46fc-8925-3d727615858d.txt",
+            "created_at": "2025-09-06T23:17:08.362Z",
+            "content_preview": "Had chicken breast with rice and broccoli for lunch"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T08:00:00Z",
+            "id": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c.txt",
+            "created_at": "2025-09-06T23:17:14.473Z",
+            "content_preview": "Breakfast: oatmeal with banana and almonds"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:38:45.879Z",
+            "id": "b7c7222c-6326-4406-afde-6bfc2d33a7b3",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "b7c7222c-6326-4406-afde-6bfc2d33a7b3.png",
+            "created_at": "2025-09-06T23:38:45.905Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:43:33.518Z",
+            "id": "fa875d50-e733-4416-8b7e-9b71db568677",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "fa875d50-e733-4416-8b7e-9b71db568677.wav",
+            "created_at": "2025-09-06T23:43:33.561Z",
+            "file_size": 1188366,
+            "content_preview": "Audio recording (1160.5 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:12.779Z",
+            "id": "42a894c8-3b9b-449a-a672-ba5a03a2f057",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "42a894c8-3b9b-449a-a672-ba5a03a2f057.txt",
+            "created_at": "2025-09-07T00:01:12.805Z",
+            "content_preview": "I ate a banana today for breakfast along with Oats"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:21.795Z",
+            "id": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a.png",
+            "created_at": "2025-09-07T00:01:21.828Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:29.431Z",
+            "id": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87.wav",
+            "created_at": "2025-09-07T00:01:29.468Z",
+            "file_size": 485646,
+            "content_preview": "Audio recording (474.3 KB)"
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-07T00:18:26.274Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-07T00:18:26.396Z"
+  },
+  "ai_response_1757204306436_9n3yze145": {
+    "id": "ai_response_1757204306436_9n3yze145",
+    "content": "\n      AI Response: Incorporate strength training exercises 2-3 times a week to help build muscle alongside your cardio.\nConsider tracking your calorie intake to ensure you're in a caloric deficit for weight loss while still getting enough protein for muscle growth.\nHydrate adequately throughout the day, aiming for at least 2-3 liters of water, especially on days you exercise.\n      Context: suggestions - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-07T00:18:26.436Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "suggestions",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "Incorporate strength training exercises 2-3 times a week to help build muscle alongside your cardio.\nConsider tracking your calorie intake to ensure you're in a caloric deficit for weight loss while still getting enough protein for muscle growth.\nHydrate adequately throughout the day, aiming for at least 2-3 liters of water, especially on days you exercise.",
+      "context": {
+        "type": "suggestions",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T12:00:00Z",
+            "id": "d310c2a1-46a9-46fc-8925-3d727615858d",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "d310c2a1-46a9-46fc-8925-3d727615858d.txt",
+            "created_at": "2025-09-06T23:17:08.362Z",
+            "content_preview": "Had chicken breast with rice and broccoli for lunch"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T08:00:00Z",
+            "id": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c.txt",
+            "created_at": "2025-09-06T23:17:14.473Z",
+            "content_preview": "Breakfast: oatmeal with banana and almonds"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:38:45.879Z",
+            "id": "b7c7222c-6326-4406-afde-6bfc2d33a7b3",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "b7c7222c-6326-4406-afde-6bfc2d33a7b3.png",
+            "created_at": "2025-09-06T23:38:45.905Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:43:33.518Z",
+            "id": "fa875d50-e733-4416-8b7e-9b71db568677",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "fa875d50-e733-4416-8b7e-9b71db568677.wav",
+            "created_at": "2025-09-06T23:43:33.561Z",
+            "file_size": 1188366,
+            "content_preview": "Audio recording (1160.5 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:12.779Z",
+            "id": "42a894c8-3b9b-449a-a672-ba5a03a2f057",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "42a894c8-3b9b-449a-a672-ba5a03a2f057.txt",
+            "created_at": "2025-09-07T00:01:12.805Z",
+            "content_preview": "I ate a banana today for breakfast along with Oats"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:21.795Z",
+            "id": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a.png",
+            "created_at": "2025-09-07T00:01:21.828Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:29.431Z",
+            "id": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87.wav",
+            "created_at": "2025-09-07T00:01:29.468Z",
+            "file_size": 485646,
+            "content_preview": "Audio recording (474.3 KB)"
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-07T00:18:26.436Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-07T00:18:26.642Z"
+  },
+  "ai_response_1757204352528_p07ufnte7": {
+    "id": "ai_response_1757204352528_p07ufnte7",
+    "content": "\n      AI Response: You've made some great strides this week with a consistent running routine and balanced meals. Your choice of lean proteins and whole grains is commendable, showing a strong commitment to your goals.\n      Context: insights_summary - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-07T00:19:12.528Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "insights_summary",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "You've made some great strides this week with a consistent running routine and balanced meals. Your choice of lean proteins and whole grains is commendable, showing a strong commitment to your goals.",
+      "context": {
+        "type": "insights_summary",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T12:00:00Z",
+            "id": "d310c2a1-46a9-46fc-8925-3d727615858d",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "d310c2a1-46a9-46fc-8925-3d727615858d.txt",
+            "created_at": "2025-09-06T23:17:08.362Z",
+            "content_preview": "Had chicken breast with rice and broccoli for lunch"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T08:00:00Z",
+            "id": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c.txt",
+            "created_at": "2025-09-06T23:17:14.473Z",
+            "content_preview": "Breakfast: oatmeal with banana and almonds"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:38:45.879Z",
+            "id": "b7c7222c-6326-4406-afde-6bfc2d33a7b3",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "b7c7222c-6326-4406-afde-6bfc2d33a7b3.png",
+            "created_at": "2025-09-06T23:38:45.905Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:43:33.518Z",
+            "id": "fa875d50-e733-4416-8b7e-9b71db568677",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "fa875d50-e733-4416-8b7e-9b71db568677.wav",
+            "created_at": "2025-09-06T23:43:33.561Z",
+            "file_size": 1188366,
+            "content_preview": "Audio recording (1160.5 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:12.779Z",
+            "id": "42a894c8-3b9b-449a-a672-ba5a03a2f057",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "42a894c8-3b9b-449a-a672-ba5a03a2f057.txt",
+            "created_at": "2025-09-07T00:01:12.805Z",
+            "content_preview": "I ate a banana today for breakfast along with Oats"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:21.795Z",
+            "id": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a.png",
+            "created_at": "2025-09-07T00:01:21.828Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:29.431Z",
+            "id": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87.wav",
+            "created_at": "2025-09-07T00:01:29.468Z",
+            "file_size": 485646,
+            "content_preview": "Audio recording (474.3 KB)"
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-07T00:19:12.528Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-07T00:19:12.770Z"
+  },
+  "ai_response_1757204352813_6x55xlw79": {
+    "id": "ai_response_1757204352813_6x55xlw79",
+    "content": "\n      AI Response: Keep pushing forward! Every healthy choice you make is a step closer to your goals of losing weight and building muscle.\n      Context: motivation - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-07T00:19:12.813Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "motivation",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "Keep pushing forward! Every healthy choice you make is a step closer to your goals of losing weight and building muscle.",
+      "context": {
+        "type": "motivation",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T12:00:00Z",
+            "id": "d310c2a1-46a9-46fc-8925-3d727615858d",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "d310c2a1-46a9-46fc-8925-3d727615858d.txt",
+            "created_at": "2025-09-06T23:17:08.362Z",
+            "content_preview": "Had chicken breast with rice and broccoli for lunch"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T08:00:00Z",
+            "id": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c.txt",
+            "created_at": "2025-09-06T23:17:14.473Z",
+            "content_preview": "Breakfast: oatmeal with banana and almonds"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:38:45.879Z",
+            "id": "b7c7222c-6326-4406-afde-6bfc2d33a7b3",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "b7c7222c-6326-4406-afde-6bfc2d33a7b3.png",
+            "created_at": "2025-09-06T23:38:45.905Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:43:33.518Z",
+            "id": "fa875d50-e733-4416-8b7e-9b71db568677",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "fa875d50-e733-4416-8b7e-9b71db568677.wav",
+            "created_at": "2025-09-06T23:43:33.561Z",
+            "file_size": 1188366,
+            "content_preview": "Audio recording (1160.5 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:12.779Z",
+            "id": "42a894c8-3b9b-449a-a672-ba5a03a2f057",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "42a894c8-3b9b-449a-a672-ba5a03a2f057.txt",
+            "created_at": "2025-09-07T00:01:12.805Z",
+            "content_preview": "I ate a banana today for breakfast along with Oats"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:21.795Z",
+            "id": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a.png",
+            "created_at": "2025-09-07T00:01:21.828Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:29.431Z",
+            "id": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87.wav",
+            "created_at": "2025-09-07T00:01:29.468Z",
+            "file_size": 485646,
+            "content_preview": "Audio recording (474.3 KB)"
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-07T00:19:12.813Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-07T00:19:13.107Z"
+  },
+  "ai_response_1757204353155_iaf91eax3": {
+    "id": "ai_response_1757204353155_iaf91eax3",
+    "content": "\n      AI Response: Incorporate healthy fats into your meals, such as avocados, nuts, or olive oil.\nConsider adding a variety of colorful vegetables to your dinner for added nutrients.\nAim for a balanced dinner that includes a source of protein, healthy fats, and carbohydrates for recovery.\n      Context: suggestions - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-07T00:19:13.155Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "suggestions",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "Incorporate healthy fats into your meals, such as avocados, nuts, or olive oil.\nConsider adding a variety of colorful vegetables to your dinner for added nutrients.\nAim for a balanced dinner that includes a source of protein, healthy fats, and carbohydrates for recovery.",
+      "context": {
+        "type": "suggestions",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T12:00:00Z",
+            "id": "d310c2a1-46a9-46fc-8925-3d727615858d",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "d310c2a1-46a9-46fc-8925-3d727615858d.txt",
+            "created_at": "2025-09-06T23:17:08.362Z",
+            "content_preview": "Had chicken breast with rice and broccoli for lunch"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T08:00:00Z",
+            "id": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c.txt",
+            "created_at": "2025-09-06T23:17:14.473Z",
+            "content_preview": "Breakfast: oatmeal with banana and almonds"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:38:45.879Z",
+            "id": "b7c7222c-6326-4406-afde-6bfc2d33a7b3",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "b7c7222c-6326-4406-afde-6bfc2d33a7b3.png",
+            "created_at": "2025-09-06T23:38:45.905Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:43:33.518Z",
+            "id": "fa875d50-e733-4416-8b7e-9b71db568677",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "fa875d50-e733-4416-8b7e-9b71db568677.wav",
+            "created_at": "2025-09-06T23:43:33.561Z",
+            "file_size": 1188366,
+            "content_preview": "Audio recording (1160.5 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:12.779Z",
+            "id": "42a894c8-3b9b-449a-a672-ba5a03a2f057",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "42a894c8-3b9b-449a-a672-ba5a03a2f057.txt",
+            "created_at": "2025-09-07T00:01:12.805Z",
+            "content_preview": "I ate a banana today for breakfast along with Oats"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:21.795Z",
+            "id": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a.png",
+            "created_at": "2025-09-07T00:01:21.828Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:29.431Z",
+            "id": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87.wav",
+            "created_at": "2025-09-07T00:01:29.468Z",
+            "file_size": 485646,
+            "content_preview": "Audio recording (474.3 KB)"
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-07T00:19:13.155Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-07T00:19:13.306Z"
+  },
+  "ai_response_1757204353344_ct6738bu5": {
+    "id": "ai_response_1757204353344_ct6738bu5",
+    "content": "\n      AI Response: Prepare a quinoa bowl with grilled salmon, mixed greens, cherry tomatoes, and a drizzle of olive oil for a nutritious dinner that balances proteins, healthy fats, and fiber-rich carbs.\n      Context: dinner_recommendation - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-07T00:19:13.344Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "dinner_recommendation",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "Prepare a quinoa bowl with grilled salmon, mixed greens, cherry tomatoes, and a drizzle of olive oil for a nutritious dinner that balances proteins, healthy fats, and fiber-rich carbs.",
+      "context": {
+        "type": "dinner_recommendation",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T12:00:00Z",
+            "id": "d310c2a1-46a9-46fc-8925-3d727615858d",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "d310c2a1-46a9-46fc-8925-3d727615858d.txt",
+            "created_at": "2025-09-06T23:17:08.362Z",
+            "content_preview": "Had chicken breast with rice and broccoli for lunch"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T08:00:00Z",
+            "id": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "9b73eb37-91ac-466b-96e2-ffb5c6ade17c.txt",
+            "created_at": "2025-09-06T23:17:14.473Z",
+            "content_preview": "Breakfast: oatmeal with banana and almonds"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:38:45.879Z",
+            "id": "b7c7222c-6326-4406-afde-6bfc2d33a7b3",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "b7c7222c-6326-4406-afde-6bfc2d33a7b3.png",
+            "created_at": "2025-09-06T23:38:45.905Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T23:43:33.518Z",
+            "id": "fa875d50-e733-4416-8b7e-9b71db568677",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "fa875d50-e733-4416-8b7e-9b71db568677.wav",
+            "created_at": "2025-09-06T23:43:33.561Z",
+            "file_size": 1188366,
+            "content_preview": "Audio recording (1160.5 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:12.779Z",
+            "id": "42a894c8-3b9b-449a-a672-ba5a03a2f057",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "42a894c8-3b9b-449a-a672-ba5a03a2f057.txt",
+            "created_at": "2025-09-07T00:01:12.805Z",
+            "content_preview": "I ate a banana today for breakfast along with Oats"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:21.795Z",
+            "id": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a",
+            "user_id": "user123",
+            "input_method": "photo",
+            "file_name": "bc0f3b58-d1cb-47bc-b79e-43abe68aaf9a.png",
+            "created_at": "2025-09-07T00:01:21.828Z",
+            "file_size": 816583,
+            "content_preview": "Image file (797.4 KB)"
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-07T00:01:29.431Z",
+            "id": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87",
+            "user_id": "user123",
+            "input_method": "voice",
+            "file_name": "77a5fe0b-25ea-49f4-a7ce-9716cda11a87.wav",
+            "created_at": "2025-09-07T00:01:29.468Z",
+            "file_size": 485646,
+            "content_preview": "Audio recording (474.3 KB)"
+          }
+        ],
+        "days": 7,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-07T00:19:13.344Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-07T00:19:13.677Z"
   }
 }

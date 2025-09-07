@@ -197,5 +197,21 @@
       "content_preview": "Audio recording (474.3 KB)"
     },
     "timestamp": "2025-09-07T00:01:29.476Z"
+  },
+  "203a83c6-ddc6-422d-b517-ec1985be75cc": {
+    "id": "203a83c6-ddc6-422d-b517-ec1985be75cc",
+    "content": "Log entry: text - Ate a salad today for lunch.",
+    "metadata": {
+      "type": "log",
+      "userId": "user123",
+      "timestamp": "2025-09-07T21:47:00Z",
+      "id": "203a83c6-ddc6-422d-b517-ec1985be75cc",
+      "user_id": "user123",
+      "input_method": "text",
+      "file_name": "203a83c6-ddc6-422d-b517-ec1985be75cc.txt",
+      "created_at": "2025-09-07T00:20:33.500Z",
+      "content_preview": "Ate a salad today for lunch."
+    },
+    "timestamp": "2025-09-07T00:20:33.501Z"
   }
 }
