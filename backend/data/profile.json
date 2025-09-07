@@ -1,30 +1,4 @@
 {
-  "09e5516c-e1a6-4cc1-83f9-275a8d23a721": {
-    "id": "09e5516c-e1a6-4cc1-83f9-275a8d23a721",
-    "content": "User profile: Alex Smith, 28 year old male, mesomorph body type, moderate activity level, western background, goals: lose weight, build muscle, improve health",
-    "metadata": {
-      "type": "profile",
-      "userId": "09e5516c-e1a6-4cc1-83f9-275a8d23a721",
-      "timestamp": "2025-09-06T21:37:13.181Z",
-      "id": "09e5516c-e1a6-4cc1-83f9-275a8d23a721",
-      "name": "Alex Smith",
-      "age": 28,
-      "gender": "male",
-      "height": 175,
-      "weight": 70,
-      "bodyType": "mesomorph",
-      "culture": "western",
-      "goals": [
-        "lose weight",
-        "build muscle",
-        "improve health"
-      ],
-      "activity_level": "moderate",
-      "createdAt": "2025-09-06T21:37:13.181Z",
-      "updatedAt": "2025-09-06T21:37:13.181Z"
-    },
-    "timestamp": "2025-09-06T21:37:13.182Z"
-  },
   "user123": {
     "id": "user123",
     "content": "User profile: Test User, 28 year old male, mesomorph body type, moderate activity level, western background, goals: lose weight, build muscle, improve health",
