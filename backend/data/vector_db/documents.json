@@ -10637,5 +10637,693 @@
       "tokens": 0
     },
     "timestamp": "2025-09-07T00:29:52.988Z"
+  },
+  "ai_response_1757206435741_irh7y8rg1": {
+    "id": "ai_response_1757206435741_irh7y8rg1",
+    "content": "\n      AI Response: You've made a great start with your 25-minute run and a healthy lunch of chicken, rice, and broccoli. Your choice of protein and complex carbohydrates is commendable, and you're on the right path toward your goals of weight loss and muscle building.\n      Context: insights_summary - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-07T00:53:55.741Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "insights_summary",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "You've made a great start with your 25-minute run and a healthy lunch of chicken, rice, and broccoli. Your choice of protein and complex carbohydrates is commendable, and you're on the right path toward your goals of weight loss and muscle building.",
+      "context": {
+        "type": "insights_summary",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T12:00:00Z",
+            "id": "d310c2a1-46a9-46fc-8925-3d727615858d",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "d310c2a1-46a9-46fc-8925-3d727615858d.txt",
+            "created_at": "2025-09-06T23:17:08.362Z",
+            "content_preview": "Had chicken breast with rice and broccoli for lunch"
+          }
+        ],
+        "days": 1,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-07T00:53:55.741Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-07T00:53:55.999Z"
+  },
+  "ai_response_1757206436030_r03z9jg9d": {
+    "id": "ai_response_1757206436030_r03z9jg9d",
+    "content": "\n      AI Response: Keep pushing forward! Every small step you take is a move closer to your health and fitness goals.\n      Context: motivation - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-07T00:53:56.030Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "motivation",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "Keep pushing forward! Every small step you take is a move closer to your health and fitness goals.",
+      "context": {
+        "type": "motivation",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T12:00:00Z",
+            "id": "d310c2a1-46a9-46fc-8925-3d727615858d",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "d310c2a1-46a9-46fc-8925-3d727615858d.txt",
+            "created_at": "2025-09-06T23:17:08.362Z",
+            "content_preview": "Had chicken breast with rice and broccoli for lunch"
+          }
+        ],
+        "days": 1,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-07T00:53:56.030Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-07T00:53:56.203Z"
+  },
+  "ai_response_1757206436232_r07heour5": {
+    "id": "ai_response_1757206436232_r07heour5",
+    "content": "\n      AI Response: Incorporate healthy fats into your meals, such as avocados, nuts, or olive oil, to enhance your nutritional balance.\nConsider adding a source of lean protein and more colorful vegetables to your dinner for variety and additional nutrients.\nStay hydrated throughout the day to support your metabolism and overall health.\n      Context: suggestions - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-07T00:53:56.232Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "suggestions",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "Incorporate healthy fats into your meals, such as avocados, nuts, or olive oil, to enhance your nutritional balance.\nConsider adding a source of lean protein and more colorful vegetables to your dinner for variety and additional nutrients.\nStay hydrated throughout the day to support your metabolism and overall health.",
+      "context": {
+        "type": "suggestions",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T12:00:00Z",
+            "id": "d310c2a1-46a9-46fc-8925-3d727615858d",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "d310c2a1-46a9-46fc-8925-3d727615858d.txt",
+            "created_at": "2025-09-06T23:17:08.362Z",
+            "content_preview": "Had chicken breast with rice and broccoli for lunch"
+          }
+        ],
+        "days": 1,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-07T00:53:56.232Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-07T00:53:56.514Z"
+  },
+  "ai_response_1757206436542_l4dis2uwp": {
+    "id": "ai_response_1757206436542_l4dis2uwp",
+    "content": "\n      AI Response: Enjoy a grilled salmon fillet with a side of quinoa and a mixed green salad topped with olive oil and avocado. This meal will provide healthy fats, additional protein, and a variety of nutrients to support your goals.\n      Context: dinner_recommendation - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-07T00:53:56.542Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "dinner_recommendation",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "Enjoy a grilled salmon fillet with a side of quinoa and a mixed green salad topped with olive oil and avocado. This meal will provide healthy fats, additional protein, and a variety of nutrients to support your goals.",
+      "context": {
+        "type": "dinner_recommendation",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T12:00:00Z",
+            "id": "d310c2a1-46a9-46fc-8925-3d727615858d",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "d310c2a1-46a9-46fc-8925-3d727615858d.txt",
+            "created_at": "2025-09-06T23:17:08.362Z",
+            "content_preview": "Had chicken breast with rice and broccoli for lunch"
+          }
+        ],
+        "days": 1,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-07T00:53:56.542Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-07T00:53:56.714Z"
+  },
+  "ai_response_1757206458627_jtbj1up7e": {
+    "id": "ai_response_1757206458627_jtbj1up7e",
+    "content": "\n      AI Response: You've made a fantastic start today with a solid 25-minute run and a nutritious lunch featuring chicken, rice, and broccoli. Keep up this momentum as you're on the right track towards your goals of losing weight and building muscle.\n      Context: insights_summary - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-07T00:54:18.627Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "insights_summary",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "You've made a fantastic start today with a solid 25-minute run and a nutritious lunch featuring chicken, rice, and broccoli. Keep up this momentum as you're on the right track towards your goals of losing weight and building muscle.",
+      "context": {
+        "type": "insights_summary",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T12:00:00Z",
+            "id": "d310c2a1-46a9-46fc-8925-3d727615858d",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "d310c2a1-46a9-46fc-8925-3d727615858d.txt",
+            "created_at": "2025-09-06T23:17:08.362Z",
+            "content_preview": "Had chicken breast with rice and broccoli for lunch"
+          }
+        ],
+        "days": 1,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-07T00:54:18.627Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-07T00:54:19.042Z"
+  },
+  "ai_response_1757206459079_la0cepih7": {
+    "id": "ai_response_1757206459079_la0cepih7",
+    "content": "\n      AI Response: Every small step counts, and you're doing great! Stay committed, and remember that progress is a journey.\n      Context: motivation - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-07T00:54:19.079Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "motivation",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "Every small step counts, and you're doing great! Stay committed, and remember that progress is a journey.",
+      "context": {
+        "type": "motivation",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T12:00:00Z",
+            "id": "d310c2a1-46a9-46fc-8925-3d727615858d",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "d310c2a1-46a9-46fc-8925-3d727615858d.txt",
+            "created_at": "2025-09-06T23:17:08.362Z",
+            "content_preview": "Had chicken breast with rice and broccoli for lunch"
+          }
+        ],
+        "days": 1,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-07T00:54:19.079Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-07T00:54:19.243Z"
+  },
+  "ai_response_1757206459272_liexvxloe": {
+    "id": "ai_response_1757206459272_liexvxloe",
+    "content": "\n      AI Response: Incorporate healthy fats into your meals, such as avocados or nuts, to meet your macro needs.\nAim for a balanced dinner that includes protein, healthy fats, and vegetables to optimize your nutrition.\nConsider tracking your food intake more consistently to identify patterns and make adjustments.\n      Context: suggestions - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-07T00:54:19.272Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "suggestions",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "Incorporate healthy fats into your meals, such as avocados or nuts, to meet your macro needs.\nAim for a balanced dinner that includes protein, healthy fats, and vegetables to optimize your nutrition.\nConsider tracking your food intake more consistently to identify patterns and make adjustments.",
+      "context": {
+        "type": "suggestions",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T12:00:00Z",
+            "id": "d310c2a1-46a9-46fc-8925-3d727615858d",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "d310c2a1-46a9-46fc-8925-3d727615858d.txt",
+            "created_at": "2025-09-06T23:17:08.362Z",
+            "content_preview": "Had chicken breast with rice and broccoli for lunch"
+          }
+        ],
+        "days": 1,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-07T00:54:19.272Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-07T00:54:19.454Z"
+  },
+  "ai_response_1757206459486_1teblh2f8": {
+    "id": "ai_response_1757206459486_1teblh2f8",
+    "content": "\n      AI Response: Prepare a quinoa salad with grilled salmon, mixed greens, cherry tomatoes, and a drizzle of olive oil. This will provide healthy fats, protein, and plenty of vitamins!\n      Context: dinner_recommendation - User: user123\n      Profile: mesomorph body type, western culture\n      Goals: lose weight, build muscle, improve health\n      Generated: 2025-09-07T00:54:19.486Z\n    ",
+    "metadata": {
+      "type": "ai_response",
+      "responseType": "dinner_recommendation",
+      "userId": "user123",
+      "profile": {
+        "type": "profile",
+        "userId": "user123",
+        "timestamp": "2025-09-06T22:50:00.000Z",
+        "id": "user123",
+        "name": "Test User",
+        "age": 28,
+        "gender": "male",
+        "height": 175,
+        "weight": 70,
+        "bodyType": "mesomorph",
+        "culture": "western",
+        "goals": [
+          "lose weight",
+          "build muscle",
+          "improve health"
+        ],
+        "activity_level": "moderate",
+        "createdAt": "2025-09-06T22:50:00.000Z",
+        "updatedAt": "2025-09-06T22:50:00.000Z"
+      },
+      "originalResponse": "Prepare a quinoa salad with grilled salmon, mixed greens, cherry tomatoes, and a drizzle of olive oil. This will provide healthy fats, protein, and plenty of vitamins!",
+      "context": {
+        "type": "dinner_recommendation",
+        "userId": "user123",
+        "profile": {
+          "type": "profile",
+          "userId": "user123",
+          "timestamp": "2025-09-06T22:50:00.000Z",
+          "id": "user123",
+          "name": "Test User",
+          "age": 28,
+          "gender": "male",
+          "height": 175,
+          "weight": 70,
+          "bodyType": "mesomorph",
+          "culture": "western",
+          "goals": [
+            "lose weight",
+            "build muscle",
+            "improve health"
+          ],
+          "activity_level": "moderate",
+          "createdAt": "2025-09-06T22:50:00.000Z",
+          "updatedAt": "2025-09-06T22:50:00.000Z"
+        },
+        "logs": [
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T21:47:00Z",
+            "id": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "6f431c03-6ff8-45f9-9a47-ad7bb8ecbf86.txt",
+            "created_at": "2025-09-06T22:31:13.388Z",
+            "content_preview": "This is a log for 25 minute run."
+          },
+          {
+            "type": "log",
+            "userId": "user123",
+            "timestamp": "2025-09-06T12:00:00Z",
+            "id": "d310c2a1-46a9-46fc-8925-3d727615858d",
+            "user_id": "user123",
+            "input_method": "text",
+            "file_name": "d310c2a1-46a9-46fc-8925-3d727615858d.txt",
+            "created_at": "2025-09-06T23:17:08.362Z",
+            "content_preview": "Had chicken breast with rice and broccoli for lunch"
+          }
+        ],
+        "days": 1,
+        "model": "gpt-3.5-turbo"
+      },
+      "timestamp": "2025-09-07T00:54:19.486Z",
+      "model": "gpt-3.5-turbo",
+      "tokens": 0
+    },
+    "timestamp": "2025-09-07T00:54:19.663Z"
   }
 }

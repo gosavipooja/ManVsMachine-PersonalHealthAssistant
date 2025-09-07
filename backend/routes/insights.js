@@ -1,4 +1,6 @@
 const express = require('express');
+const fs = require('fs').promises;
+const path = require('path');
 const { weaviateService } = require('../services/persistent-storage');
 const { aiCoach } = require('../services/openai');
 const { embeddingsService } = require('../services/embeddings');
@@ -10,6 +12,16 @@ const router = express.Router();
 router.get('/', async (req, res) => {
   try {
     const { userId, days = 1, includeRecommendations = true } = req.query;
+    
+    // Load structured output log data
+    let outputLogData = null;
+    try {
+      const outputLogPath = path.join(__dirname, '../data/output_log.json');
+      const outputLogContent = await fs.readFile(outputLogPath, 'utf8');
+      outputLogData = JSON.parse(outputLogContent);
+    } catch (error) {
+      console.warn('Could not load output_log.json:', error.message);
+    }
     
     // Validate required parameters
     if (!userId) {
@@ -81,7 +93,9 @@ router.get('/', async (req, res) => {
       similarUsers: similarUsers,
       relevantRecommendations: relevantRecommendations,
       userPatterns: userPatterns,
-      similarPatterns: similarPatterns
+      similarPatterns: similarPatterns,
+      // Structured parsed data from output_log.json
+      structuredData: outputLogData
     };
 
     // Add dinner recommendation if requested

@@ -341,5 +341,22 @@
       "content_preview": "Testing the new configuration system!"
     },
     "timestamp": "2025-09-07T00:36:32.976Z"
+  },
+  "9568227a-15da-4842-9bf8-5377b6c5c8b9": {
+    "id": "9568227a-15da-4842-9bf8-5377b6c5c8b9",
+    "content": "Log entry: voice - Audio recording (474.3 KB)",
+    "metadata": {
+      "type": "log",
+      "userId": "user123",
+      "timestamp": "2025-09-07T00:56:42.161Z",
+      "id": "9568227a-15da-4842-9bf8-5377b6c5c8b9",
+      "user_id": "user123",
+      "input_method": "voice",
+      "file_name": "9568227a-15da-4842-9bf8-5377b6c5c8b9.wav",
+      "created_at": "2025-09-07T00:56:42.175Z",
+      "file_size": 485648,
+      "content_preview": "Audio recording (474.3 KB)"
+    },
+    "timestamp": "2025-09-07T00:56:42.178Z"
   }
 }
