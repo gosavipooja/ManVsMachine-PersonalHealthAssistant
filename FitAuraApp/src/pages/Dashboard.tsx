@@ -9,6 +9,14 @@ interface DashboardProps {
   onLogout: () => void;
 }
 
+const handleGetSummary = () => {
+  alert('Summary feature coming soon!');
+};
+
+const handleGetRecommendations = () => {
+  alert('Recommendations feature coming soon!');
+};
+
 const Dashboard: React.FC<DashboardProps> = ({ userId, onLogout }) => {
   const [activeTab, setActiveTab] = useState<'home' | 'profile' | 'edit-profile' | 'log' | 'chat'>('home');
   const [profile, setProfile] = useState<any>(null);
@@ -93,6 +101,13 @@ const Dashboard: React.FC<DashboardProps> = ({ userId, onLogout }) => {
         {activeTab === 'home' && (
           <section className='home-tab'>
             <h2>Today's Logs</h2>
+
+            {/* New buttons */}
+            <div className='home-actions'>
+              <button onClick={() => handleGetSummary()}>Get Summary</button>
+              <button onClick={() => handleGetRecommendations()}>Get Recommendations</button>
+            </div>
+
             {todaysLogs.length > 0 ? (
               <table>
                 <thead>
@@ -108,16 +123,17 @@ const Dashboard: React.FC<DashboardProps> = ({ userId, onLogout }) => {
                       <td>{new Date(log.timestamp).toLocaleTimeString()}</td>
                       <td>{log.input_method}</td>
                       <td>
-                        {log.input_method === 'text' && log.content_preview}
-                        {log.input_method === 'photo' && (
-                          <img src={log.content} alt='Habit' style={{ maxWidth: '150px', borderRadius: '8px' }} />
-                        )}
-                        {log.input_method === 'voice' && (
+                        {log.input_method === 'text' && log.content && <span>{log.content}</span>}
+                        {log.input_method === 'image' && log.content && <img src={`data:image/*;base64,${log.content}`} alt='Habit' />}
+
+                        {log.input_method === 'voice' && log.content && (
                           <audio controls>
-                            <source src={log.content} type='audio/*' />
-                            Your browser does not support the audio element.
+                            <source src={`data:audio/*;base64,${log.content}`} />
                           </audio>
                         )}
+
+                        {/* Fallback for any unexpected type */}
+                        {!['text', 'image', 'voice'].includes(log.input_method) && <span>{log.content}</span>}
                       </td>
                     </tr>
                   ))}

@@ -1,7 +1,7 @@
 /* --- Global Styles --- */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f5f6fa;
+  background: linear-gradient(to right, #e0ebfa, #f4f7ff);
   margin: 0;
   padding: 0;
   color: #333;
@@ -10,219 +10,187 @@ body {
 h1,
 h2,
 h3 {
-  color: #2f3640;
+  color: #1e3a8a;
   text-align: center;
   margin-bottom: 15px;
 }
 
+/* --- App Container --- */
 .App {
-  max-width: 600px;
-  margin: 20px auto;
-  padding: 20px;
+  max-width: 650px;
+  margin: 30px auto;
+  padding: 30px;
   background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 /* --- Input Fields --- */
-input {
-  width: calc(100% - 20px);
-  padding: 10px;
-  margin: 8px 0;
-  border-radius: 8px;
-  border: 1px solid #dcdde1;
+input,
+select {
+  width: 100%;
+  padding: 14px 16px;
+  margin: 10px 0;
+  border-radius: 14px;
+  border: 1px solid #cbd5e1;
   font-size: 16px;
+  box-sizing: border-box;
+  background-color: #f9fafc;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 10px rgba(37, 99, 235, 0.3);
+  outline: none;
 }
 
 /* --- Buttons --- */
 button {
-  background-color: #4cd137;
+  display: inline-block;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
   color: white;
   border: none;
-  border-radius: 8px;
-  padding: 10px 16px;
+  border-radius: 14px;
+  padding: 14px 20px;
   margin: 8px 4px;
   font-size: 16px;
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: background 0.3s ease, transform 0.1s ease;
 }
 
 button:hover {
-  background-color: #44bd32;
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  transform: translateY(-2px);
 }
 
-/* --- Pages / Sections --- */
-section {
-  margin-bottom: 25px;
+button:active {
+  transform: translateY(0);
 }
 
-/* --- Dashboard Cards --- */
+/* --- Navigation Tabs --- */
 .dashboard-nav {
   display: flex;
   justify-content: space-around;
-  background-color: #2f3640;
-  padding: 10px;
-  border-radius: 8px;
-  margin-bottom: 20px;
+  background-color: #1e3a8a;
+  padding: 12px;
+  border-radius: 14px;
+  margin-bottom: 25px;
 }
 
 .dashboard-nav button {
   background: none;
   border: none;
-  color: #f5f6fa;
+  color: #ffffff;
   font-size: 16px;
   cursor: pointer;
-  padding: 10px 15px;
-  border-radius: 6px;
+  padding: 10px 18px;
+  border-radius: 10px;
   transition: background-color 0.2s ease;
 }
 
 .dashboard-nav button:hover {
-  background-color: #353b48;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .dashboard-nav .active {
-  background-color: #44bd32;
+  background-color: #3b82f6;
   color: white;
 }
 
 .logout-btn {
-  background-color: #e84118 !important;
+  background-color: #ef4444 !important;
   color: white !important;
 }
 
+/* --- Tabs & Sections --- */
 .tab-content {
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Table styling */
+/* --- Tables --- */
+.home-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.home-actions button {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.1s ease;
+}
+
+.home-actions button:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  transform: translateY(-2px);
+}
+
 .home-tab table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .home-tab th,
 .home-tab td {
-  border: 1px solid #dcdde1;
-  padding: 10px;
+  border: 1px solid #e2e8f0;
+  padding: 14px 10px;
   text-align: left;
 }
 
 .home-tab th {
-  background-color: #f1f2f6;
+  background-color: #f1f5f9;
+  font-weight: 600;
+  color: #1e3a8a;
 }
 
-/* --- Home Tab Table Media Styling --- */
 .home-tab td img {
-  max-width: 150px; /* constrain width */
-  max-height: 120px; /* constrain height */
-  border-radius: 8px; /* rounded corners */
-  object-fit: cover; /* maintain aspect ratio */
+  max-width: 150px;
+  max-height: 120px;
+  border-radius: 14px;
+  object-fit: cover;
   display: block;
   margin: 5px 0;
 }
 
 .home-tab td audio {
-  width: 100%; /* take full cell width */
-  max-width: 250px; /* optional max width */
+  width: 100%;
+  max-width: 250px;
   margin: 5px 0;
 }
 
-/* Optional: make table rows taller if media is present */
 .home-tab td {
   vertical-align: middle;
 }
 
-/* --- Progress Bar --- */
-.progress-bar-container {
-  background-color: #dcdde1;
-  border-radius: 10px;
-  overflow: hidden;
-  margin: 10px 0;
-  height: 20px;
-}
-
-.progress-bar-fill {
-  background-color: #4cd137;
-  height: 100%;
-  width: 0%;
-  transition: width 0.3s ease;
-  border-radius: 10px;
-}
-
-/* --- Reminder Modal --- */
-.reminder-modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #ffffff;
-  padding: 20px 30px;
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  z-index: 1000;
-}
-
-/* --- Login Page --- */
-.login-container {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  background: #fdfdfd;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.login-container input {
-  display: block;
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.login-container button {
-  width: 100%;
-}
-
-/* --- Habit Logger --- */
-.habit-logger-container button {
-  width: 32%;
-  margin-right: 2%;
-}
-
-.habit-logger-container button:last-child {
-  margin-right: 0;
-}
-
-/* --- Profile Setup / Edit Profile Section --- */
-section.profile-page {
-  background-color: #f4f6fb;
-  border: 2px solid #4cd137;
-  padding: 20px;
-  border-radius: 12px;
-  margin: 20px auto;
-  max-width: 500px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
+/* --- Profile Section --- */
+section.profile-page,
 .profile-tab {
-  background: #ffffff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  max-width: 500px;
-  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 18px;
+  padding: 30px;
+  max-width: 540px;
+  margin: 20px auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 .profile-tab h2 {
-  font-size: 1.8rem;
-  margin-bottom: 15px;
-  color: #2f3640;
-  text-align: center;
+  font-size: 2rem;
+  color: #2563eb;
+  margin-bottom: 20px;
 }
 
 .profile-tab ul {
@@ -234,8 +202,8 @@ section.profile-page {
 .profile-tab li {
   display: flex;
   justify-content: space-between;
-  padding: 10px 0;
-  border-bottom: 1px solid #f1f2f6;
+  padding: 14px 0;
+  border-bottom: 1px solid #e2e8f0;
 }
 
 .profile-tab li:last-child {
@@ -243,118 +211,103 @@ section.profile-page {
 }
 
 .profile-tab strong {
-  color: #718093;
-  font-weight: 600;
-  margin-right: 10px;
+  color: #64748b;
 }
 
 .profile-tab li span {
-  color: #2f3640;
+  color: #1e3a8a;
   font-weight: 500;
 }
 
 .profile-tab button {
   display: block;
   width: 100%;
-  background-color: #44bd32;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
   color: white;
   border: none;
-  border-radius: 8px;
-  padding: 12px;
+  border-radius: 14px;
+  padding: 16px;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.2s ease;
+  margin-top: 15px;
 }
 
 .profile-tab button:hover {
-  background-color: #4cd137;
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
 }
 
-section.profile-page h2 {
-  color: #4cd137;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-section.profile-page input,
-section.profile-page select {
-  display: block;
-  width: 90%;
-  max-width: 400px;
-  margin: 0 auto 12px auto;
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #dcdde1;
-  font-size: 16px;
-  box-sizing: border-box;
-  background-color: #ffffff;
-}
-
-section.profile-page button {
-  display: block;
-  width: 90%;
-  max-width: 400px;
-  margin: 20px auto 0 auto;
-  background-color: #4cd137;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  padding: 12px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-section.profile-page button:hover {
-  background-color: #44bd32;
-}
-
-/** --- Habit Logger section --- **/
+/* --- Habit Logger --- */
 section.habit-logger {
-  background-color: #fff8f0;
-  border: 2px solid #ffa502;
-  padding: 20px;
-  border-radius: 12px;
-  margin: 20px 0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #f0f4ff;
+  border-radius: 18px;
+  border: 2px solid #3b82f6;
+  padding: 30px;
+  margin: 25px 0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 section.habit-logger h3 {
-  color: #ffa502;
+  color: #3b82f6;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
   text-align: center;
-  margin-bottom: 15px;
 }
 
 section.habit-logger select,
 section.habit-logger input {
-  display: block;
-  width: 90%;
-  max-width: 400px;
-  margin: 0 auto 12px auto;
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #dcdde1;
+  width: 95%;
+  max-width: 440px;
+  margin: 10px auto;
+  padding: 14px;
   font-size: 16px;
-  box-sizing: border-box;
+  border-radius: 14px;
+  border: 1px solid #cbd5e1;
+  display: block;
 }
 
 section.habit-logger button {
-  display: block;
-  width: 90%;
-  max-width: 400px;
-  margin: 0 auto;
-  background-color: #ffa502;
+  width: 95%;
+  max-width: 440px;
+  margin: 15px auto 0 auto;
+  padding: 14px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
   color: white;
-  border: none;
-  border-radius: 8px;
-  padding: 10px;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  display: block;
 }
 
 section.habit-logger button:hover {
-  background-color: #e09b00;
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+}
+
+/* --- Login Page --- */
+.login-container {
+  max-width: 440px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-container input {
+  width: 100%;
+  margin-bottom: 14px;
+  padding: 14px;
+  border-radius: 14px;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 14px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+}
+
+.login-container button:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
 }
